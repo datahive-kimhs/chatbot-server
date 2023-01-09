@@ -1,0 +1,28 @@
+[DEFAULT]
+Debug = True
+SSH = True
+
+[SERVER]
+Host = 0.0.0.0
+Port = 8000
+
+[SSH]
+Host = -
+Port = -
+ID = -
+Password = -
+
+[DB.CKLINE.ACCESS]
+Host = -
+Port = -
+DBName = -
+ID = -
+Password = -
+
+[DB.CKLINE.SETTING]
+# SQLAlchemy ConnectionPool settings.
+# https://docs.sqlalchemy.org/en/20/core/engines.html#sqlalchemy.create_engine.params.max_overflow
+PoolSize = 30
+MaxOverflow = 50
+PoolRecycle = 1800
+
