@@ -1,3 +1,5 @@
+import json
+
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect
 from fastapi.logger import logger
 
@@ -16,14 +18,16 @@ async def chatbot_endpoint(
     # Preprocess chat room - load chat log, etc...
     try:
         while True:
-            data = await websocket.receive_text()
-            # data_json = await websocket.receive_json()
+            # data = await websocket.receive_text()
+            data_json = await websocket.receive_json()
+            data = data_json.get('Query', 'Lang')
 
             # make answer...
-            send_data = make_answer(data)
+            send_data =  make_answer(data_json)
 
             logger.info(f"{room_id}\treceive data = {data}")
-            await websocket.send_text(send_data)
+            text = json.dumps(send_data, ensure_ascii=False)
+            await websocket.send({"type": "websocket.send", "text": text})
             logger.info(f"{room_id}\tsend data = {send_data}")
     except WebSocketDisconnect as e:
         # exit chatbot
