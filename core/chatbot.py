@@ -59,13 +59,19 @@ def load_dataset():
     return small_talk_dataset, ckline_talk_dataset, abuse_dataset
 
 # 특수문자 처리 함수
-def convert_specialchar(query):
+def convert_specialChar(query):
     if query[-1] == "?":
         query = re.sub('[?+]', '', query)
         query = query + "?"
     elif query[0] == "#":
         query = re.sub('[#+]', '', query)
         query = "#" + query
+    elif query[-1] == ".":
+        query = re.sub('[.+]', '', query)
+    elif query[-1] == "!":
+        query = re.sub('[!+]', '', query)
+    elif query[-1] == ",":
+        query = re.sub('[,+]', '', query)
 
     return query
 
@@ -93,25 +99,11 @@ def get_pos_keywords(query):
     
     return answer_keyword, answer_keyword_string
 
-# 개체명 인식 및 일부 예외처리
+# 개체명 인식
 def predict_ner(query):
     ner_predicts = ner.predict(query)
     ner_tags = ner.predict_tags(query)
 
-    # 예외 처리(선박, 양하)
-    if query == "선박":
-        ner_predicts = [('선박', 'CK_WORD')]
-        ner_tags = ['CK_WORD']
-    elif query == "양하":
-        ner_predicts = [('양하', 'CK_WORD')]
-        ner_tags = ['CK_WORD']
-    elif query == "선박의 뜻?":
-        ner_predicts = [('선박', 'CK_WORD'), ('의', 'O'), ('뜻', 'O')]
-        ner_tags = ['CK_WORD']
-    elif query == "양하의 뜻?":
-        ner_predicts = [('양하', 'CK_WORD'), ('의', 'O'), ('뜻', 'O')]
-        ner_tags = ['CK_WORD']
-    
     return ner_predicts, ner_tags
 
 # query와 데이터셋에 있는 Q과 매칭 후 해당 A 리턴하는 함수
@@ -332,7 +324,7 @@ def make_answer(question: Any) -> Any:
     lang = question['Lang'].lower()
 
     # 특수문자 처리
-    query = convert_specialchar(query)
+    query = convert_specialChar(query)
     # 예외 문자 처리
     query, origin_query = exception_handling(query)
 
@@ -341,6 +333,9 @@ def make_answer(question: Any) -> Any:
 
     # 개체명 파악
     ner_predicts, ner_tags = predict_ner(query)
+
+    print(f"ner_predicts : {ner_predicts}")
+    print(f"ner_tags : {ner_tags}")
 
     # 답변 검색
     keyword_answer = ""
@@ -386,9 +381,9 @@ def make_answer(question: Any) -> Any:
                 keyword_answer = ""
             
             # 관리자에서 등록한 해양물류사전 검색
-            elif query[-2:] == "뜻?":
-                answer_text = f.get_dictionary(f.tag_to_answer(ner_predicts))
-                print(f'CK_WORDS 단어를 ckaix dictionary에서 검색 - answer text : {answer_text}')
+            # elif query[-2:] == "뜻?":
+            #     answer_text = f.get_dictionary(f.tag_to_answer(ner_predicts))
+            #     print(f'CK_WORDS 단어를 ckaix dictionary에서 검색 - answer text : {answer_text}')
 
             # query가 천경해운 데이터 셋에 정확하게 있을 경우 검색
             try:
@@ -429,6 +424,15 @@ def make_answer(question: Any) -> Any:
                         query, answer_keyword=answer_keyword, ner_tags=ner_tags, ner_predicts=ner_predicts, lang=lang, input=input)
                     answer_text = change_answer(origin_query, answer_text)
                     print(f"search CKAIX_SCENAIO : {answer_text}")
+            
+            # 관리자에서 등록한 해양물류사전 검색
+            try:
+                if answer_text is None or answer_text == "":
+                    answer_text = f.get_dictionary(f.tag_to_answer(ner_predicts))
+                    print(f'CK_WORDS 단어를 ckaix dictionary에서 검색 - answer text : {answer_text}')
+            
+            except Exception as ex:
+                print(" 해양 물류 사전 : ", ex)
             
             try:
                 # 천경해운 데이터셋
