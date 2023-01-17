@@ -29,7 +29,7 @@ CUTOFF = 0.6
 komoran_object = Komoran()
 
 # 사용자 사전 생성
-# train_user_dict()
+train_user_dict()
 
 # 챗봇 단어 사전 생성
 # create_dict()
