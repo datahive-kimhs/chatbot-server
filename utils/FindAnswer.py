@@ -106,7 +106,7 @@ def get_close_question(X, num_samples, new_post_vec, dataset, query):
             return ''
     elif best_dist > 0.1 and best_dist <= 0.95:
         close_matches_index = get_close_matches(
-                                query, dataset['Q'], 10, 0.5)
+                                query, dataset['Q'], 10, 0.7)
         if len(close_matches_index):
             for index in close_matches_index:
                 if index[1] == best_i:
@@ -146,10 +146,14 @@ class FindAnswer:
     def tag_to_answer(self, ner_predicts):
         answer = ""
         for word, tag in ner_predicts:
-
+            if word == "선박" or word == "양하":
+                tag = 'CK_WORD'
+                answer = word
+                break
             # 변환해야 하는 태그가 있는 경우 추가
             if tag == 'CK_WORD':
                 answer = word
+                break
 
         return answer
     
@@ -201,7 +205,8 @@ class FindAnswer:
                 for ne in ner_tags:
                     if "발행" == ne or "요청" == ne or "확인" == ne or "변경" == ne or "조회" == ne or "수정" == ne or "시간" == ne \
                     or "부산" == ne or "인천" == ne or "등록" == ne or "발생" == ne or "신청" == ne or "정보" == ne or "서비스" == ne \
-                        or "신규" == ne or "운임" == ne or "자가" == ne or "운송" == ne or "번호" == ne or "진행" == ne or "상태" == ne:
+                        or "신규" == ne or "운임" == ne or "자가" == ne or "운송" == ne or "번호" == ne or "진행" == ne or "상태" == ne \
+                            or "추적" == ne:
                         continue
 
                     if lang == "ko":
@@ -288,14 +293,16 @@ class FindAnswer:
                             if len(answers) > 1:               
                                if lang == "ko":
                                     for i in answers:
-                                        if keyNum < 5:
+                                        if keyNum < 7:
                                             keyword_answer += i[keyword_answerNum1]+","
                                         keyNum += 1
 
                                     X, num_samples, new_post_vec, ckline_talk_dataset, question = vectorize_transform(question, ckline_talk_dataset)
                                     result = get_close_question(X, num_samples, new_post_vec, ckline_talk_dataset, question)
                                     print(f'answer > 1일 때, 천경해운 새로운 closer_matcher {result}')
-                                    if len(result):
+                                    if result == None:
+                                        answer, url = "아래의 버튼 중 원하시는 업무를 선택해주세요", ""
+                                    elif len(result):
                                         answer = result
                                     else:
                                         answer, url = "아래의 버튼 중 원하시는 업무를 선택해주세요", ""
@@ -311,6 +318,9 @@ class FindAnswer:
                                     answer, category = answers[0][answerNum],  answers[0][8]
 
                                     if keyword_answer == "딜레이노티스|CKAIX_RPA_WORKING_LIST,":
+                                        keyword_answer = "지연공문,"
+                                        category = ''
+                                    elif keyword_answer == ",딜레이노티스|CKAIX_RPA_WORKING_LIST,":
                                         keyword_answer = "지연공문,"
                                         category = ''
 
