@@ -1,5 +1,10 @@
 from konlpy.tag import Komoran
 import pickle
+# import MeCab
+
+# class Preprocess_ja:
+#     def __init__(self):
+#         self.mecab = MeCab
 
 
 class Preprocess:
