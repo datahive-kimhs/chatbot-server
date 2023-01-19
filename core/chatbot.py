@@ -11,6 +11,8 @@ import pandas as pd
 import re
 import random
 import googletrans
+import string
+
 from difflib import SequenceMatcher
 from heapq import nlargest as _nlargest
 from konlpy.tag import Komoran
@@ -61,18 +63,14 @@ def load_dataset():
 
 # 특수문자 처리 함수
 def convert_specialChar(query):
-    if query[-1] == "?":
-        query = re.sub('[?+]', '', query)
-        query = query + "?"
-    elif query[0] == "#":
+    syntax = string.punctuation
+    syntax = syntax.replace("#", "")
+
+    if query[0] == "#":
         query = re.sub('[#+]', '', query)
         query = "#" + query
-    elif query[-1] == ".":
-        query = re.sub('[.+]', '', query)
-    elif query[-1] == "!":
-        query = re.sub('[!+]', '', query)
-    elif query[-1] == ",":
-        query = re.sub('[,+]', '', query)
+    else:
+        query = query.translate(str.maketrans('', '', syntax))
 
     return query
 
