@@ -70,7 +70,16 @@ def convert_specialChar(query):
         query = re.sub('[#+]', '', query)
         query = "#" + query
     else:
-        query = query.translate(str.maketrans('', '', syntax))
+        if query.find("/") > 0:
+            pass
+        elif query.find("-") > 0:
+            pass
+        elif query.find("(") > 0:
+            pass
+        elif query.find(")") > 0:
+            pass
+        else:
+            query = query.translate(str.maketrans('', '', syntax))
 
     return query
 
@@ -330,194 +339,191 @@ def make_answer(question: Any) -> Any:
     query = question['Query'].upper()
     lang = question['Lang'].lower()
 
-    if lang != "ko":
-        query = translate(query)
-        print(f"번역된 쿼리 : {query}")
     # 특수문자 처리
-    # query = convert_specialChar(query)
-    # # 예외 문자 처리
-    # query, origin_query = exception_handling(query)
+    query = convert_specialChar(query)
+    # 예외 문자 처리
+    query, origin_query = exception_handling(query)
 
-    # # 형태소 분석기 실행
-    # answer_keyword, answer_keyword_string = get_pos_keywords(query)
+    # 형태소 분석기 실행
+    answer_keyword, answer_keyword_string = get_pos_keywords(query)
 
-    # # 개체명 파악
-    # ner_predicts, ner_tags = predict_ner(query)
+    # 개체명 파악
+    ner_predicts, ner_tags = predict_ner(query)
 
-    # print(f"ner_predicts : {ner_predicts}")
-    # print(f"ner_tags : {ner_tags}")
+    print(f"ner_predicts : {ner_predicts}")
+    print(f"ner_tags : {ner_tags}")
 
-    # # 답변 검색
-    # keyword_answer = ""
-    # answer_text = ""
-    # url = ""
-    # usruse = "0"
-    # category = ""
-    # input = ""
+    # 답변 검색
+    keyword_answer = ""
+    answer_text = ""
+    url = ""
+    usruse = "0"
+    category = ""
+    input = ""
 
-    # #################챗봇 answer 로직#########################
-    # try:
-    #     with ckline_db.get_db_session() as session:
-    #         f = FindAnswer(session)
+    #################챗봇 answer 로직#########################
+    try:
+        with ckline_db.get_db_session() as session:
+            f = FindAnswer(session)
 
-    #         # # 인풋 템플릿 내에서 언어에 따른 검색
-    #         sql = f"""select * from ckaix_input_template where upper(name{f'_{lang}'  if lang != 'ko' else ''}) = '{query}'"""
-    #         sql_result = session.execute(sql).all()
-    #         print(f'input template내에서 입력과 같은 query가 있는지 검색 결과 - sql_result : {sql_result}')
-    #         # 인풋 템플릿 내에서 검색될 경우 CKAIX_SCENARIO에서 question이 INPUT|{INDEX} 값으로 조회
-    #         if sql_result:
-    #             scenario_sql = f"""select * from ckaix_scenario where upper(question) = 'INPUT|{sql_result[0][0]}'"""
-    #             scenario_result = session.execute(scenario_sql).all()
-    #             print(f'input template내에서 검색될 경우 시나리오에서 question 검색 - scenario_result : {scenario_result}')
+            # # 인풋 템플릿 내에서 언어에 따른 검색
+            sql = f"""select * from ckaix_input_template where upper(name{f'_{lang}'  if lang != 'ko' else ''}) = '{query}'"""
+            sql_result = session.execute(sql).all()
+            print(f'input template내에서 입력과 같은 query가 있는지 검색 결과 - sql_result : {sql_result}')
+            # 인풋 템플릿 내에서 검색될 경우 CKAIX_SCENARIO에서 question이 INPUT|{INDEX} 값으로 조회
+            if sql_result:
+                scenario_sql = f"""select * from ckaix_scenario where upper(question) = 'INPUT|{sql_result[0][0]}'"""
+                scenario_result = session.execute(scenario_sql).all()
+                print(f'input template내에서 검색될 경우 시나리오에서 question 검색 - scenario_result : {scenario_result}')
 
-    #             if scenario_result:
-    #                 if lang == "ko":
-    #                     answer_text, keyword_answer, url, usruse, category, input = scenario_result[0][
-    #                         5], "", scenario_result[0][7], scenario_result[0][11], scenario_result[0][8], sql_result[0][2]
-    #                 if lang == "en":
-    #                     answer_text, keyword_answer, url, usruse, category, input = scenario_result[0][
-    #                         14], "", scenario_result[0][16], scenario_result[0][11], scenario_result[0][8], sql_result[0][2]
-    #                 if lang == "ja":
-    #                     answer_text, keyword_answer, url, usruse, category, input = scenario_result[0][
-    #                         19], "", scenario_result[0][21], scenario_result[0][11], scenario_result[0][8], sql_result[0][2]
-    #                 if lang == "cn":
-    #                     answer_text, keyword_answer, url, usruse, category, input = scenario_result[0][
-    #                         24], "", scenario_result[0][26], scenario_result[0][11], scenario_result[0][8], sql_result[0][2]
+                if scenario_result:
+                    if lang == "ko":
+                        answer_text, keyword_answer, url, usruse, category, input = scenario_result[0][
+                            5], "", scenario_result[0][7], scenario_result[0][11], scenario_result[0][8], sql_result[0][2]
+                    if lang == "en":
+                        answer_text, keyword_answer, url, usruse, category, input = scenario_result[0][
+                            14], "", scenario_result[0][16], scenario_result[0][11], scenario_result[0][8], sql_result[0][2]
+                    if lang == "ja":
+                        answer_text, keyword_answer, url, usruse, category, input = scenario_result[0][
+                            19], "", scenario_result[0][21], scenario_result[0][11], scenario_result[0][8], sql_result[0][2]
+                    if lang == "cn":
+                        answer_text, keyword_answer, url, usruse, category, input = scenario_result[0][
+                            24], "", scenario_result[0][26], scenario_result[0][11], scenario_result[0][8], sql_result[0][2]
                 
-    #         # 관리자에서 등록한 # 키워드 답변 검색
-    #         elif (query[0] == "#"):
-    #             answer_text, url = f.get_answer(query)
-    #             print(f'# 키워드가 query로 왔을 때 ckaix answer에서 검색 - answer text : {answer_text}')
-    #             keyword_answer = ""
+            # 관리자에서 등록한 # 키워드 답변 검색
+            elif (query[0] == "#"):
+                answer_text, url = f.get_answer(query)
+                print(f'# 키워드가 query로 왔을 때 ckaix answer에서 검색 - answer text : {answer_text}')
+                keyword_answer = ""
             
-    #         # 관리자에서 등록한 해양물류사전 검색
-    #         # elif query[-2:] == "뜻?":
-    #         #     answer_text = f.get_dictionary(f.tag_to_answer(ner_predicts))
-    #         #     print(f'CK_WORDS 단어를 ckaix dictionary에서 검색 - answer text : {answer_text}')
+            # 관리자에서 등록한 해양물류사전 검색
+            # elif query[-2:] == "뜻?":
+            #     answer_text = f.get_dictionary(f.tag_to_answer(ner_predicts))
+            #     print(f'CK_WORDS 단어를 ckaix dictionary에서 검색 - answer text : {answer_text}')
 
-    #         # query가 천경해운 데이터 셋에 정확하게 있을 경우 검색
-    #         try:
-    #             if answer_text is None or answer_text == "":
-    #                 print('천경해운 데이터셋 정확한 값')
-    #                 if lang == "ko":
-    #                     result = question_answer_match(query, ckline_talk_dataset)
-    #                     print(f"천경해운 데이터셋 정확한 값 : {result}")
-    #                     if len(result):
-    #                         answer_text = result
-    #                     else:
-    #                         pass
+            # query가 천경해운 데이터 셋에 정확하게 있을 경우 검색
+            try:
+                if answer_text is None or answer_text == "":
+                    print('천경해운 데이터셋 정확한 값')
+                    if lang == "ko":
+                        result = question_answer_match(query, ckline_talk_dataset)
+                        print(f"천경해운 데이터셋 정확한 값 : {result}")
+                        if len(result):
+                            answer_text = result
+                        else:
+                            pass
 
-    #         except Exception as ex:
-    #             print("천경해운 데이터 셋 : ", ex)
-    #             raise Exception
+            except Exception as ex:
+                print("천경해운 데이터 셋 : ", ex)
+                raise Exception
             
-    #         # query가 일상대화 데이터 셋에 정확하게 있을 경우 검색
-    #         try:
-    #             if answer_text is None or answer_text == "":
-    #                 print('일상대화 데이터셋 정확한 값')
-    #                 if lang == "ko":
-    #                     result = question_answer_match(query, small_talk_dataset)
-    #                     print(f"일상대화 데이터셋 정확한 값 : {result}")
-    #                     if len(result):
-    #                         answer_text = result
-    #                     else:
-    #                         pass
+            # query가 일상대화 데이터 셋에 정확하게 있을 경우 검색
+            try:
+                if answer_text is None or answer_text == "":
+                    print('일상대화 데이터셋 정확한 값')
+                    if lang == "ko":
+                        result = question_answer_match(query, small_talk_dataset)
+                        print(f"일상대화 데이터셋 정확한 값 : {result}")
+                        if len(result):
+                            answer_text = result
+                        else:
+                            pass
 
-    #         except Exception as ex:
-    #             print("스몰톡 데이터 셋 : ", ex)
-    #             raise Exception
+            except Exception as ex:
+                print("스몰톡 데이터 셋 : ", ex)
+                raise Exception
             
-    #         # CKAIX_SCENAIO에서 검색
-    #         else:
-    #             if answer_text is None or answer_text == "":
-    #                 answer_text, keyword_answer, url, usruse, category, input = f.search(
-    #                     query, answer_keyword=answer_keyword, ner_tags=ner_tags, ner_predicts=ner_predicts, lang=lang, input=input)
-    #                 answer_text = change_answer(origin_query, answer_text)
-    #                 print(f"search CKAIX_SCENAIO : {answer_text}")
+            # CKAIX_SCENAIO에서 검색
+            else:
+                if answer_text is None or answer_text == "":
+                    answer_text, keyword_answer, url, usruse, category, input = f.search(
+                        query, answer_keyword=answer_keyword, ner_tags=ner_tags, ner_predicts=ner_predicts, lang=lang, input=input)
+                    answer_text = change_answer(origin_query, answer_text)
+                    print(f"search CKAIX_SCENAIO : {answer_text}")
             
-    #         # 관리자에서 등록한 해양물류사전 검색
-    #         try:
-    #             if answer_text is None or answer_text == "":
-    #                 answer_text = f.get_dictionary(f.tag_to_answer(ner_predicts))
-    #                 print(f'CK_WORDS 단어를 ckaix dictionary에서 검색 - answer text : {answer_text}')
+            # 관리자에서 등록한 해양물류사전 검색
+            try:
+                if answer_text is None or answer_text == "":
+                    answer_text = f.get_dictionary(f.tag_to_answer(ner_predicts))
+                    print(f'CK_WORDS 단어를 ckaix dictionary에서 검색 - answer text : {answer_text}')
             
-    #         except Exception as ex:
-    #             print(" 해양 물류 사전 : ", ex)
+            except Exception as ex:
+                print(" 해양 물류 사전 : ", ex)
             
-    #         try:
-    #             # 천경해운 데이터셋
-    #             if answer_text is None or answer_text == "":
+            try:
+                # 천경해운 데이터셋
+                if answer_text is None or answer_text == "":
 
-    #                 if lang == "ko":
-    #                     X, num_samples, new_post_vec, ckline_talk_dataset, query = vectorize_transform(query, ckline_talk_dataset)
-    #                     result = get_close_question(X, num_samples, new_post_vec, ckline_talk_dataset, query)
-    #                     print(f'천경해운 새로운 closer_matcher : {result}')
-    #                     if len(result):
-    #                         answer_text = result
-    #                     else:
-    #                         pass
+                    if lang == "ko":
+                        X, num_samples, new_post_vec, ckline_talk_dataset, query = vectorize_transform(query, ckline_talk_dataset)
+                        result = get_close_question(X, num_samples, new_post_vec, ckline_talk_dataset, query)
+                        print(f'천경해운 새로운 closer_matcher : {result}')
+                        if len(result):
+                            answer_text = result
+                        else:
+                            pass
 
-    #         except Exception as ex:
-    #             print(" 천경물류 데이터셋 : ", ex)
+            except Exception as ex:
+                print(" 천경물류 데이터셋 : ", ex)
             
-    #         try:
-    #             # 욕설 감지
-    #             if answer_text is None or answer_text == "":
-    #                 if lang == "ko":
-    #                     close_matches_index = get_close_matches(
-    #                             query, abuse_dataset['Q'], MIN_WORD, 0.7)
-    #                     if len(close_matches_index):
-    #                         print("욕설 감지 json 데이터셋으로 입장")
-    #                         NUM = 0
-    #                         index = close_matches_index[NUM]
-    #                         answer_text = abuse_dataset['A'].iloc[index[1]]
-    #                         print(f'욕설 감지 데이터셋에서 검색해서 나온 값 - answer text : {answer_text}')
-    #                     else:
-    #                         pass
+            try:
+                # 욕설 감지
+                if answer_text is None or answer_text == "":
+                    if lang == "ko":
+                        close_matches_index = get_close_matches(
+                                query, abuse_dataset['Q'], MIN_WORD, 0.7)
+                        if len(close_matches_index):
+                            print("욕설 감지 json 데이터셋으로 입장")
+                            NUM = 0
+                            index = close_matches_index[NUM]
+                            answer_text = abuse_dataset['A'].iloc[index[1]]
+                            print(f'욕설 감지 데이터셋에서 검색해서 나온 값 - answer text : {answer_text}')
+                        else:
+                            pass
             
-    #         except Exception as ex:
-    #             print("욕설 감지 데이터셋 : ", ex)
-    #             raise Exception
+            except Exception as ex:
+                print("욕설 감지 데이터셋 : ", ex)
+                raise Exception
 
-    #         try:
-    #             # 일상대화 데이터셋
-    #             if answer_text is None or answer_text == "":
+            try:
+                # 일상대화 데이터셋
+                if answer_text is None or answer_text == "":
 
-    #                 if lang == "ko":
-    #                     X, num_samples, new_post_vec, small_talk_dataset, query = vectorize_transform(query, small_talk_dataset)
-    #                     result = get_close_smalltalk_question(X, num_samples, new_post_vec, small_talk_dataset, query)
-    #                     print(f'일상대화 새로운 closer_matcher : {result}')
-    #                     if len(result):
-    #                         answer_text = result
-    #                     else:
-    #                         pass
+                    if lang == "ko":
+                        X, num_samples, new_post_vec, small_talk_dataset, query = vectorize_transform(query, small_talk_dataset)
+                        result = get_close_smalltalk_question(X, num_samples, new_post_vec, small_talk_dataset, query)
+                        print(f'일상대화 새로운 closer_matcher : {result}')
+                        if len(result):
+                            answer_text = result
+                        else:
+                            pass
 
-    #         except Exception as ex:
-    #             print("스몰톡 데이터셋 : ", ex)
-    #             raise Exception
+            except Exception as ex:
+                print("스몰톡 데이터셋 : ", ex)
+                raise Exception
 
 
-    # except Exception as ex:
-    #         answer_text = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부할게요!"
-    #         keyword_answer = None  
+    except Exception as ex:
+            answer_text = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부할게요!"
+            keyword_answer = None  
 
-    # if len(query) == 1:
-    #         answer_text = "글자 수가 너무 짧습니다. <br>최소 2글자 이상 입력해주세요."
+    if len(query) == 1:
+            answer_text = "글자 수가 너무 짧습니다. <br>최소 2글자 이상 입력해주세요."
 
-    # send_json_data_str = {
-    #     "Query": query,
-    #     "Answer":  answer_text if answer_text else "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부할게요!",
-    #     "keyword": answer_keyword,
-    #     "keyword_answer": keyword_answer,
-    #     "NER": str(ner_predicts),
-    #     "url": url,
-    #     "usruse": usruse,
-    #     "category": category,
-    #     "input": input
-    # }
-    # print(f'최종 결과 값 - send_json_data_str : {send_json_data_str}')
+    send_json_data_str = {
+        "Query": query,
+        "Answer":  answer_text if answer_text else "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부할게요!",
+        "keyword": answer_keyword,
+        "keyword_answer": keyword_answer,
+        "NER": str(ner_predicts),
+        "url": url,
+        "usruse": usruse,
+        "category": category,
+        "input": input
+    }
+    print(f'최종 결과 값 - send_json_data_str : {send_json_data_str}')
 
-    return "hello"
+    return send_json_data_str
 
     
 
