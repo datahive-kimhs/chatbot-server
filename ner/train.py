@@ -103,3 +103,28 @@ def train():
     print("평가 결과 : ", model.evaluate(x_test, y_test)[1])
     model.save('ner/ner_model.h5')
 
+
+    # # 시퀀스를 NER 태그로 변환
+    # def sequences_to_tag(sequences):  # 예측값을 index_to_ner를 사용하여 태깅 정보로 변경하는 함수
+    #     result = []
+    #     for sequence in sequences:  # 전체 시퀀스로부터 시퀀스를 하나씩 꺼낸다.
+    #         temp = []
+    #         for pred in sequence:  # 시퀀스로부터 예측값을 하나씩 꺼낸다.
+    #             pred_index = np.argmax(pred)  # 예를 들어 [0, 0, 1, 0, 0]이라면 1의 인덱스인 2를 리턴한다.
+    #             temp.append(index_to_ner[pred_index].replace("PAD", "O"))  # 'PAD'는 'O'으로 변경
+    #         result.append(temp)
+    #     return result
+
+
+    # # F1 스코어 계산을 위해 사용
+    # from seqeval.metrics import f1_score, classification_report
+
+    # model = tf.keras.models.load_model('./ner/ner_model.h5')
+    # # 테스트 데이터셋의 NER 예측
+    # y_predicted = model.predict(x_test)
+    # pred_tags = sequences_to_tag(y_predicted)  # 예측된 NER
+    # test_tags = sequences_to_tag(y_test)  # 실제 NER
+
+    # # F1 평가 결과
+    # print(classification_report(test_tags, pred_tags))
+    # print("F1-score: {:.1%}".format(f1_score(test_tags, pred_tags)))
