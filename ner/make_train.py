@@ -1,10 +1,11 @@
 from typing import Any
 from sqlalchemy import select
-from core import ckline_db
+from connection import get_ckline_db_engine
 from models.dictionary import Dictionary
 
 
 def make_train():
+    ckline_db = get_ckline_db_engine()
     with ckline_db.get_db_session() as session:
         stmt = select(Dictionary)
         rows = session.execute(stmt).all()

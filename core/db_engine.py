@@ -1,9 +1,8 @@
 import logging
 from typing import Union
 
-from sqlalchemy import create_engine, text, MetaData
+from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker, Session, scoped_session
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.engine.base import Engine, Connection
 from sqlalchemy.exc import SQLAlchemyError, DBAPIError
 

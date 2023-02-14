@@ -6,7 +6,12 @@ from starlette.middleware.cors import CORSMiddleware
 from endpoints.chatbot.chatbot import chatbot_router
 from endpoints.chatbot.chatroom import chatroom_router
 from config import server_config
+from connection import connect_db as connect_db_to_ckline
 
+
+connected = connect_db_to_ckline()
+if not connected:
+    raise Exception("Cannot Connect to CKLINE! Check server status or value of config/config.ini.")
 debug = server_config.getboolean('DEFAULT', 'Debug')
 app = FastAPI(debug=debug)
 
@@ -31,7 +36,7 @@ async def main():
 
 if __name__ == "__main__":
     if debug:
-        # for debug
+        # for debug. if not debug - run uvicorn on cmd.
         import uvicorn
         uvicorn.run(app,
                     host=server_config.get('SERVER', 'Host'),

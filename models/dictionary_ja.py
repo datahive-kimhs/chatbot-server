@@ -6,7 +6,7 @@ from models.base import ORMModelBase
 
 
 @dataclass
-class Dictionaryja(ORMModelBase):
+class DictionaryJA(ORMModelBase):
     __tablename__ = "CKAIX_DICTIONARY_JA"
 
     dictionary_seq = Sequence('DICTIONARY_JA_SEQ')

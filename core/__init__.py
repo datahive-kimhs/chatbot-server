@@ -2,7 +2,7 @@ import oracledb
 from sshtunnel import BaseSSHTunnelForwarderError
 
 from config import server_config
-from core.database import ORMDatabase
+from core.db_engine import ORMDatabase
 from core.ssh import SSHConnector, ssh_connect_ckline
 
 
