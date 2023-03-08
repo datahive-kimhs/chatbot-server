@@ -75,6 +75,7 @@ def connect_db() -> bool:
             pool_size=server_config['DB.CKLINE.SETTING'].getint('PoolSize'),
             max_overflow=server_config['DB.CKLINE.SETTING'].getint('MaxOverflow'),
             pool_recycle=server_config['DB.CKLINE.SETTING'].getint('PoolRecycle'),
+            arraysize=server_config['DB.CKLINE.SETTING'].getint('ArraySize'),
         )
         return True
     except Exception as e:

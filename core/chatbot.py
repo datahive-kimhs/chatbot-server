@@ -26,6 +26,9 @@ from utils.user_dic_load_ja import train_user_dict_ja
 from utils.FindAnswer import FindAnswer
 from train_tools.dict.create_dict import create_dict
 from train_tools.dict.create_dict_ja import create_dict_ja
+from schema.chatbot import ChatData
+from schema.response import ChatResponse
+
 
 MIN_WORD = 3
 CUTOFF = 0.6
@@ -349,12 +352,17 @@ def translate(q):
     return translated
 
 
-def make_answer(question: Any) -> Any:
+def make_answer(question: ChatData) -> ChatResponse:
     """
     if you use DB, reference core.chatbot_sample.py
     :param question: message(data) from client.
     :return: message(data) to be sent client from server.
     """
+    query = question.query
+    lang = question.lang
+    bot_type = question.bot_type
+    chat_option = question.opt
+
     # # 데이터 로드
     # small_talk_dataset, ckline_talk_dataset, abuse_dataset = load_dataset()
     
@@ -545,5 +553,15 @@ def make_answer(question: Any) -> Any:
     #     "input": input
     # }
     # print(f'최종 결과 값 - send_json_data_str : {send_json_data_str}')
-
-    return "hello"
+    answer = ChatResponse(Query=query,
+                          Answer="",
+                          keyword="",
+                          keyword_answer="",
+                          NER="",
+                          url="",
+                          usruse=0,
+                          category="",
+                          input="",
+                          depth=0,
+                          parent_idx=0)
+    return answer
