@@ -3,6 +3,10 @@ import logging
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 
+from data.load_data import load_dataset
+from data.load_data import dataset_bm25
+from data.load_model import load_model
+
 from endpoints.chatbot.chatbot import chatbot_router
 from endpoints.chatbot.chatroom import chatroom_router
 from config import server_config

@@ -14,6 +14,7 @@ async def chatbot_endpoint(
         websocket: WebSocket,
         room_id: str
 ):
+    
     await websocket.accept()
     # Preprocess chat room - load chat log, etc...
     try:

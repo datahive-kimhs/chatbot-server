@@ -20,13 +20,16 @@ import scipy as sp
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 from ner.NerModel import NerModel
+from ner.NerModel import NerModel_ja
 from utils.Preprocess import Preprocess
 from utils.Preprocess import Preprocess_ja
 from utils.user_dic_load import train_user_dict
 from utils.user_dic_load_ja import train_user_dict_ja
 from utils.FindAnswer import FindAnswer
 from ner.make_train import make_train
+from ner.make_train_ja import make_train_ja
 from ner.train import train
+from ner.train_ja import train_ja
 from train_tools.dict.create_dict import create_dict
 from train_tools.dict.create_dict_ja import create_dict_ja
 
@@ -43,7 +46,7 @@ komoran_object = Komoran()
 # print(p.pos(text))
 
 # 사용자 사전 생성(일본어)
-train_user_dict_ja()
+# train_user_dict_ja()
 
 # 사용자 사전 생성(한국어)
 # train_user_dict()
@@ -54,18 +57,31 @@ train_user_dict_ja()
 # 챗봇 단어 사전 생성(한국어)
 # create_dict()
 
-# 모델 학습 데이터 생성
+# 모델 학습 데이터 생성(한국어)
 # make_train()
 
-# 모델 학습
+# 모델 학습 데이터 생성(일본어)
+# make_train_ja()
+
+# 모델 학습(한국어)
 # train()
 
-# 전처리 객체 생성
-p = Preprocess(word2index_dic='train_tools/dict/chatbot_dict.bin',
-               userdic='utils/user_dic.tsv')
+# 모델 학습(일본어)
+# train_ja()
 
-# 개체명 인식 모델
-ner = NerModel(model_name='ner/ner_model.h5', preprocess=p)
+# 전처리 객체 생성(한국어)
+# p = Preprocess(word2index_dic='train_tools/dict/chatbot_dict.bin',
+#              userdic='utils/user_dic.tsv')
+
+# 개체명 인식 모델(한국어)
+# ner = NerModel(model_name='ner/ner_model.h5', preprocess=p)
+
+# 전처리 객체 생성(일본어)
+p = Preprocess(word2index_dic='train_tools/dict/chatbot_dict_ja.bin',
+               userdic=None)
+
+# 개체명 인식 모델(일본어)
+ner = NerModel(model_name='ner/ner_model_ja_ver1.h5', preprocess=p)
 
 # 데이터 로드 함수
 def load_dataset():
@@ -349,34 +365,199 @@ def make_answer(question: Any) -> Any:
 #     :param question: message(data) from client.
 #     :return: message(data) to be sent client from server.
 #     """
-    # # 데이터 로드
-    # small_talk_dataset, ckline_talk_dataset, abuse_dataset = load_dataset()
+    # 데이터 로드
+    small_talk_dataset, ckline_talk_dataset, abuse_dataset = load_dataset()
     
-    # # json에서 데이터 변환
-    # query = question['Query'].upper()
-    # lang = question['Lang'].lower()
+    # json에서 데이터 변환
+    query = question['Query'].upper()
+    lang = question['Lang'].lower()
 
-    # # 특수문자 처리
-    # query = convert_specialChar(query)
-    # # 예외 문자 처리
-    # query, origin_query = exception_handling(query)
+    # 특수문자 처리
+    query = convert_specialChar(query)
+    # 예외 문자 처리
+    query, origin_query = exception_handling(query)
 
-    # # 형태소 분석기 실행
-    # answer_keyword, answer_keyword_string = get_pos_keywords(query)
+    # 형태소 분석기 실행
+    answer_keyword, answer_keyword_string = get_pos_keywords(query)
 
-    # # 개체명 파악
-    # ner_predicts, ner_tags = predict_ner(query)
+    # 개체명 파악
+    ner_predicts, ner_tags = predict_ner(query)
 
-    # print(f"ner_predicts : {ner_predicts}")
-    # print(f"ner_tags : {ner_tags}")
+    print(f"ner_predicts : {ner_predicts}")
+    print(f"ner_tags : {ner_tags}")
 
-    # # 답변 검색
-    # keyword_answer = ""
-    # answer_text = ""
-    # url = ""
-    # usruse = "0"
-    # category = ""
-    # input = ""
+    # 답변 검색
+    keyword_answer = ""
+    answer_text = ""
+    url = ""
+    usruse = "0"
+    category = ""
+    input = ""
+
+    #################챗봇 answer 로직#########################
+    try:
+        with ckline_db.get_db_session() as session:
+            f = FindAnswer(session)
+
+            # # 인풋 템플릿 내에서 언어에 따른 검색
+            sql = f"""select * from ckaix_input_template_ja where upper(name{f'_{lang}'  if lang != 'ko' else ''}) = '{query}'"""
+            sql_result = session.execute(sql).all()
+            print(f'input template내에서 입력과 같은 query가 있는지 검색 결과 - sql_result : {sql_result}')
+            # 인풋 템플릿 내에서 검색될 경우 CKAIX_SCENARIO에서 question이 INPUT|{INDEX} 값으로 조회
+            if sql_result:
+                scenario_sql = f"""select * from ckaix_scenario_ja where upper(question) = 'INPUT|{sql_result[0][0]}'"""
+                print(f"scenario_sql : {scenario_sql}")
+                scenario_result = session.execute(scenario_sql).all()
+                print(f'input template내에서 검색될 경우 시나리오에서 question 검색 - scenario_result : {scenario_result}')
+                print(f"scenario_result : {scenario_result}")
+                if scenario_result:
+                    if lang == "ko":
+                        answer_text, keyword_answer, url, usruse, category, input = scenario_result[0][
+                            5], "", scenario_result[0][7], scenario_result[0][11], scenario_result[0][8], sql_result[0][2]
+                    if lang == "en":
+                        answer_text, keyword_answer, url, usruse, category, input = scenario_result[0][
+                            14], "", scenario_result[0][16], scenario_result[0][11], scenario_result[0][8], sql_result[0][2]
+                    if lang == "ja":
+                        answer_text, keyword_answer, url, usruse, category, input = scenario_result[0][
+                            19], "", scenario_result[0][21], scenario_result[0][11], scenario_result[0][8], sql_result[0][2]
+                    if lang == "cn":
+                        answer_text, keyword_answer, url, usruse, category, input = scenario_result[0][
+                            24], "", scenario_result[0][26], scenario_result[0][11], scenario_result[0][8], sql_result[0][2]
+                
+            # 관리자에서 등록한 # 키워드 답변 검색
+            elif (query[0] == "#"):
+                answer_text, url = f.get_answer(query)
+                print(f'# 키워드가 query로 왔을 때 ckaix answer에서 검색 - answer text : {answer_text}')
+                keyword_answer = ""
+            
+            # 관리자에서 등록한 해양물류사전 검색
+            # elif query[-2:] == "뜻?":
+            #     answer_text = f.get_dictionary(f.tag_to_answer(ner_predicts))
+            #     print(f'CK_WORDS 단어를 ckaix dictionary에서 검색 - answer text : {answer_text}')
+
+            # query가 천경해운 데이터 셋에 정확하게 있을 경우 검색
+            try:
+                if answer_text is None or answer_text == "":
+                    print('천경해운 데이터셋 정확한 값')
+                    if lang == "ko":
+                        result = question_answer_match(query, ckline_talk_dataset)
+                        print(f"천경해운 데이터셋 정확한 값 : {result}")
+                        if len(result):
+                            answer_text = result
+                        else:
+                            pass
+
+            except Exception as ex:
+                print("천경해운 데이터 셋 : ", ex)
+                raise Exception
+            
+            # query가 일상대화 데이터 셋에 정확하게 있을 경우 검색
+            try:
+                if answer_text is None or answer_text == "":
+                    print('일상대화 데이터셋 정확한 값')
+                    if lang == "ko":
+                        result = question_answer_match(query, small_talk_dataset)
+                        print(f"일상대화 데이터셋 정확한 값 : {result}")
+                        if len(result):
+                            answer_text = result
+                        else:
+                            pass
+
+            except Exception as ex:
+                print("스몰톡 데이터 셋 : ", ex)
+                raise Exception
+            
+            # CKAIX_SCENAIO에서 검색
+            else:
+                if answer_text is None or answer_text == "":
+                    answer_text, keyword_answer, url, usruse, category, input = f.search(
+                        query, answer_keyword=answer_keyword, ner_tags=ner_tags, ner_predicts=ner_predicts, lang=lang, input=input)
+                    answer_text = change_answer(origin_query, answer_text)
+                    print(f"search CKAIX_SCENAIO : {answer_text}")
+            
+            # 관리자에서 등록한 해양물류사전 검색
+            try:
+                if answer_text is None or answer_text == "":
+                    answer_text = f.get_dictionary(f.tag_to_answer(ner_predicts))
+                    print(f'CK_WORDS 단어를 ckaix dictionary에서 검색 - answer text : {answer_text}')
+            
+            except Exception as ex:
+                print(" 해양 물류 사전 : ", ex)
+            
+            try:
+                # 천경해운 데이터셋
+                if answer_text is None or answer_text == "":
+
+                    if lang == "ko":
+                        X, num_samples, new_post_vec, ckline_talk_dataset, query = vectorize_transform(query, ckline_talk_dataset)
+                        result = get_close_question(X, num_samples, new_post_vec, ckline_talk_dataset, query)
+                        print(f'천경해운 새로운 closer_matcher : {result}')
+                        if len(result):
+                            answer_text = result
+                        else:
+                            pass
+
+            except Exception as ex:
+                print(" 천경물류 데이터셋 : ", ex)
+            
+            try:
+                # 욕설 감지
+                if answer_text is None or answer_text == "":
+                    if lang == "ko":
+                        close_matches_index = get_close_matches(
+                                query, abuse_dataset['Q'], MIN_WORD, 0.7)
+                        if len(close_matches_index):
+                            print("욕설 감지 json 데이터셋으로 입장")
+                            NUM = 0
+                            index = close_matches_index[NUM]
+                            answer_text = abuse_dataset['A'].iloc[index[1]]
+                            print(f'욕설 감지 데이터셋에서 검색해서 나온 값 - answer text : {answer_text}')
+                        else:
+                            pass
+            
+            except Exception as ex:
+                print("욕설 감지 데이터셋 : ", ex)
+                raise Exception
+
+            try:
+                # 일상대화 데이터셋
+                if answer_text is None or answer_text == "":
+
+                    if lang == "ko":
+                        X, num_samples, new_post_vec, small_talk_dataset, query = vectorize_transform(query, small_talk_dataset)
+                        result = get_close_smalltalk_question(X, num_samples, new_post_vec, small_talk_dataset, query)
+                        print(f'일상대화 새로운 closer_matcher : {result}')
+                        if len(result):
+                            answer_text = result
+                        else:
+                            pass
+
+            except Exception as ex:
+                print("스몰톡 데이터셋 : ", ex)
+                raise Exception
+
+
+    except Exception as ex:
+            answer_text = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부할게요!"
+            keyword_answer = None  
+
+    if len(query) == 1:
+            answer_text = "글자 수가 너무 짧습니다. <br>최소 2글자 이상 입력해주세요."
+
+    send_json_data_str = {
+        "Query": query,
+        "Answer":  answer_text if answer_text else "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부할게요!",
+        "keyword": answer_keyword,
+        "keyword_answer": keyword_answer,
+        "NER": str(ner_predicts),
+        "url": url,
+        "usruse": usruse,
+        "category": category,
+        "input": input
+    }
+    print(f'최종 결과 값 - send_json_data_str : {send_json_data_str}')
+
+    return send_json_data_str
 
     # #################챗봇 answer 로직#########################
     # try:
@@ -540,7 +721,7 @@ def make_answer(question: Any) -> Any:
     # }
     # print(f'최종 결과 값 - send_json_data_str : {send_json_data_str}')
 
-    return "hello"
+    # return send_json_data_str
 
     
 
