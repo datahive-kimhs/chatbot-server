@@ -7,23 +7,25 @@ import logging
 
 from sqlalchemy import select, update, delete
 
-from core import ckline_db
-from models.dictionary_ja import Dictionaryja
-from models.scenario_ja import Scenarioja
-from models.user_dict_ja import Userdictja
+from connection import get_ckline_db_engine
+from models.dictionary_ja import DictionaryJA
+from models.scenario_ja import ScenarioJA
+from models.user_dict_ja import UserdictJA
+
 
 def train_user_dict_ja():
     try:
+        ckline_db = get_ckline_db_engine()
         with ckline_db.get_db_session() as session:
-            stmt = select(Userdictja)
+            stmt = select(UserdictJA)
             rows = session.execute(stmt).all()
 
             with open("utils/user_dic_ja_NNP.tsv", 'w', encoding='utf-8', newline='') as f:
                 tw = csv.writer(f, delimiter='\t')
                 for row in rows:
-                    tw.writerow([row.Userdictja.word.upper(), 'NNP'])
+                    tw.writerow([row.UserdictJA.word.upper(), 'NNP'])
 
-            stmt = select(Dictionaryja)
+            stmt = select(DictionaryJA)
             rows = session.execute(stmt).all()
 
             with open("utils/user_dic_ja_NNP.tsv", 'a', encoding='utf-8', newline='') as f:
@@ -31,7 +33,7 @@ def train_user_dict_ja():
                 for row in rows:
                     tw.writerow([row.Dictionaryja.word.upper(), 'NNP'])
 
-            stmt = select(Scenarioja)
+            stmt = select(ScenarioJA)
             rows = session.execute(stmt).all()
 
             with open("utils/user_dic_ja_NNP.tsv", 'a', encoding='utf-8', newline='') as f:

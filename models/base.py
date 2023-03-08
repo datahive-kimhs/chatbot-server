@@ -12,7 +12,8 @@ ORMModelBase = declarative_base(name='CKAIX',
 @dataclass
 class UUIDIdxPKBase(ORMModelBase):
     __abstract__ = True
-    idx: str = Column('IDX', String(255), primary_key=True)
+
+    idx: str = Column('IDX', String(100), primary_key=True)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

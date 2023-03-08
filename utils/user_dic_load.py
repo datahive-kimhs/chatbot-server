@@ -7,13 +7,15 @@ import logging
 
 from sqlalchemy import select, update, delete
 
-from core import ckline_db
+from connection import get_ckline_db_engine
 from models.dictionary import Dictionary
 from models.scenario import Scenario
 from models.user_dict import Userdict
 
+
 def train_user_dict():
     try:
+        ckline_db = get_ckline_db_engine()
         with ckline_db.get_db_session() as session:
             stmt = select(Userdict)
             rows = session.execute(stmt).all()
@@ -45,6 +47,5 @@ def train_user_dict():
                             tw.writerow([temp.upper(), 'NNP'])
     except Exception as e:
         print(e)
-
     finally:
         pass  # test

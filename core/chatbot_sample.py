@@ -3,7 +3,7 @@ import logging
 
 from sqlalchemy import select, update, delete
 
-from core import ckline_db
+from connection.ckline import get_ckline_db_engine
 from models.answer import Answer
 
 
@@ -14,6 +14,7 @@ def sample_func_select() -> None:
     :return: None
     """
     # query SELECT.
+    ckline_db = get_ckline_db_engine()
     with ckline_db.get_db_session() as session:
         stmt = select(Answer).where(Answer.ner.like('%천경%'))
         rows = session.execute(stmt).all()
@@ -42,6 +43,7 @@ def sample_func_transaction() -> None:
     # session.begin() == start transaction,
     # end of context(with clause) - implicit call commit(), exception - call rollback()
     try:
+        ckline_db = get_ckline_db_engine()
         with ckline_db.get_db_session() as session, session.begin():
             # insert
             new_answer = Answer(answer="it is answer", ner="it is ner")

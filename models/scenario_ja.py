@@ -6,7 +6,7 @@ from models.base import ORMModelBase
 
 
 @dataclass
-class Scenarioja(ORMModelBase):
+class ScenarioJA(ORMModelBase):
     __tablename__ = "CKAIX_SCENARIO_JA"
 
     senario_seq = Sequence('SCENARIO_JA_SEQ')

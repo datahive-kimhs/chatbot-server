@@ -1,37 +1,36 @@
-from typing import Any
 import logging
-
-from sqlalchemy import select, update, delete
-
-from core import ckline_db
-from models.answer import Answer
-
 import json
-import pandas as pd
 import re
 import random
-import googletrans
 import string
+from typing import Any
 
+import pandas as pd
+import googletrans
+from sqlalchemy import select, update, delete
 from difflib import SequenceMatcher
 from heapq import nlargest as _nlargest
 from konlpy.tag import Komoran
 import scipy as sp
 from sklearn.feature_extraction.text import TfidfVectorizer
 
+from connection import get_ckline_db_engine
+from models.answer import Answer
 from ner.NerModel import NerModel
-from ner.NerModel import NerModel_ja
+from ner.make_train import make_train
+from ner.train import train
 from utils.Preprocess import Preprocess
 from utils.Preprocess import Preprocess_ja
 from utils.user_dic_load import train_user_dict
 from utils.user_dic_load_ja import train_user_dict_ja
 from utils.FindAnswer import FindAnswer
 from ner.make_train import make_train
-from ner.make_train_ja import make_train_ja
 from ner.train import train
-from ner.train_ja import train_ja
 from train_tools.dict.create_dict import create_dict
 from train_tools.dict.create_dict_ja import create_dict_ja
+from schema.chatbot import ChatData
+from schema.response import ChatResponse
+
 
 MIN_WORD = 3
 CUTOFF = 0.6
@@ -80,8 +79,9 @@ komoran_object = Komoran()
 p = Preprocess(word2index_dic='train_tools/dict/chatbot_dict_ja.bin',
                userdic=None)
 
-# 개체명 인식 모델(일본어)
-ner = NerModel(model_name='ner/ner_model_ja_ver1.h5', preprocess=p)
+# 개체명 인식 모델
+ner = NerModel(model_name='ner/ner_model.h5', preprocess=p)
+
 
 # 데이터 로드 함수
 def load_dataset():
@@ -91,11 +91,11 @@ def load_dataset():
     ckline_talk_dataset = pd.read_json(f'./data/chatting_ckline.json', encoding="UTF-8").dropna()
     # 욕설 데이터
     abuse_dataset = pd.read_json(f'./data/korea_abuse_data.json', encoding="UTF-8").dropna()
-
     return small_talk_dataset, ckline_talk_dataset, abuse_dataset
 
+
 # 특수문자 처리 함수
-def convert_specialChar(query):
+def convert_special_char(query):
     syntax = string.punctuation
     syntax = syntax.replace("#", "")
 
@@ -113,8 +113,8 @@ def convert_specialChar(query):
             pass
         else:
             query = query.translate(str.maketrans('', '', syntax))
-
     return query
+
 
 # 예외 문자 처리 함수
 def exception_handling(query):
@@ -124,6 +124,7 @@ def exception_handling(query):
     elif query == "연락처":
         query = "담당자 찾기"
     return query, origin_query
+
 
 # 형태소 분석기 실행
 def get_pos_keywords(query):
@@ -137,15 +138,15 @@ def get_pos_keywords(query):
             if len(i[0]) >= 2:
                 answer_keyword.append(i[0])
                 answer_keyword_string += i[0]+","
-    
     return answer_keyword, answer_keyword_string
+
 
 # 개체명 인식
 def predict_ner(query):
     ner_predicts = ner.predict(query)
     ner_tags = ner.predict_tags(query)
-
     return ner_predicts, ner_tags
+
 
 # query와 데이터셋에 있는 Q과 매칭 후 해당 A 리턴하는 함수
 def question_answer_match(query, dataset):
@@ -161,11 +162,13 @@ def question_answer_match(query, dataset):
         answer_text = random.choice(answer_result)
         return answer_text
 
+
 # "연락처" 쿼리에 대한 특수 처리
 def change_answer(query, answer_text):
     if query == "연락처":
         return "담당자 찾기 기능을 통하여 확인 부탁드립니다."
     return answer_text
+
 
 def vectorize_transform(query, dataset):
     vectorizer = TfidfVectorizer(min_df=1, decode_error='ignore')
@@ -199,6 +202,7 @@ def vectorize_transform(query, dataset):
     new_post_vec = vectorizer.transform(new_post_for_vectorize)
     return X, num_samples, new_post_vec, dataset, query
 
+
 # 대화셋 중 word와 가장 유사한 배열의 인덱스 값을 리턴
 def get_close_matches(word, possibilities, n=3, cutoff=0.6):
     if not n > 0:
@@ -225,9 +229,11 @@ def get_close_matches(word, possibilities, n=3, cutoff=0.6):
     else:
         return []
 
+
 def dist_raw(v1, v2):
     delta = v1 - v2   # 벡터 사이의 거리를 구하기 위해 빼줌
     return sp.linalg.norm(delta.toarray())
+
 
 def get_close_question(X, num_samples, new_post_vec, dataset, query):
     best_doc = None
@@ -240,7 +246,7 @@ def get_close_question(X, num_samples, new_post_vec, dataset, query):
         # 함수호출
         d = dist_raw(post_vec, new_post_vec)
 
-        if d<best_dist:
+        if d < best_dist:
             best_dist = d
             best_i = i
 
@@ -289,6 +295,7 @@ def get_close_question(X, num_samples, new_post_vec, dataset, query):
             return ''
     else:
         return ''
+
 
 def get_close_smalltalk_question(X, num_samples, new_post_vec, dataset, query):
     best_doc = None
@@ -301,7 +308,7 @@ def get_close_smalltalk_question(X, num_samples, new_post_vec, dataset, query):
         # 함수호출
         d = dist_raw(post_vec, new_post_vec)
 
-        if d<best_dist:
+        if d < best_dist:
             best_dist = d
             best_i = i
 
@@ -351,22 +358,28 @@ def get_close_smalltalk_question(X, num_samples, new_post_vec, dataset, query):
     else:
         return ''
 
+
 # 구글 번역 API와 연결하는 함수 (프로젝트 내에 사용할지는 미지수)
 def translate(q):
     translator = googletrans.Translator()
     translator.raise_Exception = True
     translated = translator.translate(q, src='auto', dest='ko').text
-
     return translated
 
-def make_answer(question: Any) -> Any:
-#     """
-#     if use DB, reference core.chatbot_sample.py
-#     :param question: message(data) from client.
-#     :return: message(data) to be sent client from server.
-#     """
-    # 데이터 로드
-    small_talk_dataset, ckline_talk_dataset, abuse_dataset = load_dataset()
+
+def make_answer(question: ChatData) -> ChatResponse:
+    """
+    if you use DB, reference core.chatbot_sample.py
+    :param question: message(data) from client.
+    :return: message(data) to be sent client from server.
+    """
+    query = question.query
+    lang = question.lang
+    bot_type = question.bot_type
+    chat_option = question.opt
+
+    # # 데이터 로드
+    # small_talk_dataset, ckline_talk_dataset, abuse_dataset = load_dataset()
     
     # json에서 데이터 변환
     query = question['Query'].upper()
@@ -561,6 +574,7 @@ def make_answer(question: Any) -> Any:
 
     # #################챗봇 answer 로직#########################
     # try:
+    #     ckline_db = get_ckline_db_engine()
     #     with ckline_db.get_db_session() as session:
     #         f = FindAnswer(session)
 
@@ -700,7 +714,6 @@ def make_answer(question: Any) -> Any:
     #             print("스몰톡 데이터셋 : ", ex)
     #             raise Exception
 
-
     # except Exception as ex:
     #         answer_text = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부할게요!"
     #         keyword_answer = None  
@@ -720,8 +733,15 @@ def make_answer(question: Any) -> Any:
     #     "input": input
     # }
     # print(f'최종 결과 값 - send_json_data_str : {send_json_data_str}')
-
-    # return send_json_data_str
-
-    
-
+    answer = ChatResponse(Query=query,
+                          Answer="",
+                          keyword="",
+                          keyword_answer="",
+                          NER="",
+                          url="",
+                          usruse=0,
+                          category="",
+                          input="",
+                          depth=0,
+                          parent_idx=0)
+    return answer
