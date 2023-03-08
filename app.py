@@ -12,6 +12,8 @@ from endpoints.chatbot.chatroom import chatroom_router
 from config import server_config
 from connection import connect_db as connect_db_to_ckline
 
+from extensions import initialize
+
 
 connected = connect_db_to_ckline()
 if not connected:
@@ -27,6 +29,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+initialize()
 
 # add route
 app.include_router(chatbot_router)
