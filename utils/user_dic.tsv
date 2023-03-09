@@ -91,7 +91,19 @@ SPACE CHARTER	NNP
 선박번호	NNP
 써렌더	NNP
 부킹번호	NNP
+BULK요율	NNP
 인보이스	NNP
+BULK 요율	NNP
+부산지점	NNP
+인천사무소	NNP
+벌크요율	NNP
+딜레이노티스	NNP
+BL 발행	NNP
+BL발행	NNP
+WAY BILL 요청	NNP
+비엘발행	NNP
+비엘 발행	NNP
+서렌더 요청	NNP
 가입량	NNP
 간만차	NNP
 만조수위선	NNP
@@ -99,8 +111,40 @@ SPACE CHARTER	NNP
 간석지	NNP
 감조하천	NNP
 고도회유성어종	NNP
+SCHEDULE	NNP
+유효기간	NNP
+선박제원	NNP
+선박 제원	NNP
+SKY AURORA	NNP
+SKY FLOWER	NNP
+SKY GLORY	NNP
+SKY HOPE	NNP
+SKY ORION	NNP
+SKY PRIDE	NNP
+SKY VICTORIA	NNP
+CAPE FARO	NNP
+CONMAR MOON	NNP
+SKY SUNSHINE	NNP
+XIN TAI PING	NNP
+ACACIA MING	NNP
+SKY WIND	NNP
+AS LAURETTA	NNP
+MYRIAD	NNP
+MARVEL	NNP
+BAL STAR	NNP
+KOTA TAMPAN	NNP
+RUN SHENG	NNP
+SKY TIARA	NNP
+MUSE	NNP
+WARNOW CHIEF	NNP
+GAV1	NNP
+SKY IRIS	NNP
+ORTOLAN EPSILON	NNP
 비엘	NNP
 A/N	NNP
+벌크 요율	NNP
+ARRIVAL NOTICE	NNP
+輸出業務	NNP
 점심	NNP
 식대	NNP
 점심식사	NNP
@@ -110,7 +154,6 @@ MEPC	NNP
 MDO	NNP
 LTV	NNP
 GHS	NNP
-FCL	NNP
 DIP	NNP
 CCC 협약	NNP
 CCS	NNP
@@ -118,8 +161,14 @@ CCS	NNP
 CBDR 원칙	NNP
 B형수면비행선박	NNP
 BCH코드	NNP
+SAWASDEE INCHEON	NNP
 천경해운	NNP
-선박	NNP
+스카이프라이드	NNP
+스카이 프라이드	NNP
+비엘 요청	NNP
+비엘요청	NNP
+BL요청	NNP
+BL 요청	NNP
 선박관리업	NNP
 차이나막스	NNP
 VLOC	NNP
@@ -128,10 +177,8 @@ VLOC	NNP
 ULCS	NNP
 슈퍼 포스트파나막스	NNP
 포스트파나막스	NNP
-파나막스	NNP
 서브 파나막스	NNP
 핸디	NNP
-피더	NNP
 ULCC	NNP
 VLCC	NNP
 LPG선	NNP
@@ -142,74 +189,29 @@ PSV	NNP
 터그	NNP
 TUG	NNP
 선박투자회사	NNP
-선복	NNP
-선복량	NNP
-선주상호보험	NNP
-P&I	NNP
-시아이큐	NNP
-양하	NNP
 언로다	NNP
 예인선열	NNP
-오션폴리텍	NNP
-용선	NNP
 운항관리자	NNP
-유가보조금	NNP
-유조선운임지수	NNP
-임항교통시설	NNP
-임항지구	NNP
-임항철도	NNP
-정기용선	NNP
-정박	NNP
-제3자물류	NNP
 3PL	NNP
-제주선박등록특구제도	NNP
-종합물류기업인증제도	NNP
-중량톤수	NNP
-철도CY	NNP
-체선	NNP
-체화	NNP
 초대형유조선	NNP
-카페리	NNP
-컨테이너	NNP
 CONTAINER	NNP
-컨테이너선용선지수	NNP
 HRCI	NNP
-컨테이너선운임지수	NNP
 CCFI	NNP
-컨테이너크레인	NNP
-톤세제	NNP
 톤세액	NNP
 트랙터	NNP
-티이유	NNP
-TEU	NNP
-파렛트	NNP
 편의치적	NNP
 피견인트레일러	NNP
-피더	NNP
-FEEDER	NNP
-피더선	NNP
 FEEDER SHIP	NNP
-하역기계	NNP
-하역능력	NNP
-한국선주상호보험	NNP
-항로	NNP
 항만공사	NNP
-항만시설사용료	NNP
-선박입출항료	NNP
-접안료	NNP
-정박료	NNP
-계선료	NNP
 화물입출항료	NNP
 화물체화료	NNP
 전용사용료	NNP
 국제여객터미널이용료	NNP
-항만운송사업	NNP
 항만하역사업	NNP
 감정사업	NNP
 검량사업	NNP
 검수사업	NNP
 항만운영정보시스템	NNP
-해리	NNP
 해사노동협약 2006	NNP
 해상육상 복합 화물자동차 운송	NNP
 해양산업클러스터	NNP
@@ -221,65 +223,36 @@ FEEDER SHIP	NNP
 해운대리점업	NNP
 해운중개업	NNP
 선박대여업	NNP
-선박관리업	NNP
-환적	NNP
-BAF	NNP
-CAF	NNP
-CFS	NNP
 CHEMICAL TANKER	NNP
-DIP	NNP
-FCL	NNP
-강제도선	NNP
-건화물지수	NNP
 계류	NNP
-계선	NNP
 계선부표	NNP
 공급망관리	NNP
-국가물류기본계획	NNP
 국가 보조항로	NNP
 국가필수선박	NNP
 국적취득조건부 나용선	NNP
-국제선박등록제도	NNP
 국제수상 교통시설협회	NNP
-나용선	NNP
-내륙물류기지	NNP
-내륙컨테이너기지	NNP
 ICD	NNP
 노트(KT)	NNP
-녹색물류	NNP
-다목적부두	NNP
-더블스택트레인	NNP
-도선	NNP
 PILOTAGE	NNP
-도선사	NNP
-로로선	NNP
 RO/RO선	NNP
 ROLL-ON/ROLL-OFF SHIP	NNP
-리프트온리프트오프선	NNP
-묘박	NNP
-정박	NNP
 ANCHORING	NNP
-묘박지	NNP
 ANCHORING BASIN	NNP
 정박지	NNP
 물류	NNP
 LOGISTICS	NNP
 PHYSICAL DISTRIBUTION	NNP
 물류단지	NNP
-바지선	NNP
 BARGE	NNP
-벌크선	NNP
 산물선	NNP
 살물선	NNP
 BULK CARRIER	NNP
 벌크화물	NNP
 BULK	NNP
-복합물류터미널	NNP
 IFT	NNP
-복합운송	NNP
-본선작업	NNP
-부두운영회사	NNP
 TOC	NNP
+DCI	NNP
+BSA	NNP
 동캄차카해류	NNP
 동한난류	NNP
 라니냐	NNP
@@ -337,15 +310,10 @@ TOC	NNP
 수류	NNP
 GANTRY CRANE	NNP
 ISL	NNP
-LCL	NNP
 LIBO RATES	NNP
 LNG TANKER	NNP
-LTV	NNP
-MARSHALLING	NNP
-마셜링	NNP
 MARSHALLING YARD	NNP
 마셜링 야드	NNP
-ODCY	NNP
 ON-DOCK CY	NNP
 P-CBO	NNP
 PEF	NNP
@@ -359,13 +327,10 @@ RTGC	NNP
 RVI	NNP
 잔존가치보장보험	NNP
 SIC	NNP
-선박투자회사	NNP
-SPACE CHARTER	NNP
 SPC	NNP
 특수목적회사	NNP
 SPM	NNP
 STRADDLE CARRIER	NNP
-TOC	NNP
 TRANSFER CRANE	NNP
 YARD CHASSIS	NNP
 YARD TRACTOR	NNP
@@ -390,7 +355,6 @@ PORT	NNP
 해일	NNP
 허브항	NNP
 환적항	NNP
-간만차	NNP
 감조구역	NNP
 고염수	NNP
 고유종	NNP
@@ -961,8 +925,6 @@ THAT IS CORRECT	NNP
 수상레저활동	NNP
 방조제	NNP
 해상조난안전시스템	NNP
-해리	NNP
-고해양학	NNP
 연안완충구역	NNP
 파랑의주기	NNP
 무선주파수대역	NNP
@@ -1001,8 +963,6 @@ TRANSMISSOMETER	NNP
 용골	NNP
 해저절벽	NNP
 어비	NNP
-서풍	NNP
-임항지구	NNP
 해양천연물화학	NNP
 원양참치선망어업	NNP
 해양시설	NNP
@@ -1037,7 +997,6 @@ PASS BEHIND/IN FRONT OF	NNP
 비운항 구간	NNP
 공기 흡입관	NNP
 안개	NNP
-내화성	NNP
 불균형활주로길이	NNP
 초음속여객기	NNP
 미 연방항공국	NNP
@@ -1078,17 +1037,14 @@ MINIMUMS	NNP
 승망어업	NNP
 대양연변부	NNP
 젓갈	NNP
-구거	NNP
 주파수공용무선설비	NNP
 복원성	NNP
 글레이징	NNP
 방형비척계수	NNP
 조종불능선	NNP
 지표종	NNP
-남극순환류	NNP
 용존산소	NNP
 안전관리적합증서	NNP
-YARD TRACTOR	NNP
 새우조망어업	NNP
 항공기상보고	NNP
 CENTER RADAR ARTS PRESENTATION/PROCESSING PLUS	NNP
@@ -1161,13 +1117,10 @@ A-37 드레곤플라이	NNP
 염장품	NNP
 광온성	NNP
 디퍼준설선	NNP
-다목적부두	NNP
-종합물류기업인증제도	NNP
 여수토	NNP
 선루	NNP
 영양염류	NNP
 소하성어류	NNP
-대만난류	NNP
 자유무역협정	NNP
 에이프런	NNP
 채묘	NNP
@@ -1245,7 +1198,6 @@ A-37 드레곤플라이	NNP
 일기도	NNP
 최저 장애물 통과 고도	NNP
 고도 탐지 레이더	NNP
-경도	NNP
 보고지점	NNP
 자문	NNP
 예하부대	NNP
@@ -1275,16 +1227,10 @@ A-37 드레곤플라이	NNP
 해빈	NNP
 공동어로사업	NNP
 수준원점	NNP
-북태평양수산위원회	NNP
 최대지속적생산	NNP
 구명정	NNP
 생물학적허용어획량	NNP
-도하개발아젠다	NNP
-복합운송	NNP
-도선사	NNP
 에너지효율검사	NNP
-RG	NNP
-미량원소	NNP
 통항로	NNP
 모의비행훈련장치	NNP
 역스핀	NNP
@@ -1309,7 +1255,6 @@ A & B 유압 제동 장치	NNP
 단열 냉각	NNP
 전진 시기	NNP
 항공정보간행물 부록	NNP
-제동거리	NNP
 배풍로 어빔	NNP
 정풍, 맞바람	NNP
 고속 출구 유도로	NNP
@@ -1336,7 +1281,6 @@ A & B 유압 제동 장치	NNP
 탠덤	NNP
 차량속도범위	NNP
 풍동실험	NNP
-더블스택트레인	NNP
 선로작업표	NNP
 말뚝	NNP
 중심선	NNP
@@ -1776,7 +1720,6 @@ RXD	NNP
 급제동위치	NNP
 고가교	NNP
 비상제동리셋버튼	NNP
-굴절	NNP
 주회로차단기	NNP
 철 박테리아	NNP
 차량계수	NNP
@@ -1812,7 +1755,6 @@ MS	NNP
 드롭퍼	NNP
 발보신호	NNP
 차체강도시험	NNP
-주파수	NNP
 여객역	NNP
 교면포장	NNP
 소속차	NNP
@@ -2138,13 +2080,11 @@ T/G	NNP
 전동발전기	NNP
 정기검사계획	NNP
 주정류기	NNP
-TCR	NNP
 집표소	NNP
 상사	NNP
 누전경보장치	NNP
 균형캔트	NNP
 대기선	NNP
-도선	NNP
 뷔페	NNP
 압밀배수 전단시험	NNP
 아연도금	NNP
@@ -2179,7 +2119,6 @@ K	NNP
 1중 탄성체결	NNP
 섬락보호지선	NNP
 과압밀비	NNP
-CFS	NNP
 예민점토	NNP
 측량사	NNP
 연락승차권	NNP
@@ -2228,7 +2167,6 @@ CFS	NNP
 탄소포인트 제도	NNP
 투기형 구매	NNP
 탄소성적지표	NNP
-파렛트	NNP
 특수선	NNP
 특수화물	NNP
 탄소여름	NNP
@@ -2315,8 +2253,6 @@ AF	NNP
 피보험이익	NNP
 항공화물의 예약	NNP
 해륙복합운송	NNP
-항만	NNP
-하역	NNP
 플랫 랙 컨테이너	NNP
 플랫 카	NNP
 한반도의 아열대기후화	NNP
@@ -2339,7 +2275,6 @@ AF	NNP
 항만하역 시설	NNP
 항만보안법	NNP
 항공운송	NNP
-항로	NNP
 항공화물 운송보험	NNP
 테이블 리프터	NNP
 탄소성적표시제도	NNP
@@ -2455,7 +2390,6 @@ AF	NNP
 포크 포지셔너	NNP
 파렛트 시스템	NNP
 파렛트 풀 시스템	NNP
-편의치적	NNP
 포장폐기물지침	NNP
 항공운송인의 책임과 책임보험	NNP
 해상운송	NNP
@@ -2967,7 +2901,6 @@ MAPI방식	NNP
 TRAFFIC MANAGEMENT UNIT	NNP
 지상조업	NNP
 가격 및 공급능력 자료	NNP
-정풍, 맞바람	NNP
 능동 탐지 장치	NNP
 비행장 예보	NNP
 선회 및 경사지시계	NNP
@@ -2976,9 +2909,7 @@ TRAFFIC MANAGEMENT UNIT	NNP
 합의각서	NNP
 특별할인 왕복요금	NNP
 수직이착륙기, VTOL기	NNP
-비행금지구역	NNP
 항공관제사	NNP
-항공화물 운송장	NNP
 저항	NNP
 항공화물 주선업, 항공 주선업	NNP
 그레이	NNP
@@ -2986,7 +2917,6 @@ TRAFFIC MANAGEMENT UNIT	NNP
 헌팅	NNP
 승객수송버스	NNP
 풍향등	NNP
-좌석배치	NNP
 중유	NNP
 과주대등	NNP
 조류충돌	NNP
@@ -3004,7 +2934,6 @@ X형 날개	NNP
 내측 마커	NNP
 종합 디지털 통신망	NNP
 진입구역등	NNP
-멀티플렉서	NNP
 G 포-스	NNP
 축압기 프리차지	NNP
 화물 환적	NNP
@@ -3031,7 +2960,6 @@ NATIONAL SEARCH AND RESCUE PLAN	NNP
 사건,준사고	NNP
 초	NNP
 항공 무선 통신국	NNP
-지상조업	NNP
 2국간 항공협정	NNP
 교통능력	NNP
 차단, 엔진정지	NNP
@@ -3054,7 +2982,6 @@ NATIONAL SEARCH AND RESCUE PLAN	NNP
 지상체류시간이 짧은 항공기	NNP
 교통 정보 지대	NNP
 플로트	NNP
-미상	NNP
 여승무원	NNP
 지상조업사	NNP
 완충기, 축압기	NNP
@@ -3248,7 +3175,6 @@ TORCHING	NNP
 주엔진 지지대	NNP
 착빙성의 안개	NNP
 아이론 정비	NNP
-고도	NNP
 러더베이터, 방향 승강타	NNP
 적운형	NNP
 항공교통관제허가	NNP
@@ -3320,7 +3246,6 @@ TAXI PATTERNS	NNP
 최대상승	NNP
 교관 조종사	NNP
 식별버튼을 눌러라	NNP
-항공화물	NNP
 자동 자료 처리 시스템	NNP
 자이로스코프	NNP
 항공의 자유	NNP
@@ -3333,7 +3258,6 @@ TAXI PATTERNS	NNP
 항공기 객실아래 화물칸	NNP
 비행중 재급유	NNP
 구조대	NNP
-회항	NNP
 설계속도	NNP
 등고선 색조	NNP
 저고도 전단풍 경고 시스템	NNP
@@ -3349,7 +3273,6 @@ TAXI PATTERNS	NNP
 FAST FILE	NNP
 가연성	NNP
 항공 교통 업무 공역	NNP
-지형	NNP
 비행감시	NNP
 정밀 항법	NNP
 주기 브레이크	NNP
@@ -3420,9 +3343,7 @@ RADIO	NNP
 평면위치표식기	NNP
 속도계	NNP
 항공정비사	NNP
-항공의학	NNP
 사전 조치	NNP
-항공운송사업	NNP
 DVFR 비행 계획	NNP
 층류경계층	NNP
 항공 장애등	NNP
@@ -3435,7 +3356,6 @@ DVFR 비행 계획	NNP
 공중 투하, 공중 낙하	NNP
 항공기안내표지장치	NNP
 적운 단계	NNP
-피토관	NNP
 공공안내시스템	NNP
 엘리뇨	NNP
 레이다 장해 현상	NNP
@@ -3474,7 +3394,6 @@ DVFR 비행 계획	NNP
 케이징 장치, 정립 장치	NNP
 착륙 방향 지시기등	NNP
 최종접근로	NNP
-전선	NNP
 기내식	NNP
 승강타	NNP
 우발계획	NNP
@@ -3503,7 +3422,6 @@ DVFR 비행 계획	NNP
 임의 비행로	NNP
 한국 함대	NNP
 보조 낙하산	NNP
-항공로	NNP
 비행 표준 분소	NNP
 자동조종장치	NNP
 안전벨트	NNP
@@ -3526,7 +3444,6 @@ DVFR 비행 계획	NNP
 항산성 페인트	NNP
 토크 반작용	NNP
 날개 연료탱크	NNP
-회의통신	NNP
 화물 슬링	NNP
 교체헬기장	NNP
 공항기준코드	NNP
@@ -3587,7 +3504,6 @@ DVFR 비행 계획	NNP
 구름층	NNP
 해상전환항로	NNP
 기상 운영 채널	NNP
-용도부호	NNP
 고속탈출유도로	NNP
 활주로 이탈	NNP
 원주비행장	NNP
@@ -3603,7 +3519,6 @@ DVFR 비행 계획	NNP
 ATS 직접 통화 회선	NNP
 유도로 진행 지시	NNP
 방위각 및 고도	NNP
-시각정보 처리장치	NNP
 플라이 바이 웨이포인트	NNP
 화물탑재계획	NNP
 팩시밀리	NNP
@@ -3625,7 +3540,6 @@ ATS 직접 통화 회선	NNP
 비행경로각	NNP
 충격 시험	NNP
 계수형 격자점자료	NNP
-항공로	NNP
 운용허용기준	NNP
 음파	NNP
 비행장 표시	NNP
@@ -3644,8 +3558,6 @@ ATS 직접 통화 회선	NNP
 비행장등대	NNP
 등록국가	NNP
 착륙장치조작속도	NNP
-항공교통업무	NNP
-종합정보통신망	NNP
 반복도	NNP
 활주로 안전 지역	NNP
 서행진입 사인	NNP
@@ -3674,7 +3586,6 @@ LAHSO-DRY	NNP
 위험물사고	NNP
 GPS오차보정시스템	NNP
 하이드란트 배유	NNP
-초대형 상용 여객기	NNP
 AC 플레이트 저항	NNP
 상층운	NNP
 MLS CATEGORIES	NNP
@@ -3691,7 +3602,6 @@ FOLLOW	NNP
 항공용 승객운반대	NNP
 진입무선표지	NNP
 계기 기상	NNP
-풍향등	NNP
 프린터	NNP
 보조익 역효현상	NNP
 고고도 지역 항법도	NNP
@@ -3704,7 +3614,6 @@ FOLLOW	NNP
 착륙진입	NNP
 최대 항속거리	NNP
 항공사운영자협회	NNP
-자동조종장치	NNP
 경미한 개조	NNP
 비행 안경, 방풍경	NNP
 유압 잠금장치	NNP
@@ -3750,8 +3659,6 @@ C.I.Q	NNP
 능동 간격 조정	NNP
 접근지점	NNP
 솔레노이드 밸브	NNP
-극초단파	NNP
-해안선	NNP
 트럭견인	NNP
 항공교통인가	NNP
 진방위	NNP
@@ -3817,7 +3724,6 @@ AFQRJOS	NNP
 조언업무	NNP
 이륙출력	NNP
 구동기어	NNP
-최대착륙중량	NNP
 순항상승	NNP
 비행단	NNP
 위험수당	NNP
@@ -3837,16 +3743,11 @@ AFQRJOS	NNP
 드로그	NNP
 저공 비행	NNP
 유압 브레이크	NNP
-낙조	NNP
 부력	NNP
 토판천일염	NNP
-동한난류	NNP
 조업자제해역	NNP
-무풍대	NNP
 국제협약검사	NNP
 B형 수면비행선박	NNP
-녹색물류	NNP
-전환교통	NNP
 COMBINED CENTER-RAPCON	NNP
 가산 요율	NNP
 표준 IFR 분리	NNP
@@ -3860,7 +3761,6 @@ COMBINED CENTER-RAPCON	NNP
 금지	NNP
 슬롯플랩	NNP
 한국 비행정보구역	NNP
-경사각	NNP
 진입 유도등	NNP
 교육계획	NNP
 규제완화정책	NNP
@@ -3907,7 +3807,6 @@ DME 거리	NNP
 전개,개방	NNP
 주기장	NNP
 레이다 분리	NNP
-일기도	NNP
 초경량 비행장치	NNP
 운항비	NNP
 비행장등화	NNP
@@ -3927,8 +3826,6 @@ DME 거리	NNP
 메틸 에틸 케톤	NNP
 항공기 접근 범주	NNP
 기안문	NNP
-전환점	NNP
-임계이륙속도	NNP
 공항등	NNP
 연료	NNP
 중량대조표	NNP
@@ -3997,7 +3894,6 @@ INTERLINE TRANSFER	NNP
 컴퓨터	NNP
 DME픽스	NNP
 임계 발동기	NNP
-승무원	NNP
 첨단교통관리시스템	NNP
 치명적 결함	NNP
 AFTN 통신센터	NNP
@@ -4081,14 +3977,12 @@ OUT-BOUND CARRIER	NNP
 적합 대체 공항	NNP
 고정식 착륙장치	NNP
 기본 방위	NNP
-인버터	NNP
 급유장비	NNP
 공중 급유	NNP
 항로, 경로, 축선, 접근로	NNP
 최대속도	NNP
 방사정보	NNP
 격실, 칸	NNP
-전기통신	NNP
 긴급목적지변경, 회항	NNP
 경고 장치	NNP
 수동식 브레이크	NNP
@@ -4112,7 +4006,6 @@ OUT-BOUND CARRIER	NNP
 고등 조종사 훈련	NNP
 조종사 기상보고	NNP
 액세서리 기어박스 모듈	NNP
-취약점	NNP
 비주얼분리	NNP
 고전압	NNP
 가속기 장치	NNP
@@ -4167,7 +4060,6 @@ TARGET RESOLUTION	NNP
 비행장교통 장주	NNP
 기술정보	NNP
 항공 급여	NNP
-비행운	NNP
 관할 구역	NNP
 수출신고서	NNP
 사내우편물	NNP
@@ -4198,16 +4090,13 @@ ACTIVE WAYPOINT	NNP
 청주비행장	NNP
 축전기 방전등	NNP
 기단 뇌우	NNP
-자외선	NNP
 이상발생 보고서	NNP
 화물적재	NNP
 증기폐쇄, 베이퍼 록	NNP
-기단	NNP
 제안요구서	NNP
 지역관제센터	NNP
 헬리콥터 지상 유도로	NNP
 접지 속도	NNP
-고염수	NNP
 극지선박기준	NNP
 항공도	NNP
 통과공항	NNP
@@ -4232,11 +4121,9 @@ ACTIVE WAYPOINT	NNP
 무선위치표지시설	NNP
 비행점검	NNP
 눈	NNP
-해운	NNP
 열점	NNP
 어도	NNP
 이안제	NNP
-다금속퇴적광상	NNP
 도매시장법인	NNP
 연차일	NNP
 보충산소공급장치	NNP
@@ -4280,7 +4167,6 @@ HAVE NUMBERS	NNP
 단일 포장물	NNP
 구충	NNP
 기본표면	NNP
-수평안정판	NNP
 마멸성 팁	NNP
 상승압력	NNP
 지면효과	NNP
@@ -4296,18 +4182,14 @@ LAHSO-WET	NNP
 피복석	NNP
 원양꽁치봉수망어업	NNP
 선박국적증서	NNP
-공해	NNP
-선수	NNP
 내파성가두리	NNP
 선외기	NNP
 태양조	NNP
 차량적재도	NNP
-난류	NNP
 결정지	NNP
 갈릴레오 위성항법	NNP
 조위	NNP
 교통안전특정해역	NNP
-계선부표	NNP
 필수서비스	NNP
 선불운임	NNP
 분기활주로	NNP
@@ -4324,7 +4206,6 @@ SHORT RANGE CLEARANCE	NNP
 확산접합	NNP
 공중회랑	NNP
 변조율, 보	NNP
-기내식	NNP
 횡단류 효과	NNP
 구름량	NNP
 제빙	NNP
@@ -4371,7 +4252,6 @@ TERRAIN FOLLOWING	NNP
 접착 필름	NNP
 공시 VFR 항로	NNP
 감속 기어	NNP
-시계비행상태	NNP
 채식	NNP
 VFR NOT RECOMMENDED	NNP
 조난신호	NNP
@@ -4388,7 +4268,6 @@ METER LIST DISPLAY INTERVAL	NNP
 종횡비, 가로세로비	NNP
 변환기	NNP
 공기보다 가벼운 항공기	NNP
-공항정보자동방송업무	NNP
 절대 실링, 절대 상승한도	NNP
 구조 임무	NNP
 단일항공회사운임	NNP
@@ -4410,7 +4289,6 @@ METER LIST DISPLAY INTERVAL	NNP
 항복점	NNP
 활주로 말단 표식	NNP
 ARS	NNP
-기상 보고	NNP
 적도 무풍대	NNP
 한국개발연구원	NNP
 조종실 음성 기록장치	NNP
@@ -4453,7 +4331,6 @@ IFR 조건	NNP
 한국 작전구역	NNP
 점화전	NNP
 진행보고	NNP
-수익관리	NNP
 지상시정	NNP
 마커, 위치 표시기	NNP
 공시스케줄	NNP
@@ -4480,7 +4357,6 @@ IFR 조건	NNP
 계기접근절차	NNP
 구간속도	NNP
 가속 시스템	NNP
-비행장 표고	NNP
 연료유량계	NNP
 비행전 시험	NNP
 계기비행규칙	NNP
@@ -4506,7 +4382,6 @@ IFR 조건	NNP
 보조익	NNP
 항공법	NNP
 재송신	NNP
-비인가	NNP
 무한시정	NNP
 평행 ILS 접근	NNP
 내구력 시험비행	NNP
@@ -4545,7 +4420,6 @@ VFR 조건	NNP
 비행기의 축	NNP
 2차 레이더	NNP
 계획조언	NNP
-잔교	NNP
 역조작	NNP
 파생 개량 항공기	NNP
 귀빈, 요인	NNP
@@ -4558,10 +4432,8 @@ VFR 조건	NNP
 예보관	NNP
 보통 여객기	NNP
 철새 활동	NNP
-비행선	NNP
 상승로, 상승시작부분	NNP
 엔진 오일 저압 경고장치	NNP
-승무원	NNP
 활주로 진입말단	NNP
 유도로중심선등	NNP
 오메가 항법시스템	NNP
@@ -4582,14 +4454,11 @@ SCN장치	NNP
 추력 중심	NNP
 BREAKAWAY	NNP
 지리정보시스템	NNP
-화물기	NNP
 펄스등화 접근로 지시계	NNP
 비행통제 시간	NNP
 공군교범	NNP
-전이표면	NNP
 하이브리드	NNP
 마커비컨 안테나	NNP
-풍속	NNP
 극전선	NNP
 상용화주	NNP
 연속운용	NNP
@@ -4599,7 +4468,6 @@ BREAKAWAY	NNP
 실제 구간 시간	NNP
 상호안전보장법	NNP
 깊은각 접근	NNP
-자이로	NNP
 압설	NNP
 이질 금속 부식	NNP
 견용수송용기	NNP
@@ -4644,7 +4512,6 @@ BREAKAWAY	NNP
 중대한, 임계의	NNP
 분당 급유량	NNP
 신호대잡음비	NNP
-방위각	NNP
 공항구역	NNP
 수밀전기등	NNP
 탑승교	NNP
@@ -4657,7 +4524,6 @@ BREAKAWAY	NNP
 총 허용하중	NNP
 공항교통지역	NNP
 세로분리	NNP
-사회간접자본	NNP
 표적획득	NNP
 일직사령	NNP
 활주로거리표시등	NNP
@@ -4665,7 +4531,6 @@ BREAKAWAY	NNP
 지국편위	NNP
 순항고도	NNP
 공중통과경로	NNP
-손익분기점	NNP
 횡비행,크랩	NNP
 절대 습도	NNP
 벌텍스	NNP
@@ -4704,7 +4569,6 @@ ULD의 탑재 제한 중량	NNP
 항공로 정보제공 업무	NNP
 평균전력	NNP
 음향 마하계	NNP
-수평착륙	NNP
 무선정찰	NNP
 등고선 간격	NNP
 계기출항경로	NNP
@@ -4718,7 +4582,6 @@ WAGGLE	NNP
 가용좌석마일	NNP
 접근 속도	NNP
 계기 착륙 장치, 맹목착륙장치	NNP
-열교환기	NNP
 추가조업	NNP
 점화장치	NNP
 HOLD-SHORT SIGNS	NNP
@@ -4732,18 +4595,12 @@ HOLD-SHORT SIGNS	NNP
 항공기 관측	NNP
 미국 연방통신위원회	NNP
 해양원격탐사	NNP
-유조선운임지수	NNP
 군파	NNP
 정부간해양학위원회	NNP
 소건품	NNP
-부식물질	NNP
 할당관세	NNP
-중량톤수	NNP
-SPM	NNP
 해적위험예비해역	NNP
 정조	NNP
-공유수면	NNP
-티이유	NNP
 등부표	NNP
 무역항	NNP
 구명자켓	NNP
@@ -4756,7 +4613,6 @@ SPM	NNP
 기동구역	NNP
 기술자료묶음	NNP
 수직 이착륙 항공기	NNP
-비파괴검사	NNP
 가입자 주배선반	NNP
 수직속도	NNP
 소규모 활주로	NNP
@@ -4786,13 +4642,11 @@ MAP	NNP
 기기, 기구	NNP
 편차, 변위	NNP
 감항성 인증	NNP
-공중납치	NNP
 TMS용 무선 안테나	NNP
 한국 방공지역	NNP
 하자보고	NNP
 항속거리	NNP
 운항거리	NNP
-송수신기	NNP
 화물해체	NNP
 기술개발	NNP
 동축로터, 동축회전익	NNP
@@ -4804,11 +4658,9 @@ TMS용 무선 안테나	NNP
 착륙장치 경고 시스템	NNP
 연락기, 연락용 항공기	NNP
 절대볼트, 애브볼트	NNP
-비행운	NNP
 혼합 길이	NNP
 NONCOMPOSITE SEPARATION	NNP
 부정기항공운송사업	NNP
-연료유량계	NNP
 허위 수평선	NNP
 버그	NNP
 대기성 화물	NNP
@@ -4821,7 +4673,6 @@ NONCOMPOSITE SEPARATION	NNP
 화물총중량	NNP
 배풍로 연장	NNP
 분대, 반	NNP
-승무원	NNP
 관제사, 제어기	NNP
 근무 시간	NNP
 직진 시계접근	NNP
@@ -4846,7 +4697,6 @@ NONCOMPOSITE SEPARATION	NNP
 마멸되다	NNP
 나침의 방위, 나방위	NNP
 연대	NNP
-고도	NNP
 항로교통관제 업무	NNP
 상승단계	NNP
 패킷 계층 프로토콜	NNP
@@ -4860,7 +4710,6 @@ NONCOMPOSITE SEPARATION	NNP
 연쇄 작용	NNP
 바이패스 엔진	NNP
 해제 시간, 방출 시간	NNP
-비행운	NNP
 추월하다	NNP
 펄스 변조	NNP
 낙하탱크	NNP
@@ -4901,7 +4750,6 @@ X선 검사	NNP
 비행정보구역	NNP
 기외하중물	NNP
 정기화물	NNP
-제한속도	NNP
 저고도 돌풍경보시설	NNP
 SELECTED GROUND DELAYS	NNP
 한대기단	NNP
@@ -4950,7 +4798,6 @@ RADAR POINT OUT	NNP
 유지하다	NNP
 연결 항공권	NNP
 식별 부호	NNP
-저장품	NNP
 기내식사업소	NNP
 자세계	NNP
 표지등	NNP
@@ -4968,11 +4815,9 @@ RADAR POINT OUT	NNP
 항공도, 공항지도	NNP
 조이스틱, 조종간	NNP
 접착 테이프	NNP
-활주로	NNP
 후방부, 미부	NNP
 그리니치 표준시	NNP
 출생지	NNP
-보조비행장등대	NNP
 마멸성	NNP
 착륙 장치 위치 지시 시스템	NNP
 항공조언업무	NNP
@@ -4986,13 +4831,11 @@ RADAR POINT OUT	NNP
 활성제	NNP
 램 효과	NNP
 허브, 중추	NNP
-피로	NNP
 주비행 조종장치	NNP
 파견근무, 출장	NNP
 눈보라	NNP
 DEAD HEAD	NNP
 운송인	NNP
-서태평양	NNP
 좁은 통로	NNP
 통제 활주	NNP
 부가가치통신망	NNP
@@ -5038,7 +4881,6 @@ ENROUTE SPACING PROGRAM	NNP
 사용가능	NNP
 예상착륙시간	NNP
 공기순환 냉각장치	NNP
-승무원실	NNP
 강한 하강풍	NNP
 공통 기호	NNP
 복구가능 품목	NNP
@@ -5061,7 +4903,6 @@ I급비밀	NNP
 환자용 침상	NNP
 고속	NNP
 항공기 정비	NNP
-초고속 집적회로	NNP
 마이크로 웨이브	NNP
 단파	NNP
 미확인 수화물	NNP
@@ -5127,7 +4968,6 @@ AVS	NNP
 배기가스 비행운	NNP
 즉시	NNP
 터빈진입온도	NNP
-철도	NNP
 수송력	NNP
 단가	NNP
 난류경계층	NNP
@@ -5148,14 +4988,12 @@ EXPECT FURTHER CLEARANCE VIA	NNP
 배풍착륙	NNP
 프롭팬	NNP
 원심 여과기	NNP
-도플러효과	NNP
 지형속행레이더	NNP
 HIWAS OUTLET AREA	NNP
 시계진입각지시장비	NNP
 국제전기통신연합	NNP
 운항관제통신	NNP
 출입국 심사	NNP
-영국	NNP
 항공기 기록부	NNP
 인공 수평의	NNP
 승압기, 보조추진장치	NNP
@@ -5172,14 +5010,12 @@ ULD 전문	NNP
 견인정수와 표준운전시분의 설정	NNP
 EBR	NNP
 비상브레이크장치	NNP
-불연성	NNP
 적정원가	NNP
 콘크리트도상	NNP
 곡선당김장치	NNP
 큐비클	NNP
 입도안정처리	NNP
 전기차량	NNP
-AF	NNP
 시트매스틱방수공법	NNP
 평균속도	NNP
 기록장치	NNP
@@ -5351,7 +5187,6 @@ SICAS	NNP
 기적관제해제표지	NNP
 터널경보장치	NNP
 말뚝교각	NNP
-비파괴검사	NNP
 열팽창	NNP
 미닫이레일	NNP
 측지망	NNP
@@ -5434,7 +5269,6 @@ TWC차상장치	NNP
 레일교환	NNP
 키르히호프의 가정	NNP
 초벌	NNP
-개조	NNP
 전신실	NNP
 철차쇄정	NNP
 구조물강성도행렬	NNP
@@ -5458,7 +5292,6 @@ I/O LIST	NNP
 가설하중	NNP
 골재노출마무리	NNP
 층간박리	NNP
-MS	NNP
 규질암	NNP
 폐색정자	NNP
 중계선	NNP
@@ -5550,7 +5383,6 @@ ADD	NNP
 패리티체크	NNP
 성숙도 측정기	NNP
 완충개선	NNP
-옴	NNP
 복식전환쇄정장치	NNP
 격점	NNP
 코로나 방전	NNP
@@ -5635,7 +5467,6 @@ IRIS	NNP
 호퍼카	NNP
 기밀성능시험	NNP
 풍배도	NNP
-위험물	NNP
 굽은관	NNP
 정하중	NNP
 리피터	NNP
@@ -5684,7 +5515,6 @@ NAPM모듈	NNP
 진동하중	NNP
 역무실	NNP
 단침목	NNP
-파렛트	NNP
 리니어전차	NNP
 접촉정차장	NNP
 발리스전송모듈	NNP
@@ -5806,7 +5636,6 @@ SSP	NNP
 구간환기설비	NNP
 자동전압조정기	NNP
 선로작업표지	NNP
-충격파	NNP
 인장장치	NNP
 흐름시험	NNP
 측점조건	NNP
@@ -5846,7 +5675,6 @@ MAFP모듈	NNP
 속도제한표	NNP
 트래버서	NNP
 메시지	NNP
-속도계	NNP
 운용시간당 유지보수 투입인원	NNP
 회생율	NNP
 비상제동거리	NNP
@@ -5992,7 +5820,6 @@ OVAR	NNP
 붕괴성 흙	NNP
 실제동시간	NNP
 시멘트 라이닝관	NNP
-경사계	NNP
 상현재	NNP
 곡률도	NNP
 원곡선	NNP
@@ -6123,12 +5950,10 @@ BCN	NNP
 화이트메탈	NNP
 통표폐색기	NNP
 동적구조해석	NNP
-무선주파수	NNP
 복귀신호기	NNP
 안전상태	NNP
 플러그	NNP
 옹벽	NNP
-교류전압	NNP
 L-상당치	NNP
 보관차	NNP
 과다짐	NNP
@@ -6171,7 +5996,6 @@ L-상당치	NNP
 암반 품질	NNP
 정지장치	NNP
 처리장치[ATC용]	NNP
-도선	NNP
 기적	NNP
 이설	NNP
 입체투영망	NNP
@@ -6347,7 +6171,6 @@ LBS	NNP
 마찰력	NNP
 비상정차	NNP
 무궤도전차	NNP
-풍속	NNP
 벨트레일	NNP
 비상차	NNP
 LPK	NNP
@@ -6373,7 +6196,6 @@ EIA	NNP
 기화기기관	NNP
 차체구조	NNP
 다이아몬드보링	NNP
-무지향성	NNP
 과속도방어[ATP용]	NNP
 도그스파이크	NNP
 전철표지등	NNP
@@ -6579,7 +6401,6 @@ DFR	NNP
 비틂 강도	NNP
 변형계수	NNP
 궤도이설	NNP
-와류	NNP
 병렬급전	NNP
 비직선저항형	NNP
 프로그래머	NNP
@@ -6666,7 +6487,6 @@ KS	NNP
 슬래그용접	NNP
 LDTS	NNP
 절리방향	NNP
-균열	NNP
 정지 마찰	NNP
 궁현트러스	NNP
 ATC표시장치	NNP
@@ -6758,13 +6578,11 @@ D/A	NNP
 굴곡판	NNP
 레미콘공장선정시고려사항	NNP
 이형 프리스트레싱 강봉	NNP
-집적회로	NNP
 차위	NNP
 저합금강	NNP
 전단판	NNP
 장대레일궤도	NNP
 접지계전기	NNP
-마찰항력	NNP
 LCP	NNP
 CY	NNP
 위탁발매소	NNP
@@ -6804,7 +6622,6 @@ T	NNP
 탄성수축	NNP
 액성지수	NNP
 궤전쇠붙이	NNP
-수하인	NNP
 중공차축	NNP
 거푸집진동기	NNP
 섬식승강장	NNP
@@ -6882,7 +6699,6 @@ LTR	NNP
 담금질균열	NNP
 모멘트 중심	NNP
 선로최대구배	NNP
-컨테이너	NNP
 복진방지장치	NNP
 횡압	NNP
 화상면적	NNP
@@ -7013,8 +6829,6 @@ CMMODE	NNP
 오버랩	NNP
 시봉	NNP
 방출밸브	NNP
-임항철도	NNP
-속도	NNP
 뒷창	NNP
 목표거리	NNP
 꼬리표	NNP
@@ -7178,9 +6992,7 @@ TTR	NNP
 슬롯트용접	NNP
 무지향표지시설	NNP
 단열	NNP
-분리	NNP
 주빈	NNP
-변위	NNP
 금지구역등	NNP
 열의, 온난 상승기류	NNP
 시간표	NNP
@@ -7190,15 +7002,11 @@ TTR	NNP
 적외선 영상	NNP
 레이더 포착	NNP
 공기흡입구	NNP
-방위각	NNP
 바이트	NNP
 공수 능력	NNP
 활공각	NNP
-송수신기	NNP
 추력방향제어	NNP
 국제공항협회	NNP
-방문자	NNP
-에어버스	NNP
 액체 산소	NNP
 WIDE BODY	NNP
 여객 오락 편의장치	NNP
@@ -7210,7 +7018,6 @@ WIDE BODY	NNP
 화물실, 체공	NNP
 날개면적	NNP
 빗놀이	NNP
-선회 및 경사지시계	NNP
 레이더 조언 업무	NNP
 착륙 전 한정 지점	NNP
 흑빙	NNP
@@ -7241,9 +7048,7 @@ WIDE BODY	NNP
 폐색공간	NNP
 출력부족	NNP
 수하물처리	NNP
-저전압	NNP
 유량계	NNP
-항공기 형식	NNP
 공중 활주	NNP
 등고선	NNP
 상태정비	NNP
@@ -7298,12 +7103,9 @@ EXPECT	NNP
 계기비행 시간	NNP
 안정성증대장치	NNP
 풍향	NNP
-항만운영정보시스템	NNP
 수산업의 분류	NNP
-항만시설사용료	NNP
 지각평형설	NNP
 강제침선어초	NNP
-무해통항권	NNP
 어로장	NNP
 장주기파	NNP
 내항	NNP
@@ -7314,15 +7116,12 @@ EXPECT	NNP
 정제소금	NNP
 집중점검제도	NNP
 풍우밀	NNP
-CFS	NNP
 어장	NNP
 해안	NNP
-극지환경	NNP
 순환류	NNP
 근해안강망어업	NNP
 고속여객선	NNP
 포락지	NNP
-환적	NNP
 지대운임	NNP
 도상두께	NNP
 CMK	NNP
@@ -7403,7 +7202,6 @@ KFX	NNP
 알파 뉴메릭	NNP
 경계 구역	NNP
 활주로 대 기지점 표지	NNP
-지문항법	NNP
 돌출랙	NNP
 탄소성 재료	NNP
 소형전기기계?기구	NNP
@@ -7439,7 +7237,6 @@ Z-마커, Z 무선위치표지	NNP
 블레이드 비틀림	NNP
 GAMET 구역예보	NNP
 착륙 플랩	NNP
-탑승교	NNP
 조절형 카울 플랩	NNP
 주무부서	NNP
 쌍두레일	NNP
@@ -7503,7 +7300,6 @@ CCM	NNP
 레일파상마멸	NNP
 터미널	NNP
 선도장치	NNP
-승무원	NNP
 하향스윙볼스터	NNP
 전산관리승차권	NNP
 오차전파법칙	NNP
@@ -7524,19 +7320,14 @@ CCM	NNP
 편성	NNP
 차체설계통칙	NNP
 열차명	NNP
-내륙컨테이너기지	NNP
-오션폴리텍	NNP
 주관청	NNP
 공기부양정	NNP
 기수호	NNP
 선박의 길이	NNP
 감시감독통제	NNP
 위험물적하목록	NNP
-항로	NNP
-복합물류터미널	NNP
 저서생물	NNP
 선박평형수관리협약	NNP
-세계무역기구	NNP
 선박검사원	NNP
 오야시오해류	NNP
 하구	NNP
@@ -7544,7 +7335,6 @@ UN번호	NNP
 펌프준설선	NNP
 구명뗏목	NNP
 함침	NNP
-CROSS	NNP
 작동 혼	NNP
 습도계	NNP
 터미날 레이더	NNP
@@ -7554,7 +7344,6 @@ TETRAHEDRON	NNP
 비용 대 효과	NNP
 장관	NNP
 일본항공화물통관시스템	NNP
-세계무역기구	NNP
 가변익	NNP
 수정 고도	NNP
 공항교통관제업무	NNP
@@ -7567,11 +7356,8 @@ TETRAHEDRON	NNP
 ATC 요청	NNP
 잠수함	NNP
 스키 착륙장치	NNP
-음속	NNP
 초급 활공기	NNP
 상대습도	NNP
-시계비행상태	NNP
-탑승구	NNP
 표시	NNP
 폐색선	NNP
 망간강레일	NNP
@@ -7643,7 +7429,6 @@ NS-AM형 전기선로전환기	NNP
 항공기 수리	NNP
 대형항공기	NNP
 국적항공사	NNP
-수륙양용 항공기	NNP
 기능 점검	NNP
 사업계획, 사업, 투사하다	NNP
 고도계	NNP
@@ -7654,7 +7439,6 @@ NS-AM형 전기선로전환기	NNP
 항공기 어드레스	NNP
 인터폰 서비스	NNP
 후방	NNP
-절연	NNP
 등급 하향	NNP
 비행후 브리핑	NNP
 반작용	NNP
@@ -7662,7 +7446,6 @@ NS-AM형 전기선로전환기	NNP
 동위	NNP
 공중 가교	NNP
 열대수렴대	NNP
-시에멘스	NNP
 분진점, 불출장소,투하지점 집결지점	NNP
 계획속도	NNP
 용접유효길이	NNP
@@ -7799,7 +7582,6 @@ IOS	NNP
 가우스의 정리	NNP
 방음벽	NNP
 관성력	NNP
-데시벨	NNP
 흡상선	NNP
 내구	NNP
 전차선높이	NNP
@@ -7848,9 +7630,7 @@ RC침목	NNP
 중보선장비	NNP
 도입시강도	NNP
 전산자료	NNP
-재고고갈	NNP
 단독비행시간	NNP
-대형항공기	NNP
 구조 헬리콥터	NNP
 고장탐구작업	NNP
 착빙성의 비	NNP
@@ -7862,7 +7642,6 @@ RC침목	NNP
 직통선	NNP
 운임선불 화물	NNP
 환승여객	NNP
-감속낙하산	NNP
 동적 부하	NNP
 인도불능화물	NNP
 수축줄눈	NNP
@@ -7881,7 +7660,6 @@ RC침목	NNP
 방빙장치	NNP
 피치자세	NNP
 엔진압력비	NNP
-여객기	NNP
 과적상태, 하중초과	NNP
 보통, 일상적인	NNP
 품질 보증제도	NNP
@@ -7901,7 +7679,6 @@ RC침목	NNP
 시각접근 활공각 지시계	NNP
 체류, 잔류	NNP
 공중 분열	NNP
-세계무역기구	NNP
 원심 펌프	NNP
 남승무원	NNP
 출장명령	NNP
@@ -7991,9 +7768,7 @@ ICOS공법	NNP
 주파장	NNP
 도상저항력측정기	NNP
 균열정지구멍	NNP
-ICD	NNP
 압단본드	NNP
-OTPTXBUFFER	NNP
 샌드드레인공법	NNP
 트레일러형롤러	NNP
 특대화물적재화차	NNP
@@ -8024,7 +7799,6 @@ PB	NNP
 교번응력	NNP
 마찰크러치	NNP
 관성집진장치	NNP
-전류	NNP
 신호용계전기	NNP
 내부교반방식	NNP
 에러리스트	NNP
@@ -8051,7 +7825,6 @@ ATB	NNP
 우즈백항공	NNP
 적외선 탐지기	NNP
 항목수, 품목	NNP
-섭씨	NNP
 건 노즐	NNP
 항공학	NNP
 유효톤킬로미터	NNP
@@ -8062,7 +7835,6 @@ ATB	NNP
 COMMPANY FLIGHT PLAN	NNP
 자기온도계	NNP
 모의비행장치	NNP
-비행전 점검	NNP
 자이로 컴퍼스	NNP
 활주로유도등	NNP
 COURSE	NNP
@@ -8087,13 +7859,11 @@ NONMOVEMENT AREAS	NNP
 수취시기	NNP
 층류저층	NNP
 노측면접조사	NNP
-환적	NNP
 차량제어컴퓨터	NNP
 R.C.	NNP
 장척레일	NNP
 절연판	NNP
 퀼	NNP
-공차주행키로	NNP
 순극한지지력	NNP
 방부처리	NNP
 전세급소화물	NNP
@@ -8131,7 +7901,6 @@ R.C.	NNP
 전철잠금기	NNP
 교차선장치	NNP
 퀼식동력전달장치	NNP
-부력	NNP
 고도계 수정치 지시계	NNP
 종합항공통신망	NNP
 국제공항	NNP
@@ -8140,13 +7909,11 @@ R.C.	NNP
 가용 가속-정지 거리	NNP
 항공화물도심터미널	NNP
 공기흐름	NNP
-단열	NNP
 중요 부품	NNP
 시그멧/기상조언	NNP
 높이 경도력	NNP
 연습탄	NNP
 저기압	NNP
-초대형상용여객기	NNP
 정비할당표	NNP
 위치오차	NNP
 자력 부양 비행기	NNP
@@ -8155,7 +7922,6 @@ R.C.	NNP
 후착순	NNP
 일시적 시력상실	NNP
 항로 관제 업무	NNP
-초음속여객기	NNP
 실제 배기 속도	NNP
 배기가스의 흐름	NNP
 정적불규칙	NNP
@@ -8169,14 +7935,12 @@ R.C.	NNP
 토크비	NNP
 홉퍼카	NNP
 열차번호표시장치	NNP
-운송인	NNP
 검증	NNP
 주 관성 모멘트	NNP
 외턱타이플레이트	NNP
 피복 아크용접봉	NNP
 을종위탁발매소	NNP
 직렬콘덴서	NNP
-디지털	NNP
 레일배터	NNP
 이음매작업	NNP
 서행운전	NNP
@@ -8212,9 +7976,7 @@ LED	NNP
 인원, 요원, 인사	NNP
 분실화물	NNP
 공항건물지역	NNP
-무인기	NNP
 스키트, 외활	NNP
-공기보다 가벼운 항공기	NNP
 수도권신공항건설공단	NNP
 해리/시	NNP
 버블 케노피	NNP
@@ -8311,7 +8073,6 @@ SBOND	NNP
 복편	NNP
 가설재료	NNP
 ABB	NNP
-질소산화물	NNP
 궤도용수준기	NNP
 성토	NNP
 쇄기형홈	NNP
@@ -8326,7 +8087,6 @@ ATP	NNP
 알았음	NNP
 조종간	NNP
 가속 제어 장치	NNP
-계기 착륙	NNP
 소유	NNP
 설계이륙중량	NNP
 복동 작동기 계통	NNP
@@ -8366,8 +8126,6 @@ TDI	NNP
 통보하다	NNP
 IFR이륙 최저치와 출발 절차	NNP
 사업용조종사	NNP
-바람개비, 풍향계	NNP
-최저강하고도	NNP
 OPERATION OF FLIGHT PLAN	NNP
 지역예보센터	NNP
 착륙결정지점	NNP
@@ -8401,7 +8159,6 @@ BT궤전방식	NNP
 역청침투식공법	NNP
 변수	NNP
 인터페이스	NNP
-OTPTXBUFFER	NNP
 윙레일살돋음부	NNP
 복식기관차	NNP
 접착절연레일	NNP
@@ -8414,7 +8171,6 @@ VVVF	NNP
 심플렉스표	NNP
 구조역학	NNP
 체력	NNP
-역	NNP
 이면전단	NNP
 레일흑렬	NNP
 마찰손실	NNP
@@ -8461,7 +8217,6 @@ VVVF	NNP
 타고넘는 포인트	NNP
 교착방지	NNP
 슈미트햄머	NNP
-완전유체	NNP
 유실물 취급소	NNP
 수상한계속도	NNP
 정전기 방전기	NNP
@@ -8470,13 +8225,10 @@ VVVF	NNP
 승강기 착각	NNP
 레이돔	NNP
 항적 경보와 충돌방지시스템	NNP
-모노레일	NNP
 무동력 실속	NNP
 VFR/DVFR 비행계획 종결	NNP
-비행장등대	NNP
 상사점	NNP
 역코스	NNP
-난류	NNP
 비등점	NNP
 킬 효과	NNP
 요금 선지급	NNP
@@ -8521,7 +8273,6 @@ VFR/DVFR 비행계획 종결	NNP
 ESTABLISHED	NNP
 공중지연	NNP
 기상녹음 방송	NNP
-수직 이착륙 항공기	NNP
 송하운임	NNP
 수평유지장치, 짐벌	NNP
 상황도	NNP
@@ -8533,10 +8284,8 @@ ESTABLISHED	NNP
 비행 갑판	NNP
 동적하중시험	NNP
 2등석, 보통석	NNP
-운항관리사	NNP
 한랭 공기 와류	NNP
 음향 어뢰	NNP
-구급용구	NNP
 아랍 민간항공이사회	NNP
 UN 숫자	NNP
 포장물	NNP
@@ -8566,7 +8315,6 @@ ASK	NNP
 차륜압입	NNP
 이심률	NNP
 감량	NNP
-진동	NNP
 역정보처리장치	NNP
 조합캠축	NNP
 한계측정차	NNP
@@ -8682,12 +8430,10 @@ I형 레일	NNP
 활주로말단	NNP
 항적 마일	NNP
 잭포인트	NNP
-성능시험	NNP
 갓길, 노견	NNP
 엔진소음	NNP
 연결접근	NNP
 먼지 폭풍	NNP
-VOR과 TACAN을 합친장비	NNP
 범위 표시	NNP
 직진계기접근	NNP
 플랑크톤	NNP
@@ -8700,12 +8446,8 @@ VOR과 TACAN을 합친장비	NNP
 양식	NNP
 산란회유	NNP
 염신품	NNP
-생물학적최소형	NNP
 장망어업	NNP
 수산자원계군	NNP
-접안	NNP
-생물화학적산소요구량	NNP
-해운동맹	NNP
 해저열수광상	NNP
 방수복	NNP
 활주모드	NNP
@@ -8742,7 +8484,6 @@ CS	NNP
 회생제동	NNP
 부기관사	NNP
 중심투영	NNP
-파고치	NNP
 소수선	NNP
 한시간정격속도	NNP
 단사진측량	NNP
@@ -8801,7 +8542,6 @@ TILT	NNP
 인공건조법	NNP
 검수	NNP
 평형	NNP
-중유	NNP
 국제표준 및 권고방식	NNP
 EMD 교환기	NNP
 발송기관/관제사	NNP
@@ -8819,16 +8559,13 @@ EMD 교환기	NNP
 특정 지시, 요정	NNP
 I SAY AGAIN	NNP
 스모그	NNP
-무역풍	NNP
 태그	NNP
 헬기장	NNP
 배출 밸브	NNP
 진대기속도	NNP
-운항규정	NNP
 CIS	NNP
 비동반 소아	NNP
 표준식접근등	NNP
-항공 기상	NNP
 전단파괴	NNP
 목표위치	NNP
 일톤평균수송키로	NNP
@@ -8862,7 +8599,6 @@ CTC	NNP
 철근주장	NNP
 전기시험차	NNP
 신호장치	NNP
-구간거리	NNP
 활주로 말단 식별등	NNP
 공항 식별 표지	NNP
 밀폐원통롤러베어링	NNP
@@ -8934,10 +8670,7 @@ EMI	NNP
 전파방해, 교란, 재밍	NNP
 전이경로	NNP
 기술 결함	NNP
-자차	NNP
 항공 기상 관측소	NNP
-구입 소요시간	NNP
-기장	NNP
 동력공급	NNP
 잡음, 소음	NNP
 계기접근절차 단계	NNP
@@ -8953,7 +8686,6 @@ CONTROLLED DEPARTURE TIME PROGRAMS	NNP
 산소계통	NNP
 수평 비행	NNP
 시설장비, 기능장비	NNP
-헬기장	NNP
 특급화물	NNP
 화물배상책임	NNP
 로컬라이즈가능거리	NNP
@@ -8962,7 +8694,6 @@ CONTROLLED DEPARTURE TIME PROGRAMS	NNP
 관제권	NNP
 착각	NNP
 항공 사진	NNP
-운항승무원	NNP
 자이로 계기	NNP
 가입자 중간배선반	NNP
 운항자,운영자	NNP
@@ -8984,7 +8715,6 @@ CUFT	NNP
 심한 눈보라	NNP
 자주의	NNP
 덱 호스	NNP
-기장	NNP
 충돌방지등	NNP
 기계판독 가능한 여권	NNP
 부채꼴 무선 표지	NNP
@@ -8993,7 +8723,6 @@ CUFT	NNP
 비행가동률	NNP
 등고선 지도	NNP
 비행자료기록장치, 블랙박스	NNP
-공통기호 등록국	NNP
 콘테이너 수레	NNP
 전자문서교환	NNP
 최종접근 및 이륙 지점	NNP
@@ -9037,7 +8766,6 @@ SS	NNP
 연동신호기	NNP
 완목식신호기	NNP
 공극률	NNP
-표지등	NNP
 초음파탐상기	NNP
 과충기	NNP
 가청주파수궤도회로제어케이블	NNP
@@ -9054,11 +8782,9 @@ SS	NNP
 프라트트러스교	NNP
 특수분기기류	NNP
 자동화 입출고 화물보관 시스템	NNP
-항공화물운송장	NNP
 우선순위화물	NNP
 특별화물 대기장 통보	NNP
 다운스트림 허가	NNP
-오송	NNP
 초고공	NNP
 무선방향탐지국	NNP
 절대 압력	NNP
@@ -9066,7 +8792,6 @@ SS	NNP
 허용 데이터	NNP
 레이더 접근	NNP
 착륙구역조명등	NNP
-활공각	NNP
 연간 검사	NNP
 여압 항공기	NNP
 단거리이착륙	NNP
@@ -9097,12 +8822,10 @@ SUBLO	NNP
 안전 불시착	NNP
 제4의 자유	NNP
 기압실 비행	NNP
-익단와류	NNP
 조언업무주파수	NNP
 급유전시스템	NNP
 인쇄통신	NNP
 배풍, 뒷바람	NNP
-접촉지점	NNP
 작도기	NNP
 섹터 예약	NNP
 고의잡음	NNP
@@ -9201,13 +8924,11 @@ ULD고정장치	NNP
 예약 확인	NNP
 레디얼	NNP
 비행계획	NNP
-항로	NNP
 실무 훈련	NNP
 등가 등방 복사 전력	NNP
 수직 항법	NNP
 단거리 방공무기	NNP
 반자동 중계 설비	NNP
-주민등록번호	NNP
 수용 불순물	NNP
 기복.	NNP
 무선항법	NNP
@@ -9227,11 +8948,9 @@ ULD고정장치	NNP
 비행 조종장치	NNP
 제한하중계수	NNP
 안내날개	NNP
-잠열	NNP
 워드 프로세서	NNP
 화물실	NNP
 항공사 및 운영자 서류	NNP
-질소산화물	NNP
 자유탑승방식	NNP
 구조엄호	NNP
 조명방식의 신뢰도	NNP
@@ -9240,15 +8959,12 @@ ULD고정장치	NNP
 도착예정시간	NNP
 발생지국	NNP
 화물 파우치	NNP
-트레일러	NNP
 예측 운고	NNP
 MAINTENANCE PLANNING FRICTION LEVEL	NNP
 비정밀 접근 절차	NNP
 엔진 오일 온도	NNP
-상하역장비	NNP
 비트 오류율	NNP
 시간선회	NNP
-습도	NNP
 입국거절승객	NNP
 컴퓨터 이용 제작	NNP
 기수방위 지시계	NNP
@@ -9261,10 +8977,8 @@ MAINTENANCE PLANNING FRICTION LEVEL	NNP
 항공사코드	NNP
 방향별 운임	NNP
 FIX BALANCING	NNP
-최대이륙중량	NNP
 급회전, 스냅롤	NNP
 초수평선	NNP
-계기 착륙	NNP
 유상하중	NNP
 헬기 공중급유	NNP
 상층 기온과 바람 예보	NNP
@@ -9282,13 +8996,11 @@ FIX BALANCING	NNP
 비행장식별등대	NNP
 서리	NNP
 화력증원	NNP
-최저강하고도	NNP
 확인된 교통	NNP
 최대표고숫자	NNP
 항공기국	NNP
 데이터 통신	NNP
 엔진정지	NNP
-좌표계	NNP
 활공면	NNP
 기술통보, 정비개선회보	NNP
 소요, 요구	NNP
@@ -9309,7 +9021,6 @@ TMS용 전산단말기	NNP
 항속거리연장	NNP
 관제비행장	NNP
 방향탐지기 접근절차	NNP
-음속	NNP
 공기 정화기	NNP
 동시의	NNP
 고온부점검	NNP
@@ -9331,7 +9042,6 @@ PSP판	NNP
 다국적 초대형 항공사	NNP
 항공 지상 근무	NNP
 한계중량초과요금	NNP
-경항공기	NNP
 이륙단계	NNP
 지상고도	NNP
 보세지역	NNP
@@ -9368,17 +9078,14 @@ KAML	NNP
 카투사	NNP
 화물실 콘테이너	NNP
 적도 궤도	NNP
-속도계	NNP
 비행장	NNP
 항법 계획서	NNP
 로컬라이저 활용 거리	NNP
-소아	NNP
 GLONASS 오차보정시스템	NNP
 항공기냉난방지원장비	NNP
 비행용 재킷	NNP
 시계접근	NNP
 VOR	NNP
-계기비행기상상태	NNP
 도착부분	NNP
 공지통신	NNP
 항공권	NNP
@@ -9401,7 +9108,6 @@ ROUTE ACTION NOTIFICATION	NNP
 돌풍영역선도	NNP
 비레이더 분리	NNP
 다중 활주로	NNP
-진입지역	NNP
 공군기지	NNP
 가속하다	NNP
 층상토	NNP
@@ -9413,7 +9119,6 @@ ROUTE ACTION NOTIFICATION	NNP
 시굴	NNP
 닳음층	NNP
 증기해머	NNP
-일톤평균수송키로	NNP
 수용제동장치	NNP
 축제동율	NNP
 정신차려통보	NNP
@@ -9432,17 +9137,14 @@ TSR	NNP
 IT	NNP
 파괴포락선	NNP
 경사줄눈	NNP
-절연구간	NNP
 현접법	NNP
 인천국제공항공사	NNP
 화물전세기	NNP
 정밀 접근 활주로, 참조, 계기활주로	NNP
 제트항로	NNP
 항속성능	NNP
-비행점검	NNP
 영국공항공단	NNP
 시발공항	NNP
-활공각	NNP
 고속 유도로	NNP
 무선 조종	NNP
 여객화물전용기	NNP
@@ -9478,7 +9180,6 @@ IT	NNP
 이슬비	NNP
 연구	NNP
 화물대리점	NNP
-단열	NNP
 단위 체적	NNP
 엔진 기록부	NNP
 동축 프로펠러	NNP
@@ -9489,7 +9190,6 @@ IT	NNP
 최종접근-계기비행규칙	NNP
 레이다 추적	NNP
 GTR	NNP
-일기도	NNP
 실중량	NNP
 처녀 비행, 첫비행	NNP
 항공기 장비	NNP
@@ -9503,10 +9203,8 @@ GTR	NNP
 재래식	NNP
 접지지역	NNP
 활주로방향표시등	NNP
-항공화물	NNP
 음향 피복	NNP
 재난, 조난	NNP
-측풍	NNP
 항공기 부분	NNP
 슬립	NNP
 미정부지불보증서	NNP
@@ -9523,7 +9221,6 @@ PLANE	NNP
 옥상헬기장	NNP
 JUMBO JET AIRCRAFT	NNP
 이중 마그네토	NNP
-중항공기	NNP
 통제	NNP
 음성송수신변환장치	NNP
 무동력 착륙	NNP
@@ -9605,7 +9302,6 @@ STEP TURN	NNP
 항공 등대	NNP
 초대규모 집적회로	NNP
 방화벽	NNP
-항공기 종류	NNP
 전구	NNP
 화물 수송기	NNP
 대체항공권	NNP
@@ -9615,7 +9311,6 @@ STEP TURN	NNP
 유도로대	NNP
 주공급	NNP
 시행, 실시	NNP
-모드	NNP
 MILEAGE SYSTEM	NNP
 액체 연료	NNP
 비행근무시간	NNP
@@ -9628,21 +9323,17 @@ QUADRANT	NNP
 회오리바람, 선풍	NNP
 기내조리실	NNP
 항공기 도착 출현	NNP
-계류	NNP
 전천후 전투기	NNP
 일일 변화	NNP
 조달지침	NNP
 예 그렇게 하겠습니다.	NNP
 그리드 항법	NNP
 실제잔여연료량	NNP
-비행경로	NNP
-최대착륙중량	NNP
 좌석이용율	NNP
 자북 방위각	NNP
 사고 분석 보고	NNP
 정상운임	NNP
 ATC 할당 공역	NNP
-사용자 장비	NNP
 동력조종장치	NNP
 나항로	NNP
 국방과학 연구소	NNP
@@ -9654,11 +9345,9 @@ ATC 할당 공역	NNP
 중량 증명서	NNP
 다용도 범주 항공기	NNP
 협조고도	NNP
-계기비행	NNP
 진대기속도계	NNP
 정기여객	NNP
 유량기오차조정	NNP
-음향 라이너	NNP
 갑작스런 돌연한	NNP
 항공우편기준거리	NNP
 수분점검	NNP
@@ -9667,8 +9356,6 @@ ATC 할당 공역	NNP
 상업상 주요 고객	NNP
 화상회의	NNP
 사이클론, 선풍, 열대성 저기압	NNP
-동체	NNP
-하부화물실	NNP
 종합 비행 훈련장치	NNP
 광역오차보정시스템	NNP
 중간대기기지	NNP
@@ -9676,7 +9363,6 @@ ATC 할당 공역	NNP
 구명장구	NNP
 절대 압력 조절기	NNP
 호버링 상승한계	NNP
-준평행활주로	NNP
 승무원.	NNP
 음향학	NNP
 비행장관제무선국	NNP
@@ -9696,14 +9382,12 @@ ATC 할당 공역	NNP
 착륙가용거리	NNP
 제트기류	NNP
 활주등	NNP
-음성다이얼	NNP
 항공기 근접	NNP
 비행관리장치	NNP
 패럿	NNP
 선상헬기장	NNP
 관리지역,비운항 업무지역	NNP
 기내오락	NNP
-가변 주파수발진기	NNP
 메시지 시작	NNP
 비행전 조종사 브리핑	NNP
 범주, 카테고리	NNP
@@ -9714,7 +9398,6 @@ ATC 할당 공역	NNP
 고적운, 높센구름	NNP
 공중 충돌 회피 시스템	NNP
 간접 절충교역	NNP
-동력장치	NNP
 수신기	NNP
 오른쪽	NNP
 상층풍	NNP
@@ -9724,19 +9407,14 @@ ATC 할당 공역	NNP
 항공기상예보	NNP
 수색임무	NNP
 항공고정통신망회선	NNP
-급강하	NNP
-저기압	NNP
 배기 노즐	NNP
 좌표	NNP
 의무지정 고도, 의무 고도	NNP
-비행기	NNP
-전장	NNP
 연료소비율	NNP
 최대 허용고도	NNP
 피치각	NNP
 비상등	NNP
 항공정보업무통합간행물	NNP
-역전층	NNP
 AFTN 착신국	NNP
 운송용조종사	NNP
 정기 서비스	NNP
@@ -9770,7 +9448,6 @@ AN-2 COLT	NNP
 시계비행규칙	NNP
 TRAFFIC NO LONGER OBSERVED	NNP
 공역	NNP
-음속	NNP
 레이더 빔	NNP
 교차 유도로	NNP
 미사일 접근경고시스템	NNP
@@ -9815,8 +9492,6 @@ VFR 레이더 조언업무	NNP
 레이다위치표시	NNP
 세계기상기구	NNP
 실패접근지점	NNP
-응력	NNP
-자세계	NNP
 성인	NNP
 투하	NNP
 반사산란, 클러터	NNP
@@ -9835,18 +9510,15 @@ VFR 지역까지 상승하라.	NNP
 이중예약	NNP
 접지 및 부양구역	NNP
 상업항공운송운항	NNP
-조난신호	NNP
 세계주요항공로	NNP
 인치	NNP
 연구용 비행기	NNP
-바람 방향각	NNP
 아음속 비행	NNP
 비운송항공사	NNP
 일선도선식신호기	NNP
 발차통고	NNP
 종단역	NNP
 환승	NNP
-설계속도	NNP
 주공기배관	NNP
 자기탐상	NNP
 연속보	NNP
@@ -9879,12 +9551,9 @@ TWC안테나	NNP
 갑판	NNP
 보충연료	NNP
 중거리	NNP
-무인기	NNP
 3색 등화 활공로 지시계	NNP
-여성 우주비행사	NNP
 화물기전용화물	NNP
 생일축하 케익	NNP
-교류전압	NNP
 레이더 탐지	NNP
 레이더	NNP
 하중계수, 하중율	NNP
@@ -9920,12 +9589,10 @@ TWC안테나	NNP
 역순예약	NNP
 조종사 재량	NNP
 지상요원	NNP
-공중 급유	NNP
 정지신호등	NNP
 요구 운용능력서, 작전요구성능	NNP
 항공유.	NNP
 자기 나침반	NNP
-좌표	NNP
 소형 헬리콥터	NNP
 콘솔	NNP
 호흡보호장치	NNP
@@ -9933,13 +9600,11 @@ TWC안테나	NNP
 회전 날개	NNP
 POLAR TROUGH ALOFT	NNP
 경고 시간	NNP
-하강풍	NNP
 준비, 작성하다	NNP
 관제사 실수, 통제관 착오	NNP
 활공기비행시간	NNP
 거리 탐지레이더	NNP
 무게중심	NNP
-전압정재파 비율	NNP
 액정 화면	NNP
 고탄소강	NNP
 저고도 접근	NNP
@@ -9951,7 +9616,6 @@ POLAR TROUGH ALOFT	NNP
 간이 비행장	NNP
 트레인에어	NNP
 차등보조익	NNP
-중심선	NNP
 건널목경보장치	NNP
 문전수송	NNP
 상용주파식전철화	NNP
@@ -9985,7 +9649,6 @@ NON-VITAL 정지점	NNP
 기타 정보 제공	NNP
 화물카트	NNP
 방향타, 러더	NNP
-고주파 통신	NNP
 사면하강풍,활강 바람	NNP
 증가율 대응 조언	NNP
 화물도착통지	NNP
@@ -10012,10 +9675,8 @@ NON-VITAL 정지점	NNP
 접근비	NNP
 시각대	NNP
 탑재 제한	NNP
-그리니치 표준시	NNP
 복합 항공기	NNP
 라운지	NNP
-진방위	NNP
 CAA	NNP
 등고선, 등압선	NNP
 화물인도영수증	NNP
@@ -10026,19 +9687,15 @@ CAA	NNP
 국제 날짜선	NNP
 항공기 지상전원공급장치	NNP
 지상충돌회피장치	NNP
-운송약관	NNP
 바렛트	NNP
 유효좌석킬로미터	NNP
 방향탐지기	NNP
-발판	NNP
-기내 통신 계통	NNP
 음향 실험	NNP
 아네로이드	NNP
 급유패널	NNP
 정밀고도계	NNP
 기상정보	NNP
 무상여객	NNP
-항공기 지구국	NNP
 탈연료	NNP
 단면도	NNP
 설계최대중량	NNP
@@ -10050,7 +9707,6 @@ GAP	NNP
 운임배분	NNP
 승압 조종 장치	NNP
 A B C D E 체임버	NNP
-모의비행훈련장치	NNP
 도입기간	NNP
 과전압	NNP
 상승율	NNP
@@ -10068,7 +9724,6 @@ DIMENSIONS	NNP
 음속폭음	NNP
 항공사전자기술위원회	NNP
 문제성물질사용	NNP
-사고조사	NNP
 극한 하중 계수	NNP
 수직 또는 단거리 이착륙	NNP
 압력 수요 산소 장치	NNP
@@ -10077,7 +9732,6 @@ DIMENSIONS	NNP
 실속지시고도	NNP
 중심선측량	NNP
 유손	NNP
-버그	NNP
 계자제어	NNP
 보간	NNP
 레일공전홈	NNP
@@ -10106,7 +9760,6 @@ THROTTLE LEVER	NNP
 회교도식	NNP
 진창눈	NNP
 STEREO ROUTE	NNP
-수상 착륙	NNP
 항법	NNP
 승객 승,하기	NNP
 최초비행장착륙	NNP
@@ -10130,14 +9783,12 @@ JET BLAST	NNP
 곡예비행, 곡예 비행술	NNP
 토잉카	NNP
 도로 교차점	NNP
-객실승무원	NNP
 환급	NNP
 날개끝	NNP
 기상의, 기상학	NNP
 위성조난통신망	NNP
 운송제한자	NNP
 여객 마일	NNP
-조언업무	NNP
 AFTN기지국	NNP
 편차	NNP
 화객 겸 목적용 항공기.	NNP
@@ -10151,7 +9802,6 @@ LAHSO	NNP
 스틱 쉐이커	NNP
 항행성능기준	NNP
 조종사	NNP
-구간	NNP
 장거리 운항구간	NNP
 도플러레이더	NNP
 화물칸	NNP
@@ -10163,7 +9813,6 @@ LAHSO	NNP
 분사 효과	NNP
 소음 영향 지역, 착륙 예상지점	NNP
 항공사간 환승	NNP
-주활주로	NNP
 가시 거리	NNP
 캐노피, 조종실덮개	NNP
 마하수	NNP
@@ -10198,21 +9847,17 @@ METER FIX ARC	NNP
 비트 전송속도. 전송속도	NNP
 기초비행훈련	NNP
 음향 조정	NNP
-가변주파수	NNP
 위험항공등대	NNP
 평행	NNP
 절대 영도	NNP
-광역오차보정시스템	NNP
 마찰	NNP
 무선주파수 방해	NNP
 등평각	NNP
 근접-정지 위성궤도	NNP
-활주로중심선등	NNP
 전파 추적	NNP
 구간가동률	NNP
 하이드란트 시스템	NNP
 동승 교육 시간	NNP
-경항공기	NNP
 배합연료	NNP
 적도 위성	NNP
 절대고도	NNP
@@ -10234,7 +9879,6 @@ D/L	NNP
 저고도 난기류	NNP
 음향 진동	NNP
 공회전 차단	NNP
-기장	NNP
 유나이티드 항공	NNP
 로켓 발사대	NNP
 비행 계획 구역	NNP
@@ -10242,7 +9886,6 @@ NUMEROUS TARGETS VICINITY	NNP
 비상 절차	NNP
 배풍경로	NNP
 공중부양	NNP
-항법	NNP
 우빙	NNP
 볼트	NNP
 땅날림 눈	NNP
@@ -10253,8 +9896,6 @@ NUMEROUS TARGETS VICINITY	NNP
 감시레이더	NNP
 세계 예보 체계	NNP
 소형 항공기	NNP
-부기장	NNP
-급유	NNP
 곡기비행팀	NNP
 로테이션	NNP
 정비확인행위	NNP
@@ -10262,7 +9903,6 @@ NUMEROUS TARGETS VICINITY	NNP
 인화성 액체	NNP
 국지 비행 계획	NNP
 제초제	NNP
-단가	NNP
 연료배출장치	NNP
 가속도 변수	NNP
 최저 접근 속도까지 감속하라.	NNP
@@ -10286,7 +9926,6 @@ EGT 지시계	NNP
 제어 표시기	NNP
 옆놀이 각	NNP
 역효과	NNP
-비행장등대	NNP
 정격 30초 OEI 출력	NNP
 관문	NNP
 출발국가	NNP
@@ -10294,7 +9933,6 @@ EGT 지시계	NNP
 동위 중계	NNP
 남방한계선	NNP
 대권	NNP
-복무기간	NNP
 고도 장벽	NNP
 스콱	NNP
 가속기 펌프	NNP
@@ -10311,7 +9949,6 @@ ASBU	NNP
 해외구매	NNP
 엘리본	NNP
 실제 도착시간	NNP
-항법사	NNP
 보급소	NNP
 비관제 공역	NNP
 유인 항공기	NNP
@@ -10339,7 +9976,6 @@ PPM	NNP
 뜬침목	NNP
 발착선	NNP
 배수제	NNP
-동력장치	NNP
 비틂각	NNP
 안전진단	NNP
 낙석방지책	NNP
@@ -10373,7 +10009,6 @@ PPM	NNP
 여객킬로미터	NNP
 절대모, 애브모	NNP
 초저공 비행	NNP
-풍향지시기	NNP
 전륜형 착륙 장치	NNP
 통신	NNP
 항공통신사	NNP
@@ -10397,7 +10032,6 @@ PPM	NNP
 적극통제지역, 실제관제구역	NNP
 국제항공운송협정	NNP
 램 공기 터빈	NNP
-고장수리	NNP
 무선전화기	NNP
 아네로이드 고도계	NNP
 후기연소	NNP
@@ -10407,16 +10041,13 @@ PPM	NNP
 화물탑재계획담당	NNP
 영구 반사체	NNP
 대구비행장	NNP
-노선	NNP
 레이다 착륙유도	NNP
 음향 처리	NNP
 자연발화성	NNP
-비레이더	NNP
 이중 테이퍼 날개	NNP
 중국	NNP
 연장운항	NNP
 교차 활주로에서 동시 운용	NNP
-시계진입각지시장비	NNP
 비행기록장치	NNP
 직접 통과 구역	NNP
 레이더 반사기	NNP
@@ -10432,7 +10063,6 @@ PPM	NNP
 클립익 비행기	NNP
 오염 활주로	NNP
 적운	NNP
-초단파 방향탐지기	NNP
 낙오자 수집소	NNP
 정격최대연속추력	NNP
 간이계기착륙시설	NNP
@@ -10479,7 +10109,6 @@ PSD	NNP
 기화기 열	NNP
 안전경보	NNP
 공항소방 및 구조업무	NNP
-눈보라	NNP
 안정성	NNP
 착륙중량	NNP
 프레임, 기본틀, 기체	NNP
@@ -10524,26 +10153,20 @@ SWING NOSE	NNP
 단열 효과	NNP
 비행 승무원	NNP
 평행 위도선	NNP
-부정기항공운송사업	NNP
 자원관리본부	NNP
-경고 장치	NNP
 항공교통관제	NNP
 리터	NNP
 비수익운항, 무상비행	NNP
 분출 불꽃	NNP
-비행운	NNP
 MA	NNP
-보고	NNP
 지방시간	NNP
 임무	NNP
 단위 탑재용기 임대료	NNP
-완충장치	NNP
 관계당국	NNP
 실속 영각	NNP
 기상 조언	NNP
 한국 국방부	NNP
 도착 항공기 간격	NNP
-방향탐지기	NNP
 방벽, 울타리	NNP
 관제지시	NNP
 감시 접근, 감시레이더 접근	NNP
@@ -10578,7 +10201,6 @@ DILP	NNP
 공기 냉각	NNP
 비행 형상	NNP
 고도차이값	NNP
-기상관측 기구	NNP
 비수기 운임	NNP
 중제트항공기	NNP
 대류성 구름	NNP
@@ -10589,10 +10211,8 @@ DILP	NNP
 출생일	NNP
 램프중량, 택시중량	NNP
 유효 인접 채널 거부	NNP
-극한 강도	NNP
 기수방향	NNP
 가신호등	NNP
-관제탑	NNP
 오산비행장	NNP
 여압복	NNP
 김해비행장	NNP
@@ -10606,7 +10226,6 @@ DILP	NNP
 자동 고도 보고	NNP
 우편물	NNP
 공기 비행	NNP
-후방	NNP
 해상항공운송	NNP
 양해 각서	NNP
 전세비행요금	NNP
@@ -10616,20 +10235,17 @@ DILP	NNP
 부조종사	NNP
 일반화물	NNP
 단열 팽창	NNP
-조종사	NNP
 항공교통관제 레이더 비이컨 장치	NNP
 기압 고도 편차	NNP
 비 네트워크통신	NNP
 비레이더 항로	NNP
 공중시동	NNP
 말린 구름	NNP
-기상위성	NNP
 중앙처리장치	NNP
 근접	NNP
 멸실	NNP
 관성장치	NNP
 공항여객이용료	NNP
-경유지	NNP
 출발 관제사와 교신하라	NNP
 경보 업무	NNP
 포항비행장	NNP
@@ -10644,7 +10260,6 @@ DELAY INDEFINITE	NNP
 기계적 차단 역추력기	NNP
 상승 기류	NNP
 응급실	NNP
-마멸성	NNP
 탐색기	NNP
 예비, 교체하다	NNP
 방공지방관제소	NNP
@@ -10662,18 +10277,14 @@ HOLD	NNP
 계기접근착륙	NNP
 비행 난류	NNP
 절대 받음각	NNP
-조종간	NNP
 관성	NNP
 ROAD RECONNAISSANCE	NNP
-축척	NNP
 정비교범	NNP
 출발예정시각	NNP
 종합정보통신시스템	NNP
 활주로 침범	NNP
 역활주	NNP
-위치보고	NNP
 혼재화물	NNP
-비행장	NNP
 실패접근 체공경유지점	NNP
 자동 고정 긴급위치발신기	NNP
 파리공항공단	NNP
@@ -10681,8 +10292,6 @@ ROAD RECONNAISSANCE	NNP
 비행정보센터	NNP
 기화기 공기 가열기	NNP
 고장검출	NNP
-운항승무원	NNP
-속도계	NNP
 구간 거리	NNP
 마찰계수	NNP
 주파수변조	NNP
@@ -10692,51 +10301,41 @@ ROAD RECONNAISSANCE	NNP
 표준화 변량	NNP
 VMS	NNP
 과부하	NNP
-방향탐지기	NNP
 편승 승무원	NNP
 격납고	NNP
-인터페이스	NNP
 리벳	NNP
 위기조치체제	NNP
 착륙 점검	NNP
 제한된	NNP
 출발관제	NNP
-응력부식균열	NNP
 무선 송신기	NNP
 위험 기상 정보	NNP
 공기 부양선	NNP
 시계비행 군훈련비행로	NNP
 초저공	NNP
 절대값	NNP
-송하인	NNP
 전자정보	NNP
 헨리	NNP
 음향 기뢰	NNP
 사출	NNP
 항공기소음	NNP
-비행운	NNP
 사용자 시험	NNP
-위성항법시스템	NNP
 한랭 기단	NNP
 아크릴 수지	NNP
 제트, 분사	NNP
 접개식 보조석	NNP
-중력	NNP
 글라이더, 활공기	NNP
-유니컴	NNP
 외부의	NNP
 지연 시간	NNP
 완속, 공회전	NNP
 연대 전투단	NNP
 기준착륙속도	NNP
-비트	NNP
 조직개발	NNP
 에어버스330	NNP
 조종사-관제사 시스템	NNP
 1분기상	NNP
 IFR 항공기	NNP
 공대지 통신	NNP
-플레어	NNP
 항공보안시설	NNP
 긴급탈출장치, 비상장비	NNP
 능동 호밍 유도	NNP
@@ -10745,7 +10344,6 @@ IFR 항공기	NNP
 시계 비행	NNP
 유상톤킬로미터	NNP
 유압	NNP
-절대 압력 조절기	NNP
 조종 화면 장치	NNP
 출발공항중심고도	NNP
 강도시험	NNP
@@ -10754,7 +10352,6 @@ SEAPLANE	NNP
 전천후 착륙장치	NNP
 지상활주/지상 공회전	NNP
 해독하다	NNP
-휴대 수화물	NNP
 조종상태에서의 지형충돌	NNP
 왕복여행	NNP
 우회로, 바이패스	NNP
@@ -10771,7 +10368,6 @@ SEAPLANE	NNP
 입항	NNP
 위치	NNP
 레이더 접근관제 시설	NNP
-휘발유	NNP
 항공기 주기장	NNP
 자유 대류면	NNP
 화물주소	NNP
@@ -10794,7 +10390,6 @@ LDB	NNP
 일반객차	NNP
 크로이스	NNP
 대피선	NNP
-암페어	NNP
 침매공법	NNP
 채석장	NNP
 보수주기	NNP
@@ -10815,17 +10410,13 @@ DROS	NNP
 자동전개식 비상위치발신기	NNP
 온도풍	NNP
 액세서리부	NNP
-식별	NNP
-공항여객이용료	NNP
 케이블 TV	NNP
 비상착수 모형항공기	NNP
 압력식 점검등	NNP
 부속품 , 보기	NNP
 회랑	NNP
-최대 상승률 속도	NNP
 운반장비	NNP
 실제산출착륙시간	NNP
-점검 도어	NNP
 항공운송산업 규제완화법	NNP
 수분검수약	NNP
 공통항적조언주파수	NNP
@@ -10860,7 +10451,6 @@ GPS 오차보정시스템	NNP
 난기류의 일종.	NNP
 PARALLEL OFFSET ROUTE	NNP
 거리고도 지시기	NNP
-항공화물운송장	NNP
 대기 상태	NNP
 초과화물운임	NNP
 객실 적재	NNP
@@ -10872,7 +10462,6 @@ PARALLEL OFFSET ROUTE	NNP
 전하량	NNP
 극지항법	NNP
 압축 공기	NNP
-비행선	NNP
 A-배터리	NNP
 허리케인 눈	NNP
 항공기 보조동력장치	NNP
@@ -10882,7 +10471,6 @@ A-배터리	NNP
 정지로 지역	NNP
 원격 조종	NNP
 모터, 전동기	NNP
-착륙대	NNP
 항공 고정 통신망	NNP
 오프셋 평행 활주로	NNP
 불확실 단계	NNP
@@ -10895,13 +10483,11 @@ A-배터리	NNP
 제한 표준품목	NNP
 해상 공항	NNP
 준설선	NNP
-항만운송사업	NNP
 지인망어업	NNP
 용승류	NNP
 과숙란	NNP
 주목망어업	NNP
 궤란	NNP
-수류	NNP
 천일염	NNP
 유류오염	NNP
 해곡	NNP
@@ -10917,12 +10503,8 @@ A-배터리	NNP
 염습지	NNP
 연안조망어업	NNP
 가스연료추진선박	NNP
-SIC	NNP
-CAF	NNP
-국가필수선박	NNP
 항만국통제 지역협력체	NNP
 소형기선저인망어업	NNP
-공적개발원조	NNP
 고극조위	NNP
 고밀도양식	NNP
 국가해사안전기본계획	NNP
@@ -10934,7 +10516,6 @@ CAF	NNP
 해상항해정보서비스	NNP
 치패	NNP
 HS 분류체계	NNP
-라니냐	NNP
 국제총톤수	NNP
 부선	NNP
 부어	NNP
@@ -10947,18 +10528,14 @@ HS 분류체계	NNP
 국내운항구간	NNP
 지시대기속도	NNP
 OVERLYING CENTER	NNP
-다용도 헬기	NNP
 중심선, 익형중심선	NNP
 항공기 주변	NNP
-접지점	NNP
-수직속도	NNP
 어미	NNP
 조언구역	NNP
 지역수정치고도	NNP
 인트라넷	NNP
 저고도	NNP
 군훈련 항로	NNP
-배출 밸브	NNP
 정밀 착륙	NNP
 자침방위	NNP
 특별운임	NNP
@@ -10967,34 +10544,26 @@ OVERLYING CENTER	NNP
 중요엔진	NNP
 정밀 접근 레이더	NNP
 국적기	NNP
-방향탐지기	NNP
 활주대기 지점 위치등	NNP
-열기구	NNP
 이중 로터 장치	NNP
 정지후 이륙	NNP
 배전기 밸브	NNP
 큰돌이 난류	NNP
 스폰지 브레이크	NNP
-야적	NNP
-RTGC	NNP
 일반화물선	NNP
 에너지효율설계지수	NNP
 선망	NNP
 발	NNP
-질소산화물	NNP
 위험물컨테이너점검	NNP
 국제해상위험물규칙	NNP
 침식해안	NNP
 해저확장설	NNP
-국제수산기구	NNP
 수심기준면	NNP
 아태지역 항만국통제 매뉴얼	NNP
 해양관광	NNP
 제어온도	NNP
 정량분석	NNP
-고도회유성어종	NNP
 어군탐지기	NNP
-항만구역	NNP
 통발어업	NNP
 감항성	NNP
 인공구조물	NNP
@@ -11006,15 +10575,9 @@ RTGC	NNP
 부두뜰	NNP
 VDES	NNP
 크루즈선	NNP
-용선	NNP
-망간단괴	NNP
-P-CBO	NNP
 QUALSHIP21 제도	NNP
 기선권현망	NNP
 용승현상	NNP
-로로선	NNP
-해사노동협약 2006	NNP
-대마난류	NNP
 항만국 검색	NNP
 친환경어업	NNP
 수역시설	NNP
@@ -11027,11 +10590,8 @@ QUALSHIP21 제도	NNP
 실용염분단위	NNP
 안전관리책임자	NNP
 국제해법학회	NNP
-레이더 반사기	NNP
 국제해사국	NNP
-부영양해역	NNP
 백화현상	NNP
-선주상호보험	NNP
 국제주파수등록위원회	NNP
 관성참조장치	NNP
 항공기 운용 기관	NNP
@@ -11063,41 +10623,29 @@ METER FIX TIME/SLOT TIME	NNP
 표고	NNP
 대기지역	NNP
 강하성 어류	NNP
-생물다양성협약	NNP
-항만	NNP
 자력계	NNP
 일광신호용거울	NNP
-MEPC	NNP
 양빈	NNP
 돌제부두	NNP
 지진파	NNP
-노출암	NNP
 초고속 해상무선통신	NNP
 천리안해양관측위성	NNP
 해안누리길	NNP
-국제수로기구	NNP
 이석	NNP
-컨테이너선운임지수	NNP
 해양환경전문가그룹	NNP
-FCL	NNP
 기선	NNP
 건현	NNP
 부잔교	NNP
-언로다	NNP
 가호안	NNP
 개체군	NNP
-수괴	NNP
 열수구	NNP
 잠제	NNP
-SPC	NNP
 해양유입 쓰레기 책임관리제	NNP
 계획수심	NNP
 환경수용력	NNP
 기본수준면	NNP
 보험가액	NNP
-방제선	NNP
 FAO 이행협정	NNP
-공진조석	NNP
 해외수역	NNP
 E-NAVIGATION	NNP
 침식	NNP
@@ -11109,23 +10657,15 @@ E-NAVIGATION	NNP
 전자해도표시시스템	NNP
 경사식 방파제	NNP
 부두	NNP
-하역기계	NNP
 마루높이	NNP
-묘박	NNP
-수로지	NNP
 분조	NNP
 해양	NNP
-해양산업클러스터	NNP
 액화천연가스, LNG	NNP
 농수산물 공판장	NNP
 해상특수경비업체	NNP
 NOWPAP	NNP
 혼합층	NNP
-부표	NNP
 산업피해구제제도	NNP
-빈산소수괴	NNP
-대기온실효과	NNP
-임항철도	NNP
 레이더경보수신기	NNP
 점와류	NNP
 고등 훈련기	NNP
@@ -11141,7 +10681,6 @@ ULD이동설비	NNP
 로직/논리	NNP
 항공정보간행물 개정판	NNP
 보조 항로.	NNP
-활공각	NNP
 배풍로 진입	NNP
 중량제한 탑재물	NNP
 원산지 증명서	NNP
@@ -11150,45 +10689,29 @@ ULD이동설비	NNP
 VIP/승무원 수송 버스	NNP
 화물정리	NNP
 미대사관	NNP
-일기도	NNP
 경고음	NNP
-방사제	NNP
-계선	NNP
 수중익선	NNP
 해양보호구역	NNP
 식물플랑크톤의 천이	NNP
-담수쐐기현상	NNP
 총톤수	NNP
-LNG TANKER	NNP
-PEF	NNP
 지능형 해양수산재난정보체계	NNP
 전통외식산업	NNP
-생물여과	NNP
 온실가스	NNP
-북극수렴선	NNP
 자가오염	NNP
 근해어업	NNP
 영해기선	NNP
 황산화물	NNP
 한국해양교통안전공단	NNP
-해양공간정보체계	NNP
 어항	NNP
-RMGC	NNP
-북대서양심층수	NNP
 판구조론	NNP
-감조구역	NNP
 폐기물	NNP
 자기발연신호	NNP
-돌제	NNP
 해양쓰레기선상집하장	NNP
-ODCY	NNP
 환경호르몬	NNP
 바닷가	NNP
 굴입식항만	NNP
 양쯔강 유출류	NNP
 수산자원보호구역	NNP
-국제선박등록제도	NNP
-그리니치자오선	NNP
 천해성퇴적물	NNP
 포대	NNP
 SAFE SEA NET	NNP
@@ -11197,13 +10720,10 @@ SAFE SEA NET	NNP
 피시플레이션	NNP
 냉동톤	NNP
 호망어업	NNP
-해운업	NNP
 어촌계	NNP
 원격탐사기술	NNP
 IBC 코드	NNP
-대양저	NNP
 재화중량톤수	NNP
-굴절	NNP
 조력발전	NNP
 냉동고기풀	NNP
 부영양화	NNP
@@ -11211,7 +10731,6 @@ IBC 코드	NNP
 어업구조	NNP
 지선어장	NNP
 염장	NNP
-제3자물류	NNP
 선박톤수	NNP
 해양환경공단	NNP
 해면가두리양식	NNP
@@ -11226,16 +10745,12 @@ IBC 코드	NNP
 목적지교체공항	NNP
 인쇄전신기테이프	NNP
 승화	NNP
-풍향계	NNP
-결빙층	NNP
-조종간	NNP
 삼각익	NNP
 조절형 안전판	NNP
 감항증명 유효 인정	NNP
 보충절차	NNP
 감속 낙하산	NNP
 도착지	NNP
-레이더 감시	NNP
 이중불인가	NNP
 파손성, 부패성 화물	NNP
 전세기	NNP
@@ -11254,14 +10769,10 @@ IBC 코드	NNP
 상급의, 고등의, 첨단의	NNP
 라인교체장치	NNP
 ABM	NNP
-고유종	NNP
 식품위해요소중점관리기준	NNP
 신개념선박구조기준	NNP
 저율관세할당	NNP
 경계왕래성어족	NNP
-선박투자회사	NNP
-체화	NNP
-제주선박등록특구제도	NNP
 흘수제약선	NNP
 건망어업	NNP
 자기점화등	NNP
@@ -11272,16 +10783,11 @@ ABM	NNP
 주권적권리	NNP
 설계파	NNP
 조업자제선	NNP
-세계협정시	NNP
-국가 보조항로	NNP
-LIBO RATES	NNP
-기본관세	NNP
 LORAN-C	NNP
 해양생명공학	NNP
 반사	NNP
 수입할당제	NNP
 해상교통관제	NNP
-한국원양산업협회	NNP
 연안 유휴지	NNP
 어유	NNP
 주낙	NNP
@@ -11289,10 +10795,8 @@ LORAN-C	NNP
 평균해면	NNP
 바다숲	NNP
 대수속력	NNP
-부두운영회사	NNP
 계선주	NNP
 최적지속적생산	NNP
-해안침식	NNP
 해류	NNP
 해주	NNP
 파고	NNP
@@ -11304,13 +10808,10 @@ LORAN-C	NNP
 토운선	NNP
 해역이용영향평가대행자	NNP
 공모선	NNP
-컨테이너	NNP
 양수표	NNP
 황산화물 배기가스 정화장치	NNP
 공유수면매립기본계획	NNP
 저인망어업	NNP
-GHS	NNP
-해양공간자원	NNP
 선박평형수처리설비형식승인 코드	NNP
 산지중도매인	NNP
 러시아전파위성항법시스템	NNP
@@ -11329,14 +10830,12 @@ CSC 협약	NNP
 운용자 국가	NNP
 급유고정 시스템	NNP
 자유비행풍동	NNP
-부가가치통신망	NNP
 비정밀접근	NNP
 항공기 일지	NNP
 한계기상상태	NNP
 갤런	NNP
 개방형 시스템 상호접속	NNP
 여권검사	NNP
-비행제한구역	NNP
 교란, 난기류	NNP
 석유	NNP
 증감속상승	NNP
@@ -11350,32 +10849,22 @@ CSC 협약	NNP
 심해파	NNP
 장판천일염	NNP
 선교자원관리교육	NNP
-인화점	NNP
 선박장거리위치추적시스템	NNP
 임시검사	NNP
 수리모형	NNP
 만재흘수	NNP
 연안정비사업	NNP
-CCC 협약	NNP
-내분비계장애추정물질	NNP
 기본수준점표지	NNP
 이안류	NNP
 심해어	NNP
-간만차	NNP
-접안능력	NNP
 화학적산소요구량	NNP
-소조차	NNP
 UN위험물운송 전문가소위원회	NNP
 수산물이력제	NNP
 선교항해당직경보장치	NNP
-무광층	NNP
 쇄암선	NNP
-MARSHALLING	NNP
 축양	NNP
 주파수공용무선통신시스템	NNP
 통발	NNP
-불규칙파	NNP
-성층현상	NNP
 자건품	NNP
 호안	NNP
 부진동	NNP
@@ -11384,7 +10873,6 @@ MARSHALLING	NNP
 바닷가 실태조사	NNP
 적조	NNP
 양승기	NNP
-리프트온리프트오프선	NNP
 중도매인	NNP
 인증심사	NNP
 해양환경오염	NNP
@@ -11392,21 +10880,14 @@ MARSHALLING	NNP
 파회절	NNP
 기관실자원관리교육	NNP
 방파제두부	NNP
-물류	NNP
 쿠로시오해류	NNP
-임항교통시설	NNP
 연안바다목장	NNP
-대륙사면	NNP
 BCH 코드	NNP
 조류발전	NNP
 가이식	NNP
-MARSHALLING YARD	NNP
-나용선	NNP
 유어	NNP
 연안류	NNP
 해적행위	NNP
-ISL	NNP
-컨테이너부두	NNP
 정도관리	NNP
 평균	NNP
 동계운항계획	NNP
@@ -11415,7 +10896,6 @@ ISL	NNP
 허니문 케익	NNP
 조난 단계	NNP
 국제 전기통신 업무	NNP
-회전익	NNP
 페리	NNP
 직접, 직선비행	NNP
 일시 방문자	NNP
@@ -11426,7 +10906,6 @@ HOW DO YOU HEAR ME?	NNP
 가속 익렬	NNP
 기술지시	NNP
 기상조언센터	NNP
-휘발유	NNP
 통합 방공체계	NNP
 MINUTES-IN-TRAIL	NNP
 경고	NNP
@@ -11440,25 +10919,18 @@ LATE CANCELLATION	NNP
 단발엔진 항공기, 단발기	NNP
 교류	NNP
 열적 난기류	NNP
-알았음	NNP
-삭마, 융제	NNP
-CBDR 원칙	NNP
 연제품	NNP
 음향수신장치	NNP
 액체물질	NNP
-류큐해류	NNP
 경제사업	NNP
 문어단지	NNP
 해양쓰레기	NNP
-환적항	NNP
 평수구역	NNP
-대륙붕	NNP
 레이다 비콘	NNP
 표준선환산톤수	NNP
 온수성어류	NNP
 유럽해사안전청	NNP
 자망	NNP
-전장	NNP
 앵커	NNP
 연해주한류	NNP
 외줄낚시어업	NNP
@@ -11468,32 +10940,22 @@ CBDR 원칙	NNP
 해	NNP
 해양산성화	NNP
 너울	NNP
-체선	NNP
 안벽	NNP
 제리캔	NNP
 국제해사기구	NNP
-DIP	NNP
-MDO	NNP
 한국해사위험물검사원	NNP
 BC 코드	NNP
-도서	NNP
-연안항	NNP
 직거래	NNP
 선속거리계	NNP
 계절회유	NNP
 냉수대	NNP
-STRADDLE CARRIER	NNP
 사일로	NNP
-파렛트	NNP
 복합용기	NNP
-내수	NNP
 호퍼준설선	NNP
 해양생물	NNP
 잠수기어업	NNP
-감조하천	NNP
 안강망	NNP
 마운드	NNP
-특별검사	NNP
 전업어업인	NNP
 수치모형실험	NNP
 특정해역	NNP
@@ -11514,14 +10976,11 @@ STRADDLE CARRIER	NNP
 공항 표지	NNP
 기수올림	NNP
 활주로 경사도	NNP
-간이 비행장	NNP
 여객, 승객	NNP
 THROUGH ROUTE	NNP
 재연소장치	NNP
-레이더 유도	NNP
 원격 데이터처리	NNP
 의료시설	NNP
-흡착	NNP
 진북	NNP
 중립정적 안전성	NNP
 전도체	NNP
@@ -11529,7 +10988,6 @@ THROUGH ROUTE	NNP
 연료 노즐	NNP
 근거리통신망	NNP
 지연	NNP
-후퇴각	NNP
 격좌표	NNP
 전방시현기	NNP
 초음속비행공역	NNP
@@ -11541,33 +10999,25 @@ THROUGH ROUTE	NNP
 인체 공학적 개조	NNP
 최대고도	NNP
 수직이착륙	NNP
-미량영양염	NNP
 연안통항대	NNP
-대조차	NNP
 정온도	NNP
 끌낚시	NNP
-톤세제	NNP
 기중기선	NNP
 해상교통방송	NNP
 분리선	NNP
 조간대	NNP
 조정관세	NNP
 저어	NNP
-TRANSFER CRANE	NNP
 원양어업	NNP
 어획노력	NNP
 염건품	NNP
-국적취득조건부 나용선	NNP
 규칙파	NNP
-CCS	NNP
 적층	NNP
 다이옥신	NNP
 해류모식도	NNP
 투승	NNP
 소하회유	NNP
 선급협회	NNP
-정박지	NNP
-마리나선박	NNP
 해양환경영향조사	NNP
 비행초과모드	NNP
 IOPC FUND 협약	NNP
@@ -11578,9 +11028,6 @@ VHF 무선 통신기	NNP
 염전	NNP
 수산질병관리사	NNP
 음향측심기	NNP
-계류	NNP
-비상위치지시용 무선표지설비	NNP
-빈영양해역	NNP
 트롤어업	NNP
 파	NNP
 수륙양용모드	NNP
@@ -11594,10 +11041,6 @@ UN공해어업협정	NNP
 온스	NNP
 훈령, 지시서한	NNP
 성인운임	NNP
-방향탐지기	NNP
-전이고도	NNP
-착륙활주	NNP
-저고도	NNP
 아크릴 니트로라커 마감재	NNP
 최초접근 웨이포인트	NNP
 훈련, 교육	NNP
@@ -11607,13 +11050,10 @@ UN공해어업협정	NNP
 전투수색 및 구조	NNP
 증기 제거기	NNP
 계기이륙	NNP
-최대허용탑재중량	NNP
-단위 체적	NNP
 화물 인도 지역	NNP
 항공기 운용국	NNP
 성능관리장치	NNP
 전자식 교환기, 교환대	NNP
-측정단위	NNP
 분리, 이탈	NNP
 예광제	NNP
 입출고허가	NNP
@@ -11624,27 +11064,21 @@ UN공해어업협정	NNP
 육상화물보세	NNP
 통신교육	NNP
 중간 픽스	NNP
-정풍경로	NNP
-환기구, 송풍기	NNP
 표준화, 규격화	NNP
 유해항력	NNP
-조종간	NNP
 아웃바운드	NNP
 귀환 불능 지점	NNP
 혼재업자	NNP
 연료직접분사장치	NNP
 저고도 전단풍, 윈쉬어	NNP
 측풍요소	NNP
-항공운송	NNP
 최저 직항로 고도	NNP
-감항성	NNP
 누적 오차	NNP
 방향을 조종하다, 조향	NNP
 일반화물 운임률	NNP
 서비스 만족도 조사	NNP
 전사양 시험	NNP
 독일항공, 루프트한자	NNP
-주착륙장치	NNP
 수중익	NNP
 생물	NNP
 구조조정센터	NNP
@@ -11655,40 +11089,30 @@ UN공해어업협정	NNP
 안전한 속력	NNP
 글로벌위성항법시스템	NNP
 여굴	NNP
-편의치적	NNP
 해상강도행위	NNP
 버킷준설선	NNP
 채낚기어업	NNP
 해로드 앱	NNP
-컨테이너크레인	NNP
 외곽시설	NNP
 신규 점검제도	NNP
 ISM CODE	NNP
-트랙터	NNP
 물돛	NNP
-선박관리업	NNP
 건조검사	NNP
 선박연료유협약	NNP
 안전관리대행업	NNP
 위성항법장치	NNP
 파력발전	NNP
 위험?유해물질	NNP
-만조	NNP
 여과조	NNP
-이안류	NNP
 해저대지	NNP
 접속수역	NNP
 파장	NNP
 해적생물	NNP
 부유생물	NNP
-해양	NNP
 MFO	NNP
 최대승선인원	NNP
-와류	NNP
-시아이큐	NNP
 쇄파	NNP
 필수보고지점	NNP
-유효좌석킬로미터	NNP
 인도, 투하	NNP
 예하 구조센터	NNP
 양서	NNP
@@ -11697,20 +11121,13 @@ MFO	NNP
 세로 안정성	NNP
 비행절차훈련장치	NNP
 제이피-8	NNP
-항공 등대	NNP
-화물실	NNP
 식별불능지점	NNP
-착륙료	NNP
 수상비행기	NNP
 상부화물실 콘테이너	NNP
-소화기	NNP
-관제비행장	NNP
 수용 원자	NNP
 지상 시험	NNP
-첨가제	NNP
 보조추진 엔진	NNP
 항공기지	NNP
-항공기 유도	NNP
 루프 안테나	NNP
 이상폭발연소	NNP
 단위 적재 용기, 단위 탑재 용기	NNP
@@ -11734,8 +11151,6 @@ ADS CONTRACT	NNP
 이상 접근	NNP
 송·수신	NNP
 도착부분 조언목차	NNP
-역류	NNP
-전도	NNP
 보세화물	NNP
 용적관리	NNP
 항공신체검사판정	NNP
@@ -11751,10 +11166,8 @@ ADS CONTRACT	NNP
 수산업관측	NNP
 관할해역	NNP
 산지위판장	NNP
-굴절	NNP
 발연부신호	NNP
 자연해안관리목표제	NNP
-본선작업	NNP
 드래그석션준설선	NNP
 간조	NNP
 TIR 협약	NNP
@@ -11764,39 +11177,29 @@ A형 수면비행선박	NNP
 선내외기	NNP
 불포화폴리에스테르수지	NNP
 양성지	NNP
-준설	NNP
 해양보호생물	NNP
 기국 통제	NNP
-하구항	NNP
 자동추적장치	NNP
 여쇄	NNP
 외래종	NNP
 융빙수	NNP
 위생 및 식물위생조치	NNP
 강화검사	NNP
-미생물	NNP
-배타적 관할권	NNP
-건화물지수	NNP
 평균조차	NNP
 예상최악조건	NNP
 친환경수산물	NNP
 영해	NNP
 조류	NNP
 논양어	NNP
-도선	NNP
-피더	NNP
 수산식품수출가공클러스터	NNP
 퇴적오염물질수거업	NNP
-해상육상 복합 화물자동차 운송	NNP
 에어버스310	NNP
 여객칸 / 상부 화물실	NNP
 고도를 말하라	NNP
 초계정	NNP
-지면 표기 위치 표시	NNP
 부패성 화물	NNP
 유아운임	NNP
 램덤 액세스	NNP
-항공정비사	NNP
 탑승동	NNP
 무편차	NNP
 자동 조절기	NNP
@@ -11810,12 +11213,7 @@ A형 수면비행선박	NNP
 저고도항법 야간표적 적외선장치	NNP
 순항속도	NNP
 마하파	NNP
-가시 거리	NNP
 후드착용	NNP
-운항비	NNP
-시계비행규칙	NNP
-행정용 항공기	NNP
-대한항공	NNP
 포장중량	NNP
 집하작업	NNP
 구조	NNP
@@ -11835,10 +11233,8 @@ A형 수면비행선박	NNP
 제한하중	NNP
 음향 방출	NNP
 공항용량	NNP
-난기류	NNP
 자료처리	NNP
 법정마일	NNP
-벌텍스	NNP
 강하각	NNP
 시체	NNP
 더미, 유인용 물체	NNP
@@ -11853,7 +11249,6 @@ FILED	NNP
 FRP 구조	NNP
 농수산물 물류센터	NNP
 구명줄발사기	NNP
-유가보조금	NNP
 첨단 지상파항법시스템	NNP
 어초	NNP
 연안들망어업	NNP
@@ -11865,7 +11260,6 @@ MGO	NNP
 UN식량농업기구	NNP
 가리비	NNP
 수밀	NNP
-선미	NNP
 오일펜스	NNP
 정선해양관측	NNP
 국립등대박물관	NNP
@@ -11880,12 +11274,10 @@ UN식량농업기구	NNP
 조미가공품	NNP
 노트	NNP
 내수면어업	NNP
-ON-DOCK CY	NNP
 오염물질저장시설	NNP
 해선망어업	NNP
 품질보증	NNP
 위성영상표면수온	NNP
-석회질 보상수심	NNP
 수산피혁품	NNP
 유통경로	NNP
 유처리제	NNP
@@ -11897,7 +11289,6 @@ ON-DOCK CY	NNP
 미세플라스틱	NNP
 호소	NNP
 1일2회조	NNP
-파속	NNP
 부적합사항	NNP
 볼멧 기상방송, 대항공기 기상방송	NNP
 복합비행계획	NNP
@@ -11908,10 +11299,8 @@ ON-DOCK CY	NNP
 가스 터빈 엔진	NNP
 탑승 거부 보상	NNP
 주기장 식별 표시등	NNP
-최대 중량	NNP
 재발급	NNP
 터그 카	NNP
-공기흐름	NNP
 음향파	NNP
 등가대기속도	NNP
 음성 양력	NNP
@@ -11923,10 +11312,8 @@ KIT	NNP
 고기압	NNP
 등온위선	NNP
 연하	NNP
-풍향계	NNP
 수상경계등	NNP
 항공 보안	NNP
-속도	NNP
 엘리베이터	NNP
 불탑재 화물	NNP
 ATC 항로	NNP
@@ -11936,10 +11323,8 @@ ATC 항로	NNP
 비상용장비	NNP
 가속기, 가속장치	NNP
 절대 좌표 체계	NNP
-지상이동유도관제시스템	NNP
 관제권 이관.	NNP
 국제물류	NNP
-도착 시간	NNP
 항로중심 지시계	NNP
 활강 바람	NNP
 팔레트 적재	NNP
@@ -11949,7 +11334,6 @@ ATC 항로	NNP
 공시 운임	NNP
 NEXT DATA AUTHORITY	NNP
 군작전 지역	NNP
-영기준 예산	NNP
 BSP	NNP
 필요시 점검, 정비	NNP
 실패 접근 지점	NNP
@@ -11962,22 +11346,18 @@ BSP	NNP
 국제해사위성기구	NNP
 덕트 팬 제트 엔진	NNP
 피아식별/ 선택식별장치	NNP
-CHEMICAL TANKER	NNP
 퇴	NNP
 침수점	NNP
 선박재활용협약	NNP
 자망어업	NNP
-배타적 경제수역	NNP
 잠수선	NNP
 선상수산물가공업	NNP
 거대선	NNP
 방파제	NNP
 기수어업	NNP
 집어등	NNP
-TOC	NNP
 국제톤수측정에 관한 협약	NNP
 덱 바지선	NNP
-정기용선	NNP
 함수	NNP
 회귀율	NNP
 스톡홀름협약	NNP
@@ -11996,28 +11376,20 @@ TOC	NNP
 어부림	NNP
 원양오징어유자망어업	NNP
 경하중량	NNP
-한국선주상호보험	NNP
 무선주파수 인식장치	NNP
 국제해사기구 기술협력사업	NNP
 친수공간	NNP
 폐수처리	NNP
-미터	NNP
 항공기등록증명	NNP
 축마력	NNP
-공지 통신	NNP
-활주로등	NNP
-구조	NNP
-항공기 근접	NNP
 지상 지연	NNP
 산화제	NNP
-제1의 자유	NNP
 아음속 비행기	NNP
 열전류계	NNP
 기상최저치	NNP
 위험 물질의 우발적 배출	NNP
 항로 구간	NNP
 빔	NNP
-장파	NNP
 지대공	NNP
 구난 항공기	NNP
 크로스바	NNP
@@ -12040,7 +11412,6 @@ DESIRED TRACK	NNP
 피토관 압력	NNP
 무산소증, 산소결핍증	NNP
 페더 프로펠러	NNP
-단기능 트랜지스터	NNP
 저온 접점	NNP
 데이터 링크, 데이터 연결	NNP
 증감속 검사	NNP
@@ -12056,56 +11427,37 @@ DESIRED TRACK	NNP
 허용, 어드미턴스	NNP
 통과	NNP
 강하속도	NNP
-통과화물	NNP
 월파	NNP
-대마난류 일본연안지류	NNP
 선박안전관리증서	NNP
 국제해상교통간소화협약	NNP
-피더선	NNP
 흘수	NNP
 원양트롤어업	NNP
 기요	NNP
 무산소상태	NNP
 해역이용협의 제도	NNP
 데이터수집시스템	NNP
-생물교란	NNP
 매립	NNP
 초단파대 무선설비	NNP
-국제수상 교통시설협회	NNP
 해사채권책임제한협약	NNP
-서캄차카해류	NNP
 채란	NNP
 폭풍해일	NNP
 유의파고	NNP
-GANTRY CRANE	NNP
 수온약층	NNP
 선박 출항?입항 신고기관	NNP
-음향수신장치	NNP
 태음조	NNP
-대조	NNP
 ISPS CODE	NNP
 선인망어업	NNP
 수중레저활동	NNP
 건현갑판	NNP
 잔류산화물	NNP
-고조	NNP
-공급망관리	NNP
 핵	NNP
-벌크화물	NNP
-국제해양오염방지협약	NNP
-위성항법시스템	NNP
 UN모델규정	NNP
-이안제	NNP
-대륙붕단	NNP
 그물가두리	NNP
 아시아해적방지협정	NNP
-복사	NNP
 화학제품운반선	NNP
-묘박지	NNP
 기선선인망어업	NNP
 선회 예측	NNP
 추력축	NNP
-수직 안정판	NNP
 출구대기절차	NNP
 AIRPORT INFORMATION DESK	NNP
 기상관측보고	NNP
@@ -12113,26 +11465,19 @@ AIRPORT INFORMATION DESK	NNP
 항공우편 운송장	NNP
 작동 전기 구성품	NNP
 산화납	NNP
-수정 고도	NNP
 우편행랑	NNP
 패러 글라이더	NNP
-수상비행기	NNP
 압축기실속	NNP
 공중 대기, 공습 경보	NNP
-극한 하중 계수	NNP
 단열 감율	NNP
 긴급발진, 긴급출동	NNP
 유효감각 소음단위	NNP
 항공업무 전문위탁업자	NNP
 연료 축압기	NNP
-최대착륙중량	NNP
 여압	NNP
 임계높이	NNP
-불시착	NNP
 DESIRED COURSE	NNP
 압축기	NNP
-승강계	NNP
-여압복	NNP
 기술교범	NNP
 예약재확인	NNP
 공중 납치	NNP
@@ -12143,13 +11488,10 @@ DESIRED COURSE	NNP
 통과 비행	NNP
 전륜조향장치	NNP
 착륙장치 내림속도	NNP
-비행장	NNP
-조종실	NNP
 SQUALL	NNP
 제이피-4	NNP
 일차 첨가 색깔	NNP
 수원비행장	NNP
-수직 또는 단거리 이착륙	NNP
 비정밀계기착륙 지원시설	NNP
 가동 계수	NNP
 판, 패널	NNP
@@ -12170,14 +11512,12 @@ SQUALL	NNP
 유의파	NNP
 압력용기	NNP
 한국선급	NNP
-더블스택트레인	NNP
 항로지정제도	NNP
 총유기탄소	NNP
 조차	NNP
 고조간격	NNP
 사석고르기	NNP
 부유식방파제	NNP
-동물성 플랑크톤	NNP
 선박 보안계획서	NNP
 전자플로팅설비	NNP
 해양공간계획	NNP
@@ -12185,34 +11525,23 @@ SQUALL	NNP
 복합양식	NNP
 대륙붕파	NNP
 연안	NNP
-양하	NNP
 등대	NNP
-소조	NNP
-서한연안류	NNP
 해파리류	NNP
-소하성 어족	NNP
 선박자동식별장치	NNP
 배수량모드	NNP
 해양유입 쓰레기 차단막	NNP
 선박검사관	NNP
-북한한류	NNP
-초대형유조선	NNP
-설계조위	NNP
 해상기상신호표지	NNP
 전이모드	NNP
 군집	NNP
-강제도선	NNP
 쌍끌이저인망	NNP
 국제항로표지협회	NNP
-해일	NNP
 교통을 확인했음	NNP
-버스	NNP
 착륙거리	NNP
 공중탑재 레이더, 기상 레이더	NNP
 계류장유도로	NNP
 타겟	NNP
 심사 평면 투영	NNP
-수직이착륙	NNP
 벌크탑재	NNP
 하방 탐지 레이더	NNP
 입.출력처리장치	NNP
@@ -12223,7 +11552,6 @@ SQUALL	NNP
 비행장 교통	NNP
 본선인도가격	NNP
 조각구름	NNP
-접지선	NNP
 상대속도	NNP
 임의 구역항행로	NNP
 체공픽스	NNP
@@ -12233,12 +11561,10 @@ SQUALL	NNP
 평행접근	NNP
 구름 대류	NNP
 전방향 표지시설 시험신호	NNP
-전압제어발진기	NNP
 정침의	NNP
 2국간협정	NNP
 DA	NNP
 덮개	NNP
-최대순항거리	NNP
 교류발전기	NNP
 장거리 통신 장치	NNP
 수요창출용 특별운임	NNP
@@ -12253,49 +11579,37 @@ DA	NNP
 공군파견대	NNP
 교차활주로	NNP
 약식 브리핑	NNP
-유도로	NNP
 마이크로파 착륙시설	NNP
 최저 안전 고도 경보기	NNP
-인화성	NNP
 활주로 할당	NNP
 파상운	NNP
 TERMINAL OPERATIONS	NNP
 컴퓨터 보조교육	NNP
 재포율	NNP
-컨테이너장치장	NNP
-반일주조	NNP
 조위계	NNP
 원양저연승어업	NNP
-중간검사	NNP
 IGC 코드	NNP
 만재 흘수선	NNP
 해수기둥	NNP
 해중공원	NNP
 표준화재시험	NNP
 다금속열수유화광상	NNP
-과조	NNP
 도류제	NNP
 평균해수면	NNP
 기조력	NNP
 국립해양측위정보원	NNP
 선양장	NNP
-벌크선	NNP
 교배육종	NNP
 사석	NNP
 수심	NNP
 한국수산자원공단	NNP
-항만친수시설	NNP
 해저산/해산	NNP
 UN소말리아해적 퇴치 연락그룹	NNP
 고기갈이	NNP
 조난신호장비	NNP
-간석지	NNP
-선박번호	NNP
 구명부환	NNP
 카보타지	NNP
-국가물류기본계획	NNP
 수집상	NNP
-망간각	NNP
 순환여과식양식	NNP
 수산물산지거점유통센터	NNP
 선박의 명칭구분	NNP
@@ -12304,9 +11618,6 @@ UN소말리아해적 퇴치 연락그룹	NNP
 데이터 버스	NNP
 위도	NNP
 예약	NNP
-구명정	NNP
-부대 필수장비	NNP
-화상회의	NNP
 항공 모함	NNP
 표면 지역	NNP
 통관대리인	NNP
@@ -12334,7 +11645,6 @@ UN소말리아해적 퇴치 연락그룹	NNP
 싱가포르민항청	NNP
 로칼라이저 수신기	NNP
 레이더 기상보고	NNP
-착빙	NNP
 항공 우선권	NNP
 시정	NNP
 THROTTLE VALVE	NNP
@@ -12355,21 +11665,13 @@ QUICK LOOK	NNP
 입력/출력 집중기	NNP
 관제탑 시정	NNP
 GNSS오차보정시스템	NNP
-광역오차보정시스템	NNP
 뉴톤	NNP
 천해파	NNP
-예인선	NNP
 원양모선식어업	NNP
 선박에너지효율관리계획서	NNP
-레이다	NNP
-맨틀	NNP
 조위관측소	NNP
-선복량	NNP
 구조정	NNP
 유자망어업	NNP
-항해용해도	NNP
-BAF	NNP
-국제해도	NNP
 등주	NNP
 지향등	NNP
 조석	NNP
@@ -12385,15 +11687,11 @@ BAF	NNP
 선망어업	NNP
 직선기선	NNP
 이식	NNP
-마리나업	NNP
 권파	NNP
-북적도해류	NNP
 자기컴파스	NNP
-비사	NNP
 트림	NNP
 신고어업	NNP
 연안어업	NNP
-내륙물류기지	NNP
 해상교통안전진단	NNP
 SEABEAM 2000	NNP
 공식	NNP
@@ -12405,15 +11703,11 @@ INF 코드	NNP
 가루다 인도네시아 항공	NNP
 등풍향선	NNP
 보안검사	NNP
-초저공	NNP
 산 희석제	NNP
-공회전 추력	NNP
-동력장치	NNP
 비행대기선 정비	NNP
 특수정보	NNP
 헤르츠	NNP
 가스 용접	NNP
-활주로말단식별등	NNP
 극초음속 여객기	NNP
 조종력	NNP
 시계 접근,통신교신접근	NNP
@@ -12423,7 +11717,6 @@ INF 코드	NNP
 조향장치	NNP
 비행대대	NNP
 기내 독서등	NNP
-피치각	NNP
 항공기 운항시간표	NNP
 GNSS 오차보정시스템	NNP
 지대지 미사일	NNP
@@ -12543,7 +11836,6 @@ OTP ACKNOWLEDGE	NNP
 부착력	NNP
 비자동구간	NNP
 실리콘제어주정류기	NNP
-CCS	NNP
 풍화암	NNP
 둑,둑쌓기	NNP
 천연경량골재	NNP
@@ -12611,7 +11903,6 @@ OW	NNP
 상반 정리	NNP
 소음감소계수	NNP
 포화식기관차	NNP
-공수	NNP
 운동학적 변형경화	NNP
 독립입체모형법	NNP
 감가상각	NNP
@@ -12672,7 +11963,6 @@ EMU	NNP
 이면 용접봉	NNP
 정사사진	NNP
 궤도회로사구간	NNP
-수중음파탐지기	NNP
 곡선부 확대	NNP
 지보공	NNP
 고압탭절환기	NNP
@@ -12710,7 +12000,6 @@ EMU	NNP
 무효전류	NNP
 과주여유거리	NNP
 제1종방호	NNP
-루멘	NNP
 호핑채널	NNP
 선로변레벨	NNP
 정시간제어기차륜검지기	NNP
@@ -12723,7 +12012,6 @@ EMU	NNP
 실제리드길이	NNP
 수송망 평형	NNP
 선로	NNP
-누설전류	NNP
 신축이음	NNP
 비틂 응력	NNP
 제동축	NNP
@@ -12736,7 +12024,6 @@ EMU	NNP
 과전류계전기	NNP
 닳음시험	NNP
 전기쇄정기부전철기	NNP
-PB	NNP
 스터드용접	NNP
 재사용물표	NNP
 블록침목	NNP
@@ -12787,7 +12074,6 @@ MAVH모듈	NNP
 기동차	NNP
 밧도	NNP
 독립관측	NNP
-피트	NNP
 소성 모멘트	NNP
 역대합실	NNP
 정밀진단	NNP
@@ -12824,7 +12110,6 @@ MAVH모듈	NNP
 진단모듈	NNP
 철도계획	NNP
 선륜	NNP
-건널선	NNP
 유원지철도	NNP
 중보선장비작업	NNP
 3선식 분기기	NNP
@@ -13016,7 +12301,6 @@ FDDI	NNP
 저상굴절차량	NNP
 유색포장	NNP
 컴파스법칙	NNP
-혼선	NNP
 상압주입법	NNP
 용해 아세틸렌	NNP
 제어밸브	NNP
@@ -13058,7 +12342,6 @@ LED형신호기	NNP
 인하선	NNP
 교점	NNP
 박스형차륜	NNP
-경화	NNP
 수평게이지	NNP
 연속용접	NNP
 차량진동	NNP
@@ -13096,7 +12379,6 @@ LED형신호기	NNP
 통행단모형	NNP
 기대창	NNP
 기관차운용표	NNP
-PEF	NNP
 궤도 임시철거 및 복구	NNP
 운영자콘솔	NNP
 배류코일	NNP
@@ -13137,7 +12419,6 @@ KOTI	NNP
 산옹이	NNP
 이음매	NNP
 이선율	NNP
-Y선	NNP
 덤미가프링	NNP
 사령실	NNP
 밸러스트도상궤도	NNP
@@ -13200,7 +12481,6 @@ ACM	NNP
 서지임피던스	NNP
 삼각선	NNP
 부레키슈	NNP
-제한속도	NNP
 결함무시시간	NNP
 조화 함수	NNP
 초기전압	NNP
@@ -13272,14 +12552,12 @@ EBICAB900시스템	NNP
 가동받침	NNP
 출발선식별표지	NNP
 복식중계밸브	NNP
-아크	NNP
 환상선일주	NNP
 SMRT	NNP
 추병선로전환기	NNP
 레일부설	NNP
 혼승단체	NNP
 화물조차장	NNP
-RV	NNP
 화물선	NNP
 궤도버스	NNP
 투시거리	NNP
@@ -13313,7 +12591,6 @@ RV	NNP
 종속신호기	NNP
 선로별표시등	NNP
 일반화된 좌표	NNP
-EBS	NNP
 일부기	NNP
 각주	NNP
 기억용량	NNP
@@ -13381,7 +12658,6 @@ UPS	NNP
 데드섹션	NNP
 지표답사	NNP
 선로연장	NNP
-정점	NNP
 2위식 신호기	NNP
 돌방	NNP
 초기 프리스트레스	NNP
@@ -13453,7 +12729,6 @@ MAT시스템	NNP
 정보전송시스템[ATP용]	NNP
 1계속 승무시간	NNP
 엔글라 점도	NNP
-뇌우	NNP
 합성소자부카티너리식	NNP
 철도시설관리자	NNP
 기울기	NNP
@@ -13541,7 +12816,6 @@ BD	NNP
 슬라이더	NNP
 국부 역장치	NNP
 철도대중교통	NNP
-중련편성 전후동력형동차	NNP
 급전소	NNP
 알칼리골재반응	NNP
 OIS	NNP
@@ -13592,7 +12866,6 @@ ABS	NNP
 LCX	NNP
 세립도 갭 아스팔트 콘크리트	NNP
 발파기	NNP
-적하	NNP
 영구교	NNP
 교통소음	NNP
 통일분류법	NNP
@@ -13662,7 +12935,6 @@ EMI/EMC	NNP
 지중인입선	NNP
 대차복원장치	NNP
 연약지반	NNP
-중상	NNP
 본선시운전	NNP
 무임	NNP
 음향신호	NNP
@@ -13681,7 +12953,6 @@ EMI/EMC	NNP
 운전모드선택스위치	NNP
 BTIU	NNP
 낙석막이 옹벽	NNP
-호환성	NNP
 베어링메탈	NNP
 감속신호	NNP
 강구조용볼트	NNP
@@ -13740,7 +13011,6 @@ CBR	NNP
 궤광갱신작업	NNP
 매개루프	NNP
 구교	NNP
-연소실	NNP
 열차서행	NNP
 주응력	NNP
 교류아크용접	NNP
@@ -13812,7 +13082,6 @@ N형레일	NNP
 접합점	NNP
 원가보상	NNP
 단독정자식	NNP
-파장	NNP
 드랙토크	NNP
 궤도점유	NNP
 가우스분포	NNP
@@ -13822,7 +13091,6 @@ N형레일	NNP
 상례작업	NNP
 압력 구근	NNP
 종렬	NNP
-무임운송	NNP
 궤전메신저	NNP
 엽리	NNP
 수시전보	NNP
@@ -13862,7 +13130,6 @@ ISO2631	NNP
 집중제어장치	NNP
 연이음	NNP
 입환모드	NNP
-방위	NNP
 부력제트	NNP
 건설기계가동률	NNP
 열차존재감시	NNP
@@ -13939,7 +13206,6 @@ TGV	NNP
 수송량	NNP
 레일이음매	NNP
 TWC	NNP
-수송력	NNP
 WN구동방식	NNP
 3지 포인트	NNP
 정시간제어기고장진단기능	NNP
@@ -13962,9 +13228,7 @@ WN구동방식	NNP
 토공	NNP
 전동차단기	NNP
 재화	NNP
-STR	NNP
 입사각부착곡선포인트	NNP
-사일로	NNP
 종합열차운행체제	NNP
 지능형열차제어시스템	NNP
 승차권발권기	NNP
@@ -14007,7 +13271,6 @@ DTE	NNP
 압착식레일제동	NNP
 줄틀림	NNP
 비계판	NNP
-여굴	NNP
 연속확대기초	NNP
 화물측선	NNP
 표척	NNP
@@ -14081,8 +13344,6 @@ PLC	NNP
 진분분기기	NNP
 제동압력	NNP
 불감	NNP
-조차	NNP
-바이트	NNP
 시험차 방법	NNP
 재동력주행	NNP
 정착부의 변형	NNP
@@ -14113,7 +13374,6 @@ ATO	NNP
 외궤	NNP
 열차접근표시등	NNP
 PSI	NNP
-지상자	NNP
 정상도형 및 정상축	NNP
 지하구간	NNP
 폴링	NNP
@@ -14172,7 +13432,6 @@ Y 합금	NNP
 접지보호장치	NNP
 변조전달함수	NNP
 완충기행정	NNP
-구름	NNP
 DISCRETE I/O CARD	NNP
 이동전선	NNP
 페이딩	NNP
@@ -14218,7 +13477,6 @@ DMU	NNP
 건널목장해물검지장치	NNP
 전기기연동기	NNP
 이동 지점	NNP
-키로표	NNP
 플랜지없는차륜	NNP
 전철기반위	NNP
 지상운영레벨	NNP
@@ -14235,7 +13493,6 @@ PSO	NNP
 고강도콘크리트	NNP
 지방열차	NNP
 누설시험	NNP
-절리	NNP
 토적곡선	NNP
 급수주	NNP
 과전류	NNP
@@ -14246,7 +13503,6 @@ PSO	NNP
 관측	NNP
 제재	NNP
 근거리운전	NNP
-옥탄가	NNP
 부정동상	NNP
 하중감지밸브	NNP
 예비품	NNP
@@ -14297,7 +13553,6 @@ SYN	NNP
 지상장치시험기[ATC용]	NNP
 용접토치	NNP
 성토재료	NNP
-극한하중	NNP
 목재건조법	NNP
 오토크래이브양생말뚝	NNP
 도상침하곡선	NNP
@@ -14319,7 +13574,6 @@ SYN	NNP
 단층마찰면	NNP
 이류 가속도	NNP
 트롤리지지구	NNP
-어드레스	NNP
 가람링크 받침	NNP
 섹터	NNP
 2종 경계	NNP
@@ -14386,7 +13640,6 @@ CIP	NNP
 중대사고	NNP
 진공건조	NNP
 로러베아링	NNP
-브이비	NNP
 운전수배	NNP
 현장설명	NNP
 포화증기기관차	NNP
@@ -14525,7 +13778,6 @@ LVR	NNP
 기지국	NNP
 크로싱인후	NNP
 철도안전	NNP
-근거리통신망	NNP
 검사피트	NNP
 다짐흙쌓기	NNP
 제어 발파	NNP
@@ -14548,7 +13800,6 @@ ACK	NNP
 제동변위치	NNP
 곡선당김쇠붙이	NNP
 접점저항	NNP
-가청주파수	NNP
 비영업차	NNP
 OTP 텔레그램수신	NNP
 코트렐 집진장치	NNP
@@ -14556,7 +13807,6 @@ OTP 텔레그램수신	NNP
 수송인키로	NNP
 수동제어패널	NNP
 예방정비 및 계획정비	NNP
-하역기계	NNP
 저항제동	NNP
 표준경사	NNP
 롤러레일	NNP
@@ -14580,7 +13830,6 @@ OTP 텔레그램수신	NNP
 지방철도청경계표	NNP
 지하층	NNP
 에프디엠단국	NNP
-음파	NNP
 안전원	NNP
 회전자	NNP
 교직양용기관차	NNP
@@ -14588,7 +13837,6 @@ OTP 텔레그램수신	NNP
 응력도	NNP
 신호반응기	NNP
 아스팔트 추출시험	NNP
-연료	NNP
 PRESTRESSED CON‘C  GROUT재료의 품질조건	NNP
 고압	NNP
 곰보	NNP
@@ -14600,7 +13848,6 @@ PRESTRESSED CON‘C  GROUT재료의 품질조건	NNP
 제작재료표	NNP
 차량제작사	NNP
 정밀검사	NNP
-콘솔	NNP
 궤조	NNP
 병렬전송방식	NNP
 랭거트러스	NNP
@@ -14635,7 +13882,6 @@ FDM	NNP
 일체식콘크리트	NNP
 역조작반	NNP
 스프링전철기	NNP
-추진축	NNP
 보통시멘트	NNP
 감온성	NNP
 R.F	NNP
@@ -14651,7 +13897,6 @@ R.F	NNP
 지주	NNP
 보일러인장력	NNP
 제어소	NNP
-정합변성기	NNP
 접근표시등	NNP
 단순지지연	NNP
 증폭기	NNP
@@ -14668,7 +13913,6 @@ R.F	NNP
 동력근대화	NNP
 도상단면	NNP
 실측	NNP
-파단	NNP
 철관장치	NNP
 반도체	NNP
 왜율	NNP
@@ -14707,7 +13951,6 @@ GEC-ALSTOM	NNP
 운전방향	NNP
 측압	NNP
 유도전류	NNP
-임무	NNP
 PBPS	NNP
 스파이크박기기계	NNP
 측지기사	NNP
@@ -14793,7 +14036,6 @@ ISOLATION BOARD	NNP
 원추형믹서	NNP
 운동마찰	NNP
 다이오드	NNP
-호차	NNP
 압력파	NNP
 밸러스트포크	NNP
 장해구간	NNP
@@ -14812,8 +14054,6 @@ ISOLATION BOARD	NNP
 품질인증제도	NNP
 층분리	NNP
 재성형증대	NNP
-산화제	NNP
-구간속도	NNP
 정정 반력	NNP
 반자동변전소	NNP
 밸러스트도상	NNP
@@ -14821,7 +14061,6 @@ ISOLATION BOARD	NNP
 권고속도	NNP
 차내신호폐색장치	NNP
 측량성과	NNP
-음향측심기	NNP
 리겐바흐식철도	NNP
 단레일 궤도회로	NNP
 작은뚜껑	NNP
@@ -14829,7 +14068,6 @@ ISOLATION BOARD	NNP
 일정준수	NNP
 전자직통제어기	NNP
 산악터널단면공법	NNP
-건널목정시간제어기	NNP
 백신	NNP
 케이블단자대[ITCS용]	NNP
 지도통신식	NNP
@@ -15044,7 +14282,6 @@ HDTV	NNP
 VF	NNP
 조립이음	NNP
 오버패스	NNP
-하중	NNP
 환경기준	NNP
 고정발리스	NNP
 전기지령제동	NNP
@@ -15059,7 +14296,6 @@ VF	NNP
 점고법	NNP
 가스용접	NNP
 저온부식	NNP
-차량	NNP
 펄스부호변조	NNP
 전진법	NNP
 신호기의외방	NNP
@@ -15107,7 +14343,6 @@ US&S	NNP
 발틀	NNP
 내측패널	NNP
 라멘교	NNP
-프로토콜	NNP
 한쪽열림분기기	NNP
 인도기간	NNP
 절환변	NNP
@@ -15128,7 +14363,6 @@ US&S	NNP
 주행장치	NNP
 중간보	NNP
 자기회로	NNP
-포장	NNP
 과전압계전기	NNP
 제륜자간격	NNP
 단행열차	NNP
@@ -15255,11 +14489,9 @@ CDTS	NNP
 중력입환	NNP
 서행신호기	NNP
 부착된 텐던	NNP
-인공	NNP
 수탁사업	NNP
 발리스[ATP용]	NNP
 키로와트	NNP
-자기테이프	NNP
 스윙볼스터연결봉	NNP
 눈사태경보기	NNP
 착역 오선정	NNP
@@ -15294,7 +14526,6 @@ TMO	NNP
 직결	NNP
 천정각거리	NNP
 지하굴착	NNP
-험프	NNP
 보통여객열차	NNP
 쟌넬	NNP
 관통문	NNP
@@ -15316,7 +14547,6 @@ PRT시스템	NNP
 CSC	NNP
 속도제어방식	NNP
 전도장치	NNP
-패킷	NNP
 사망자	NNP
 정동토크	NNP
 RS-422A INTERFACE	NNP
@@ -15367,11 +14597,9 @@ PT	NNP
 온라인시스템	NNP
 파쇄골재	NNP
 벽개파면	NNP
-동축	NNP
 사구간	NNP
 덕트	NNP
 스파이크해머	NNP
-특별검사	NNP
 역전광장	NNP
 레일의종류	NNP
 운전시행전달부	NNP
@@ -15395,7 +14623,6 @@ PT	NNP
 노치계수	NNP
 맥스웰브리지	NNP
 기계식이음	NNP
-차축	NNP
 재제용 물표	NNP
 PSM	NNP
 편리	NNP
@@ -15403,7 +14630,6 @@ PSM	NNP
 차원해석	NNP
 LIM	NNP
 사유견궤	NNP
-STM	NNP
 먼지막이뚜껑	NNP
 직접확산방식	NNP
 IF	NNP
@@ -15535,7 +14761,6 @@ FERRODECK	NNP
 고정폐색방식	NNP
 1레일 궤도회로	NNP
 완충레일	NNP
-헤르츠	NNP
 탑리프터	NNP
 광궤철도	NNP
 내장판	NNP
@@ -15574,7 +14799,6 @@ TCC	NNP
 수냉조작	NNP
 평면입환	NNP
 불투명유리	NNP
-안내소	NNP
 복귀스위치[ATS용]	NNP
 교직류기관차	NNP
 담금질시효	NNP
@@ -15632,7 +14856,6 @@ L형 이음매판	NNP
 기초	NNP
 리벳접합	NNP
 화물지붕덮개	NNP
-기포	NNP
 PIP	NNP
 타려전동기	NNP
 레일턱마멸	NNP
@@ -15736,7 +14959,6 @@ OD조사	NNP
 제한된수동운전모드	NNP
 보존계	NNP
 단면1차모멘트	NNP
-대차복원장치	NNP
 철도부설권	NNP
 실린더벽	NNP
 책임사고	NNP
@@ -15767,7 +14989,6 @@ OD조사	NNP
 멈춤링	NNP
 군용철도	NNP
 거친면마무리	NNP
-불연성	NNP
 사다리기초	NNP
 계전연동기	NNP
 병렬용접	NNP
@@ -15787,7 +15008,6 @@ OD조사	NNP
 산소아크절단	NNP
 가변 궤간	NNP
 일렉트로슬래그 용접	NNP
-차단기	NNP
 냉?난방설비	NNP
 교번하중	NNP
 알류민산철 사석회	NNP
@@ -15808,7 +15028,6 @@ HQCCR	NNP
 백게이지	NNP
 전단면 굴착공법	NNP
 증기발생기	NNP
-자동발권기	NNP
 교통	NNP
 선단파괴	NNP
 일반통화	NNP
@@ -15827,7 +15046,6 @@ HQCCR	NNP
 방청도료	NNP
 부하중	NNP
 동압밀	NNP
-크리프	NNP
 곡간	NNP
 전호용접	NNP
 응력 측정	NNP
@@ -15958,7 +15176,6 @@ TS	NNP
 배향	NNP
 이동거푸집	NNP
 물받이	NNP
-구체	NNP
 잠함기초	NNP
 창멈추개	NNP
 골재의 함수율	NNP
@@ -15996,7 +15213,6 @@ TS	NNP
 ACI	NNP
 지적확인환호응답	NNP
 해결	NNP
-프로그램	NNP
 승차	NNP
 하로교	NNP
 중공축평행카르단구동장치	NNP
@@ -16129,7 +15345,6 @@ LRV	NNP
 진행현시 착오	NNP
 고속도차단기	NNP
 크리닝 슈	NNP
-뒷표지	NNP
 모자이크형 조작반	NNP
 부 궤환선	NNP
 유개화차	NNP
@@ -16155,7 +15370,6 @@ LRV	NNP
 재발송역	NNP
 전자파	NNP
 숙련자	NNP
-과전압	NNP
 자동문	NNP
 좌굴	NNP
 타이라인법	NNP
@@ -16281,7 +15495,6 @@ PERT	NNP
 초염기성암	NNP
 지장물경고장치	NNP
 위상조정기	NNP
-진입구역	NNP
 평판재하시험	NNP
 B/W CRT	NNP
 스프레이어	NNP
@@ -16339,14 +15552,11 @@ ACKNOWLEDGE[ATP용]	NNP
 규소강레일	NNP
 런	NNP
 사립	NNP
-발광신호	NNP
 반경	NNP
-초고공	NNP
 브레이크 오브 게이지권	NNP
 시동 장치	NNP
 전체구간 통과수속	NNP
 동체기준선	NNP
-가속 유조	NNP
 맹목 속도	NNP
 SSPD	NNP
 노스웨스트 항공	NNP
@@ -16358,13 +15568,10 @@ SSPD	NNP
 정상 선회	NNP
 만국우편연합	NNP
 정비이월	NNP
-단파	NNP
 공항 교통 주파수	NNP
 전환된 가상회로장치	NNP
 유도 안내등, 유도로 안내등	NNP
 제2의 자유.	NNP
-항공기 사고	NNP
-MAP	NNP
 특별 품목 요율	NNP
 레일부식	NNP
 직통공기제동기	NNP
@@ -16422,7 +15629,6 @@ CMGN	NNP
 관리자용콘솔	NNP
 철도시스템	NNP
 여객	NNP
-피기백방식	NNP
 음파측심기	NNP
 설명서	NNP
 전두부	NNP
@@ -16430,7 +15636,6 @@ CMGN	NNP
 거더	NNP
 곡선정정	NNP
 스위치백 정거장	NNP
-KIT	NNP
 지수구	NNP
 보안기	NNP
 행선안내표시기	NNP
@@ -16467,13 +15672,11 @@ SPLIT FLAP	NNP
 행정 기관	NNP
 바르샤바 체제	NNP
 장비목록표	NNP
-안테나	NNP
 운항구간	NNP
 면세판매점	NNP
 MAKE SHORT APPROACH	NNP
 지역 관제 업무	NNP
 팬 소음	NNP
-기상레이다	NNP
 지속 기간	NNP
 최소위험경로	NNP
 층적운, 층쎈구름	NNP
@@ -16536,7 +15739,6 @@ VITALSUPERVISIONCARD	NNP
 방음방진차륜	NNP
 동력분산식열차	NNP
 역 티형 옹벽	NNP
-출발반응표지	NNP
 식당차	NNP
 용접길이	NNP
 표시계전기	NNP
@@ -16582,13 +15784,11 @@ VITALSUPERVISIONCARD	NNP
 형상관리	NNP
 수입관리시스템	NNP
 제빙장비	NNP
-CROSS	NNP
 감압	NNP
 레이더 도착	NNP
 실제관제구역, 적극통제지역	NNP
 접근 관제 업무	NNP
 항력 계수	NNP
-사용 불가능	NNP
 통과고도	NNP
 단측파대	NNP
 터빈흡입온도	NNP
@@ -16599,7 +15799,6 @@ CROSS	NNP
 착륙 장치	NNP
 정밀접근절차	NNP
 리마콘	NNP
-항로	NNP
 너클 핀	NNP
 MANUFACTURE EMPTY WEIGHT	NNP
 INTERLINE BAGGAGE TAG	NNP
@@ -16611,7 +15810,6 @@ INTERLINE BAGGAGE TAG	NNP
 역전간	NNP
 절연종류	NNP
 장표류	NNP
-PBS	NNP
 출발신호기	NNP
 진로연동[ATP용]	NNP
 위색사진	NNP
@@ -16702,8 +15900,6 @@ PBS	NNP
 전응력	NNP
 VHCM	NNP
 개구절리	NNP
-LAHSO	NNP
-관계항공교통업무당국	NNP
 VOR와 TACAN의 병치시설	NNP
 OFF LINE	NNP
 원심 과급기	NNP
@@ -16719,10 +15915,7 @@ OFF LINE	NNP
 활수저면	NNP
 저고도 윈드쉐아	NNP
 화물청사	NNP
-수직 항법 오차	NNP
-비행기록장치	NNP
 비행장 관제업무	NNP
-보고지점	NNP
 고도 제한	NNP
 유효 톤 마일	NNP
 비행중 엔진정지	NNP
@@ -16754,7 +15947,6 @@ OTP 텔레그램송신	NNP
 궤도단락감도	NNP
 마운틴형기관차	NNP
 변태점	NNP
-원심력	NNP
 자갈막이	NNP
 전기기계기구	NNP
 설계내용기간	NNP
@@ -16805,7 +15997,6 @@ MI	NNP
 부속장치	NNP
 반위접점	NNP
 다이나믹제동	NNP
-하드웨어	NNP
 지령대차	NNP
 자갈치기	NNP
 수시수선방식	NNP
@@ -16834,10 +16025,7 @@ PLAN POSITION INDICATOR SCOPE	NNP
 캐세이 패시픽 항공	NNP
 구간 요금	NNP
 초기접근단계	NNP
-경계지역 통과 예정 시간	NNP
-정밀접근	NNP
 제트엔진	NNP
-해안선	NNP
 열대저기압	NNP
 토미룩	NNP
 주회전익	NNP
@@ -16879,7 +16067,6 @@ VHF	NNP
 발리스[KVB용]	NNP
 풍송류	NNP
 개럿형기관차	NNP
-중앙전산기	NNP
 접촉각	NNP
 평용접	NNP
 양궤조궤도회로	NNP
@@ -16954,13 +16141,11 @@ CT	NNP
 정위치정차지상송신기	NNP
 쌍미닫이문	NNP
 지압	NNP
-표시	NNP
 정적속도감시설계속도	NNP
 디스플레이판	NNP
 지질단면도	NNP
 콘서베이터	NNP
 입찰	NNP
-경고	NNP
 가감밸브	NNP
 압축율	NNP
 마그네트클러치	NNP
@@ -17037,7 +16222,6 @@ HIV	NNP
 복합곡선	NNP
 전기방식	NNP
 점제어	NNP
-가속력	NNP
 색등식자동폐색	NNP
 정차장내외	NNP
 건축설비	NNP
@@ -17048,9 +16232,7 @@ HIV	NNP
 회생실효	NNP
 자동간극조정기	NNP
 열순탄	NNP
-항공병	NNP
 확보예약공간	NNP
-습도계	NNP
 외부 적재물 투하	NNP
 ABC WORLD AIRWAYS GUIDE	NNP
 비항공운송구간	NNP
@@ -17103,7 +16285,6 @@ MITSUBISHI	NNP
 급전선로	NNP
 모어-쿨롱의 파괴규준	NNP
 독립기초	NNP
-연동장치	NNP
 역벤치식굴착공법	NNP
 재해우려	NNP
 통면	NNP
@@ -17133,7 +16314,6 @@ OPTICAL LINK MODULE	NNP
 환경성검토	NNP
 내철형변압기	NNP
 유도전동기	NNP
-보호커버	NNP
 수송분담율	NNP
 걸린 경간	NNP
 토질조사	NNP
@@ -17147,7 +16327,6 @@ WAN	NNP
 안정제	NNP
 흡입변	NNP
 끝남시간	NNP
-상판	NNP
 정기요구	NNP
 외적 가상일	NNP
 궤도부설차	NNP
@@ -17163,20 +16342,14 @@ SSR 모드	NNP
 국제운항구간	NNP
 실패 접근 절차	NNP
 여권	NNP
-항공모함	NNP
 전자기취약성	NNP
 중간지점	NNP
-로컬라이저형 지향성 보조시설	NNP
 비행장장애도	NNP
 레이더 자료	NNP
 1차 레이다	NNP
 순중량	NNP
-항공기 구분	NNP
 항공기 재급유	NNP
 천둥구름	NNP
-예비기	NNP
-기압	NNP
-무게, 중량	NNP
 화물추적시스템	NNP
 정지로	NNP
 경사	NNP
@@ -17205,7 +16378,6 @@ TTC	NNP
 변조건	NNP
 납땜이어	NNP
 화물의최대적재중량	NNP
-제어장치	NNP
 서브제로 처리	NNP
 조근	NNP
 도중정차	NNP
@@ -17220,7 +16392,6 @@ TTC	NNP
 가동레일	NNP
 육각너트	NNP
 풍속검지장치	NNP
-완충장치	NNP
 열 팽창 계수	NNP
 교류밸런서	NNP
 복선기	NNP
@@ -17232,7 +16403,6 @@ TTC	NNP
 에너지경사선	NNP
 주행선	NNP
 톤재차급화물	NNP
-컨베이어	NNP
 배류선	NNP
 점착계수	NNP
 보안전자밸브	NNP
@@ -17269,7 +16439,6 @@ Q/P	NNP
 정보화시공	NNP
 절연협조	NNP
 콘 관입시험기	NNP
-지연	NNP
 사이드크로싱	NNP
 FC	NNP
 대향분기	NNP
@@ -17296,13 +16465,11 @@ FC	NNP
 창정비	NNP
 곡기비행	NNP
 지상감시레이더	NNP
-수정대기속도	NNP
 접근로	NNP
 항공운임	NNP
 물보라	NNP
 버클	NNP
 전진각, 앞젖힘각	NNP
-활주로말단식별등	NNP
 빗놀이 각	NNP
 항공교통관리시스템	NNP
 라치쇄정	NNP
@@ -17344,7 +16511,6 @@ S레일	NNP
 지형학	NNP
 차상신호장치	NNP
 자기혼선	NNP
-여과기	NNP
 한류가속계전기	NNP
 시가지 측량	NNP
 액성한계	NNP
@@ -17407,7 +16573,6 @@ EI	NNP
 음향 감쇠	NNP
 접착, 부착	NNP
 유도서비스	NNP
-시각화상장치	NNP
 충격압력 흡수장치	NNP
 공중의, 공기의	NNP
 상호 운용성	NNP
@@ -17423,7 +16588,6 @@ EI	NNP
 연료소비량	NNP
 이륙중단	NNP
 항공기술훈련원	NNP
-연소실	NNP
 기수	NNP
 입환협의	NNP
 분기기휴스켈리턴	NNP
@@ -17447,7 +16611,6 @@ EI	NNP
 급송품	NNP
 랙식철도	NNP
 정차위치확인표	NNP
-경보장치	NNP
 전철쇄정기	NNP
 상호유도	NNP
 전기기관차	NNP
@@ -17461,7 +16624,6 @@ ATS-P	NNP
 베어링스프링	NNP
 GSM-R	NNP
 컴파운드카티너리식	NNP
-도착통지	NNP
 토습수	NNP
 정적 박리시험	NNP
 전기리머	NNP
@@ -17493,7 +16655,6 @@ MIP	NNP
 액체염소	NNP
 입환선	NNP
 자동신호기	NNP
-전압	NNP
 이동권한종단	NNP
 유막	NNP
 분배 모멘트	NNP
@@ -17524,7 +16685,6 @@ MIP	NNP
 여객지역	NNP
 이득 대 잡음 온도비	NNP
 연습기	NNP
-관리지역	NNP
 항공	NNP
 송장	NNP
 고고도 항로차트	NNP
@@ -17539,7 +16699,6 @@ MIP	NNP
 조절형 다이와 스톡	NNP
 진고도	NNP
 최종진입 픽스	NNP
-VTOL기 이착륙장	NNP
 천문항법. 천측항법	NNP
 승객 승하기용 계단	NNP
 합금	NNP
@@ -17547,10 +16706,8 @@ VTOL기 이착륙장	NNP
 소비행 장.	NNP
 줄	NNP
 3급비밀	NNP
-감속낙하산	NNP
 중간마커비콘	NNP
 지산	NNP
-영업키로	NNP
 일반구조용 압연강재	NNP
 진로쇄정	NNP
 수중발파	NNP
@@ -17561,7 +16718,6 @@ TDE	NNP
 승객정원	NNP
 레일두부	NNP
 여유두께	NNP
-압축	NNP
 차량세척	NNP
 중신교차	NNP
 차량검사	NNP
@@ -17598,8 +16754,6 @@ TVM430차상장치	NNP
 체적 변형	NNP
 암석	NNP
 사교	NNP
-조석	NNP
-정기여객	NNP
 직접 하중	NNP
 내연기관	NNP
 비상전자밸브	NNP
@@ -17652,12 +16806,9 @@ ON램프[VOBC용]	NNP
 팔레트 돌리	NNP
 수평미익	NNP
 표준교재	NNP
-저기압	NNP
 등화 표식	NNP
 연료-공기 혼합비	NNP
-고도	NNP
 경보계통	NNP
-차량	NNP
 비행방식	NNP
 단일 주파수 접근.	NNP
 상층 공기 온도	NNP
@@ -17710,7 +16861,6 @@ TGR	NNP
 열차방호장치	NNP
 승무원숙사	NNP
 제1종전공연동장치	NNP
-TEU	NNP
 공기혼입 콘크리트	NNP
 제3종건널목	NNP
 역팔자링크	NNP
@@ -17743,7 +16893,6 @@ DBM	NNP
 맞대기용접	NNP
 변단면 부재	NNP
 관통제동장치	NNP
-치환	NNP
 단동	NNP
 계전기	NNP
 변질지수	NNP
@@ -17756,7 +16905,6 @@ DBM	NNP
 교호발착	NNP
 접이식문	NNP
 유효 폭	NNP
-개집표구	NNP
 도상	NNP
 지반손실	NNP
 공기정화	NNP
@@ -17771,13 +16919,11 @@ DBM	NNP
 사이드덤프도어스톱퍼	NNP
 이층여과	NNP
 회차	NNP
-비행 난류	NNP
 주기검사	NNP
 무선 자기 지시계	NNP
 항공유품질관리담당자	NNP
 마멸	NNP
 임시항공편	NNP
-경고	NNP
 임계 고도	NNP
 내연성	NNP
 원격 주기장	NNP
@@ -17789,16 +16935,12 @@ DBM	NNP
 높새바람, 휀.	NNP
 통신망국	NNP
 능동 전자 방해책	NNP
-양력	NNP
 명시도	NNP
 유효마력	NNP
 전방부	NNP
-예보관	NNP
 규정	NNP
 국제무선통신자문위원회	NNP
 자동 기상 관측소	NNP
-속도	NNP
-구간 전세기	NNP
 야간비행	NNP
 재난 주파수	NNP
 교선법	NNP
@@ -17835,7 +16977,6 @@ EMC	NNP
 분권발전기	NNP
 중복구간	NNP
 열차단위	NNP
-하중시험	NNP
 골재의 침강	NNP
 전철화	NNP
 접지[VOBC용]	NNP
@@ -17868,7 +17009,6 @@ IC	NNP
 받침고무	NNP
 유해물 함유량	NNP
 피난측선	NNP
-접지	NNP
 2레일 궤도회로 불평형	NNP
 블라스트공법	NNP
 권장속도	NNP
@@ -17893,14 +17033,11 @@ IC	NNP
 신호의주시	NNP
 POWER LEVER	NNP
 단거리 이ㆍ착륙 항공기	NNP
-전압대 주파수 변환기	NNP
 어댑터	NNP
 액세서리 기어 트레인	NNP
 COMMON ICAO DATA INTERCHANGE NETWORK	NNP
 POINT OUT	NNP
 기술착륙	NNP
-사용자 시험	NNP
-편의	NNP
 날개	NNP
 고도계 오차	NNP
 항공기 운항규정	NNP
@@ -17908,9 +17045,7 @@ POINT OUT	NNP
 수용, 대기, 전방 이동 및 통합	NNP
 계기 접근 구간	NNP
 공항화물	NNP
-사출	NNP
 정상작동속도	NNP
-최대 상승률 속도	NNP
 청각의 , 음향의, 음파의	NNP
 역사	NNP
 보링조사	NNP
@@ -17961,7 +17096,6 @@ PSU	NNP
 아이형 강말뚝	NNP
 동력차출력	NNP
 곡선포인트	NNP
-정류기	NNP
 용접솔기	NNP
 선종륜축	NNP
 공기호스연결기	NNP
@@ -18002,10 +17136,7 @@ DIB	NNP
 선도등급	NNP
 스톨토크비	NNP
 몰	NNP
-기내식	NNP
 레이더 항로	NNP
-레이더유도	NNP
-선하증권	NNP
 비디알 킷트	NNP
 상존 위협	NNP
 턴 테이블	NNP
@@ -18016,9 +17147,6 @@ DIB	NNP
 위험품 사건	NNP
 백분율	NNP
 ILS 범주[ICAO]	NNP
-세퍼레이터	NNP
-기상 레이더 통제패널	NNP
-사용활주로	NNP
 바이패스 비	NNP
 조종실 배열	NNP
 대한민국 방공식별구역	NNP
@@ -18108,7 +17236,6 @@ AVR	NNP
 점퍼본드	NNP
 현지시간	NNP
 판토그라프	NNP
-투시도	NNP
 교류전철화	NNP
 중간점	NNP
 신호용단자	NNP
@@ -18126,7 +17253,6 @@ AVR	NNP
 수정 대응 조언	NNP
 자동 발권	NNP
 예비품 증명	NNP
-운항 노선/비운항 노선	NNP
 규격서	NNP
 해무	NNP
 수하물 보관소	NNP
@@ -18139,13 +17265,9 @@ SQUALL LINE	NNP
 트랜스, 변압기. 변성기	NNP
 착륙자세	NNP
 이륙추력	NNP
-램프	NNP
-항공일지	NNP
-계류	NNP
 마하 효과	NNP
 활주로 온도	NNP
 과테말라 의정서	NNP
-마멸성	NNP
 삼엽기	NNP
 알고리즘	NNP
 배수전단시험	NNP
@@ -18174,7 +17296,6 @@ CLIBING FORM	NNP
 소성 설계법	NNP
 삼축압축시험	NNP
 검중차	NNP
-객차키로	NNP
 고장진단	NNP
 내마모성	NNP
 산화물	NNP
@@ -18210,7 +17331,6 @@ PCB	NNP
 전축거	NNP
 스위치어저스터	NNP
 터미널 비용	NNP
-포설	NNP
 강제혼합믹서	NNP
 매쉬심용접	NNP
 철도의 특질	NNP
@@ -18228,7 +17348,6 @@ AFTC	NNP
 출구측차단간검지기	NNP
 보온화물수송	NNP
 보관창고	NNP
-PCB	NNP
 보통화물	NNP
 싱글슬립스위치	NNP
 건늠선	NNP
@@ -18236,9 +17355,7 @@ PCB	NNP
 인천지하철구간	NNP
 스카핑	NNP
 내측대차	NNP
-전차	NNP
 방향레버	NNP
-가청주파수	NNP
 단편성열차	NNP
 초기지압	NNP
 자기발광 다이오드	NNP
@@ -18268,11 +17385,9 @@ PCB	NNP
 오더 피킹 모듈	NNP
 오염자부담의 원칙	NNP
 의무이행기간	NNP
-적재	NNP
 에코레일 프로젝트	NNP
 일괄 오더 피킹	NNP
 위탁형 구매	NNP
-연료	NNP
 에너지원단위	NNP
 자연 감축량	NNP
 운수	NNP
@@ -18303,7 +17418,6 @@ ESCM	NNP
 수평적 확산	NNP
 간이	NNP
 NETWORK MANAGEMENT	NNP
-선복	NNP
 SAP R/3	NNP
 선	NNP
 세율	NNP
@@ -18321,12 +17435,10 @@ SAP R/3	NNP
 관세	NNP
 공동농업정책	NNP
 단위탑재	NNP
-기후변화협약	NNP
 당사국	NNP
 데릭	NNP
 녹색물류인증제도	NNP
 방청자	NNP
-물류	NNP
 보관시스템	NNP
 보조적 수단	NNP
 불요식 계약	NNP
@@ -18341,7 +17453,6 @@ SAP R/3	NNP
 빙하 해빙	NNP
 벽돌 적재  방식	NNP
 배후단지	NNP
-바코드	NNP
 리터너블시스템	NNP
 무인포크 리프트	NNP
 배출권 거래제도	NNP
@@ -18349,7 +17460,6 @@ SAP R/3	NNP
 윤리적 소비	NNP
 재활용	NNP
 수평직선의 원칙	NNP
-성층권	NNP
 재고회전율	NNP
 임시 항행검사	NNP
 수소 에너지	NNP
@@ -18362,7 +17472,6 @@ SAP R/3	NNP
 에코포인트	NNP
 소화물일관운송	NNP
 재활용산업	NNP
-연료전지	NNP
 선 · 후진국간 공동이행 시범사업	NNP
 EIS	NNP
 DW	NNP
@@ -18379,12 +17488,10 @@ CP	NNP
 소요량증명서	NNP
 보세운송 도착관리	NNP
 ROI	NNP
-BAF	NNP
 BUCKET	NNP
 U-COMMERCE DATA VISIBILITY	NNP
 대외무역법	NNP
 랜드 브릿지	NNP
-FCL	NNP
 수입 통관	NNP
 MASTER DATA	NNP
 APS	NNP
@@ -18430,7 +17537,6 @@ APS	NNP
 보세창고	NNP
 변동 다이어그램 시스템	NNP
 명료성의 원칙	NNP
-보세운송	NNP
 발생원	NNP
 발화성 화물	NNP
 종합물류시책대강	NNP
@@ -18449,7 +17555,6 @@ APS	NNP
 제품종합환경정보	NNP
 컨테이너 선	NNP
 총량 감축 의무 대상 가스	NNP
-컨테이너	NNP
 집화운송	NNP
 지구온난화	NNP
 청정연료	NNP
@@ -18458,7 +17563,6 @@ TARIFF	NNP
 RFID	NNP
 FORECAST	NNP
 BPR	NNP
-포장	NNP
 납세고지	NNP
 신용장 당사자	NNP
 EDI	NNP
@@ -18472,7 +17576,6 @@ SCP	NNP
 가산요소	NNP
 BACKORDER	NNP
 수입관세	NNP
-PSI	NNP
 수입세	NNP
 월별납부제도	NNP
 수입세금계산서	NNP
@@ -18509,7 +17612,6 @@ PSI	NNP
 선박의 흘수	NNP
 우라늄	NNP
 온실가스 종합정보관리체계	NNP
-송장	NNP
 상물분리	NNP
 운반속도의 원칙	NNP
 인코텀스	NNP
@@ -18534,7 +17636,6 @@ PSI	NNP
 최저운임	NNP
 초기감축행동	NNP
 최대 접지압력	NNP
-크레인	NNP
 전자식 선하증권	NNP
 쾌속화물운송	NNP
 즉시교환방식	NNP
@@ -18548,12 +17649,10 @@ SCM	NNP
 원상태 수출	NNP
 수출신고	NNP
 재수출감면세	NNP
-TARIFF	NNP
 PULL	NNP
 부정환급	NNP
 환급후심사	NNP
 계약 재고수준	NNP
-ATP	NNP
 무환수입	NNP
 자가판정	NNP
 고객정보LIST	NNP
@@ -18606,7 +17705,6 @@ BI	NNP
 위험화물	NNP
 수요자 전압 조절	NNP
 중량 특성의 원칙	NNP
-크레인	NNP
 정박기간	NNP
 종합물류업	NNP
 직송운송	NNP
@@ -18656,7 +17754,6 @@ APPLICATION VISIBILITY	NNP
 갠트리 크레인	NNP
 그린 서비사이징	NNP
 변형 단일책임체계	NNP
-부선	NNP
 산업혁신클러스터 중심지 전략	NNP
 비즈니스 프로세스 리엔지니어링	NNP
 분류 시스템	NNP
@@ -18707,7 +17804,6 @@ APPLICATION VISIBILITY	NNP
 유닛로드 사이즈	NNP
 일반 화물	NNP
 2005년 에너지정책법	NNP
-감항성	NNP
 그린라운드	NNP
 고가화물	NNP
 국제운송	NNP
@@ -18715,7 +17811,6 @@ APPLICATION VISIBILITY	NNP
 덤프 트럭	NNP
 도서국가 연합	NNP
 기후변화에 관한 정부간 협의체	NNP
-대류권	NNP
 공급사슬	NNP
 감량화	NNP
 다이어그램 배송방법	NNP
@@ -18727,7 +17822,6 @@ APPLICATION VISIBILITY	NNP
 사전예방활동	NNP
 마이 백 지참 운동	NNP
 물류공동화	NNP
-묘박지	NNP
 배출 한도량	NNP
 고중량 저운임 적용에 의한 운임산출	NNP
 공동계산협정	NNP
@@ -18742,13 +17836,10 @@ APPLICATION VISIBILITY	NNP
 그린 마일리지	NNP
 3E물류	NNP
 고체폐기물처리법	NNP
-엘니뇨	NNP
 어소트 방식	NNP
 자주개발율	NNP
-임시검사	NNP
 자동창고	NNP
 생분해성 플라스틱	NNP
-일반화물선	NNP
 의무이행계획	NNP
 에너지플러스 건물	NNP
 스마트 그리드	NNP
@@ -18763,7 +17854,6 @@ APPLICATION VISIBILITY	NNP
 위험물컨테이너점검제도	NNP
 스위프법	NNP
 에너지공급자	NNP
-선급협회	NNP
 이종책임체계	NNP
 운송수단	NNP
 이용운송사업	NNP
@@ -18806,7 +17896,6 @@ WA	NNP
 개방적 파렛트 풀 시스템	NNP
 기후변화대응 기본계획	NNP
 기후변화협약 41조	NNP
-도크 레벨러	NNP
 6-SIGMA 품질 경영	NNP
 더블 트레일러	NNP
 경쟁억압선	NNP
@@ -18840,7 +17929,6 @@ WA	NNP
 실시간 감시	NNP
 이차전지	NNP
 SUA	NNP
-THC	NNP
 수입신고 수리전 반출	NNP
 수출신용보험	NNP
 화물인도 지시서	NNP
@@ -18854,7 +17942,6 @@ COMMERCIAL INVOICE	NNP
 환어음의 지급일	NNP
 수입증명서	NNP
 INVENTORY PLANNING	NNP
-선하증권	NNP
 XML	NNP
 CONSIGNEE	NNP
 냉동·냉장창고	NNP
@@ -18875,11 +17962,9 @@ ONE STOP SERVICE	NNP
 대금지불 청구서	NNP
 공동출하	NNP
 물류센터의 ACTIVITIES	NNP
-보험가액	NNP
 FPA	NNP
 WMS	NNP
 3자물류	NNP
-WA	NNP
 라벨링	NNP
 로지스틱스	NNP
 로드 스테빌라이저	NNP
@@ -18943,7 +18028,6 @@ ANTIBOYCOTT	NNP
 수입검사	NNP
 운임 선불	NNP
 사전판정	NNP
-트레일러	NNP
 일시 수출	NNP
 서면심사	NNP
 원상태수출	NNP
@@ -18952,17 +18036,14 @@ QUOTATION	NNP
 WEB-BASED	NNP
 RACK	NNP
 매자닌랙	NNP
-적하보험	NNP
 보험자	NNP
 협정보험가액	NNP
 A/R	NNP
 물류센터	NNP
-피보험자	NNP
 CDC	NNP
 내륙운송확장담보	NNP
 물류센터 인증제	NNP
 VMI	NNP
-로트	NNP
 WA IOP	NNP
 전손	NNP
 HUB OPERATION	NNP
@@ -18973,12 +18054,10 @@ HUB OPERATION	NNP
 분류	NNP
 방사성 화물	NNP
 마켓 녹색	NNP
-부패성 화물	NNP
 마이크로 브리지	NNP
 물류모듈화	NNP
 박스운임	NNP
 복합화물터미널	NNP
-벌크선	NNP
 미래개척전략	NNP
 물류비	NNP
 마라케쉬 합의문	NNP
@@ -19024,7 +18103,6 @@ B2C	NNP
 PUSH	NNP
 소요량산정방법신고	NNP
 매매계약서	NNP
-로트	NNP
 운송관리시스템	NNP
 미국 EAR 의 역외적용	NNP
 납기일	NNP
@@ -19069,10 +18147,8 @@ EXTERNAL PARTY VISIBILITY	NNP
 반자동식	NNP
 매달아 싣는 방식	NNP
 비당사국	NNP
-보세구역	NNP
 바이오 시밀러	NNP
 베를린 위임사항	NNP
-재고관리	NNP
 일반 화물요율	NNP
 양판점	NNP
 저온물류	NNP
@@ -19080,7 +18156,6 @@ EXTERNAL PARTY VISIBILITY	NNP
 이산화탄소 환산	NNP
 에너지사용기자재	NNP
 유기겔	NNP
-선박	NNP
 에너지 자립도	NNP
 에너지 누진 비용	NNP
 상징에 의한 표시법	NNP
@@ -19094,14 +18169,12 @@ EXTERNAL PARTY VISIBILITY	NNP
 수출승인면제	NNP
 보통창고	NNP
 악성 재고	NNP
-LCL	NNP
 납세	NNP
 수입신고필증	NNP
 ABCM 확산규제	NNP
 감면	NNP
 예상 무이동 재고	NNP
 전략물자 기술 수출입통합공고	NNP
-재고	NNP
 ROUTE	NNP
 ENTERPRISE D/W D/M	NNP
 선적서류	NNP
@@ -19118,7 +18191,6 @@ EVENT MANAGEMENT	NNP
 ECS	NNP
 관세EDI환급시스템	NNP
 간이창고	NNP
-트랙터	NNP
 GIS	NNP
 재수출면세	NNP
 내륙수로	NNP
@@ -19144,11 +18216,9 @@ GIS	NNP
 기후변화협약 42조	NNP
 물류거점	NNP
 바이오매스	NNP
-산성비	NNP
 분산형 전원	NNP
 바이오디젤	NNP
 보통트럭	NNP
-링크	NNP
 바이오가스	NNP
 복합운송증권	NNP
 배송 공동형	NNP
@@ -19169,14 +18239,12 @@ GIS	NNP
 열사용기자재	NNP
 저탄소 녹색성장전략	NNP
 야드 트랙터	NNP
-온실가스	NNP
 임항 교통시설	NNP
 스왑바디 차량	NNP
 자유무역지역	NNP
 인공태양	NNP
 연료비 연동제	NNP
 재고이론 모형	NNP
-안전재고	NNP
 인텔리그리드	NNP
 왕복운송 시스템	NNP
 오일샌드	NNP
@@ -19187,10 +18255,8 @@ WORKFLOW MANAGEMENT	NNP
 DELIVERY	NNP
 FREE HOUSE, FREE DOMICILE	NNP
 BOD	NNP
-포장명세서	NNP
 INTRANSIT INVENTORY	NNP
 수출물품검사	NNP
-보세운송	NNP
 REEFER CONTAINER	NNP
 DATA QUALITY MANAGEMENT	NNP
 대외 무역법 시행령	NNP
@@ -19225,7 +18291,6 @@ TEU, FEU	NNP
 3자 물류	NNP
 그린 뉴딜정책	NNP
 그린 스타트 운동	NNP
-물류센터	NNP
 산화물 적재방식	NNP
 부적운임	NNP
 반송운임	NNP
@@ -19242,7 +18307,6 @@ TEU, FEU	NNP
 생분해성수지제품	NNP
 유비쿼터스도시 기술	NNP
 연료전지 발전설비	NNP
-신용장	NNP
 운임보험	NNP
 스마트 미터	NNP
 에너지회수	NNP
@@ -19274,7 +18338,6 @@ TEU, FEU	NNP
 제로에너지 주택	NNP
 B/L	NNP
 경정통지서	NNP
-D/L	NNP
 AATP	NNP
 개별수출허가	NNP
 입항전 신고	NNP
@@ -19287,9 +18350,7 @@ WEB-SUPPORT	NNP
 납부세액	NNP
 부가가치세	NNP
 CAUSAL FORECASTING	NNP
-환급	NNP
 MES	NNP
-수출용원자재	NNP
 QUERY	NNP
 ASN	NNP
 KPI	NNP
@@ -19302,20 +18363,17 @@ ERP	NNP
 기름회수선	NNP
 도외 크레디트	NNP
 녹색기술	NNP
-녹색물류	NNP
 기준 배출량	NNP
 대체에너지	NNP
 다이버터	NNP
 단일운행	NNP
 과불화탄소	NNP
-국제물류	NNP
 기후모델	NNP
 감축의무	NNP
 감축목표	NNP
 녹색 가전	NNP
 그린 GDP	NNP
 구매력지수	NNP
-다이옥신	NNP
 석면	NNP
 순차	NNP
 유비쿼터스도시 서비스	NNP
@@ -19356,11 +18414,9 @@ ERP	NNP
 장기 운송계약운임	NNP
 슈퍼에코쉽	NNP
 자기 코팅방식	NNP
-창고	NNP
 재고 회전율	NNP
 신용장의 이해	NNP
 BSC	NNP
-VMI	NNP
 COMMITTED FORECAST	NNP
 SCORE CARD	NNP
 CROSS DOCKING	NNP
@@ -19374,35 +18430,28 @@ SHIPMENT PLANNING	NNP
 보세운송 보고	NNP
 우리나라 관세율표의 세번분류 연혁	NNP
 보세창고 인도조건부 거래	NNP
-수입분할증명서	NNP
 CONSUMPTION REPORT	NNP
 SNAP	NNP
 BACKLOG	NNP
 국제기상기구	NNP
 그린디젤	NNP
 공동이행체제	NNP
-국제해운연맹	NNP
 기후변화지수	NNP
 녹색표시제	NNP
 국제해운회의소	NNP
-검수	NNP
 그린에너지 계획	NNP
 가동률	NNP
-국제해사기구	NNP
 녹색생활	NNP
 대리점 집하	NNP
 누출	NNP
 드라이 벌크 컨테이너	NNP
 델파이법	NNP
-대기	NNP
 유럽 및 일본 선주협의회	NNP
 에코포인트 프로그램	NNP
-여객기	NNP
 연속 카트	NNP
 자동식	NNP
 온실가스 종합정보관리시스템	NNP
 에프런 컨베이어	NNP
-유통경로	NNP
 수증기	NNP
 자발적 협약	NNP
 씨뿌리기 방식	NNP
@@ -19413,7 +18462,6 @@ BACKLOG	NNP
 적재중량톤수	NNP
 샤시방식	NNP
 수력발전	NNP
-잔교	NNP
 수요예측	NNP
 온실가스 의무보고제	NNP
 인터넷데이터센터	NNP
@@ -19424,7 +18472,6 @@ BACKLOG	NNP
 영국표준협회	NNP
 온실가스 배출권의 종류	NNP
 수화인 혼재운송	NNP
-시뮬레이션	NNP
 시티 로지스틱스	NNP
 장치장	NNP
 연료전지차	NNP
@@ -19433,10 +18480,7 @@ BACKLOG	NNP
 저탄소제품 인증제도	NNP
 쿠리어서비스	NNP
 취급균형의 원칙	NNP
-클램프	NNP
-전환교통	NNP
 지중해항로	NNP
-자유무역협정	NNP
 DRY CONTAINER	NNP
 수입신고취하	NNP
 수출물류 L/T	NNP
@@ -19454,7 +18498,6 @@ AIRWAY BILL	NNP
 PERFORMANCE MANAGEMENT	NNP
 AGING 재고	NNP
 소요량	NNP
-항공화물 운송장	NNP
 AMS	NNP
 MONITORING WORKBENCH	NNP
 4대 국제 수출통제체제	NNP
@@ -19508,12 +18551,10 @@ CRM	NNP
 탄소 포집 및 저장	NNP
 컨테이너 카	NNP
 최대 적재량	NNP
-창고	NNP
 자동제어	NNP
 유비쿼터스도시 기반시설	NNP
 서머타임제	NNP
 생태산업단지	NNP
-운임	NNP
 유통	NNP
 유럽항로	NNP
 셀	NNP
@@ -19522,7 +18563,6 @@ NPT	NNP
 NOTIFY PARTY	NNP
 STOCK TAKING	NNP
 수입승인	NNP
-POD	NNP
 수입화물선취보증서	NNP
 잉여 재고	NNP
 관세징수	NNP
@@ -19536,7 +18576,6 @@ OPEN TOP CONTAINER	NNP
 환급청구권	NNP
 체납	NNP
 통관증명서	NNP
-보세창고	NNP
 FLAT RACK CONTAINER	NNP
 수직적 확산	NNP
 DPL	NNP
@@ -19546,44 +18585,27 @@ C-TPAT	NNP
 수면창고	NNP
 세액보정	NNP
 해저분지	NNP
-피견인트레일러	NNP
 중앙도매시장	NNP
-철도CY	NNP
-무역풍	NNP
 물양장	NNP
 취수해역	NNP
-LTV	NNP
 대형 등부표	NNP
-카페리	NNP
 조종제한선	NNP
 돌핀	NNP
-마리나항만	NNP
 해양환경정보통합관리시스템	NNP
 계류시설	NNP
 유통기관	NNP
-SPACE CHARTER	NNP
-선복	NNP
-RVI	NNP
-대마난류 외해지류	NNP
 해양쓰레기대응센터	NNP
 잠정수역	NNP
-운항관리자	NNP
 임시항해검사	NNP
-단파	NNP
 선도	NNP
-품질관리	NNP
 위험물운반선	NNP
 재제조소금	NNP
-선박	NNP
 보온구	NNP
-항만공사	NNP
 해양수산정보 플랫폼	NNP
 다기능어항	NNP
 간출암	NNP
 선박평형수처리설비	NNP
 신호홍염	NNP
-YARD CHASSIS	NNP
-어유	NNP
 면허어업	NNP
 유조선통항금지해역	NNP
 보호수면	NNP
@@ -19593,206 +18615,207 @@ YARD CHASSIS	NNP
 항만국통제관	NNP
 통상기선	NNP
 관세양허	NNP
-NMFT원칙	NNP
 항해구역	NNP
 그래브준설선	NNP
 수산업협동조합	NNP
 IMO NUMBERS	NNP
 세계해사대학	NNP
 중력식안벽	NNP
-품질인증	NNP
 인공어초	NNP
 지리적표시	NNP
 해양생태계교란생물	NNP
 해양안전종합정보시스템	NNP
 저염분현상	NNP
 해상위험물	NNP
-굴절파	NNP
 수선간장	NNP
 테트라포드	NNP
-하역능력	NNP
 취송거리	NNP
 심해시추계획	NNP
-컨테이너선용선지수	NNP
 환경관리해역	NNP
-온실효과	NNP
 우점종	NNP
 해양광물자원	NNP
 남극중층수	NNP
 단위노력당 어획량	NNP
 구명부기	NNP
-바지선	NNP
 어장도	NNP
 멤브레인탱크	NNP
-북태평양해양과학기구	NNP
 IMO 회원국감사제도	NNP
 유전자변형생물체	NNP
-예인선열	NNP
 레드라인	NNP
 자율관리어업	NNP
 뗏목양식	NNP
-표고	NNP
 한천	NNP
-허브항	NNP
 보합제	NNP
-물류단지	NNP
 최대순경제적생산	NNP
 원양구역	NNP
-정박	NNP
 해조류	NNP
 수산물원산지표시	NNP
 청항선	NNP
-안전관리자	NNP
-LCL	NNP
 케이슨	NNP
 어간유	NNP
 유회수기	NNP
 냉수어	NNP
-지구온난화	NNP
 갑문	NNP
 공제	NNP
 한국해사주간	NNP
 약광층	NNP
 드럼	NNP
 해양심층수	NNP
-동캄차카해류	NNP
 판과 암석권	NNP
-잔교	NNP
-선석	NNP
-대륙대	NNP
 제한시계	NNP
-해안선	NNP
 자동조타장치	NNP
 위험물운송적합증서	NNP
 종	NNP
 UN해양법협약	NNP
-공유수면매립	NNP
+삼일절	NNP
+광복절	NNP
 INPUT|143	NNP
-NONE	NNP
-#스케줄	NNP
-NONE	NNP
-위치	NNP
-위치	NNP
+부킹번호로 조회	NNP
+ブッキング番号で照会	NNP
+位置	NNP
 설립일	NNP
-설립일	NNP
+設立日	NNP
 서비스 항로	NNP
-서비스 항로	NNP
-INPUT|244	NNP
+サービス航路	NNP
 ARRIVAL NOTICE 발행	NNP
+ARRIVAL NOTICE発行	NNP
 FREETIME(수입)	NNP
 FREETIME	NNP
+FREETIME(輸入)	NNP
+フリータイム	NNP
 프리타임 인보이스 발행 요청(수입)	NNP
 인보이스 발행 요청	NNP
+フリータイムインボイス発行要請(収入)	NNP
+インボイス発行要請	NNP
 #천경해운 61주년	NNP
-NONE	NNP
-#프리타임 인보이스	NNP
-NONE	NNP
-공지사항	NNP
-공지사항	NNP
-전자 DO 위임장 신청 양식	NNP
-전자 DO 위임장 신청 양식	NNP
-INPUT|202	NNP
-NONE	NNP
-자가운송 요청서(부산/인천 외)	NNP
-자가운송 요청서(부산/인천 외)	NNP
-자가운송 요청서(부산)	NNP
-자가운송 요청서(부산)	NNP
-자가운송 요청서(인천)	NNP
-자가운송 요청서(인천)	NNP
-컨테이너 내부치수 확인	NNP
-컨테이너 내부치수 확인	NNP
-INPUT|481	NNP
-D/O신청상태조회	NNP
-E-SERVICE	NNP
-E-SERVICE	NNP
-스케줄	NNP
-스케줄	NNP
-INPUT|202	NNP
-B/L COPY	NNP
-INPUT|81	NNP
-스케줄	NNP
-INPUT|501	NNP
-비엘번호로 담당자 찾기	NNP
-부킹 정보 등록/조회	NNP
-부킹등록/수정/조회/확인	NNP
-부킹번호	NNP
-부킹조회	NNP
-INPUT|261	NNP
-신규 부킹	NNP
-INPUT|181	NNP
-부킹정보 조회	NNP
-INPUT|341	NNP
-부킹취소/캔슬	NNP
-INPUT|201	NNP
-비엘 정보 조회	NNP
-반납지 업무	NNP
-반납지 업무	NNP
-서류 마감시간	NNP
-서류 마감시간	NNP
-INPUT|441	NNP
-반납지 조회	NNP
-#프리타임 인보이스	NNP
-NONE	NNP
-INPUT|442	NNP
-반납지 변경신청	NNP
-기타업무	NNP
-기타업무	NNP
-INPUT|461	NNP
-반납지 인보이스 발행	NNP
-양식 다운로드	NNP
-양식 다운로드	NNP
-담당자 찾기	NNP
-담당자 찾기	NNP
+#天硬海運61周年	NNP
 INPUT|422	NNP
 부킹번호로 담당자 찾기	NNP
-INPUT|421	NNP
-영업 담당자 찾기	NNP
+ブッキング番号で担当者を探す	NNP
+공지사항	NNP
+お知らせ事項	NNP
+전자 DO 위임장 신청 양식	NNP
+電子DO委任状申請フォーム	NNP
+INPUT|202	NNP
+B/L COPY 조회	NNP
+B/L COPY照会	NNP
+자가운송 요청서(부산/인천 외)	NNP
+自家運送要請書(釜山/仁川ほか)	NNP
+자가운송 요청서(부산)	NNP
+自家運送要請書(釜山)	NNP
+자가운송 요청서(인천)	NNP
+自家運送要請書(仁川)	NNP
+컨테이너 내부치수 확인	NNP
+コンテナ内部寸法の確認	NNP
+INPUT|481	NNP
+D/O신청상태조회	NNP
+D/O申請状態照会	NNP
+INPUT|522	NNP
+운임 인보이스 발행(수출)	NNP
+運賃インボイス発行(輸出)	NNP
 INPUT|462	NNP
 반납지 입금확인	NNP
+半納地入金確認	NNP
+스케줄	NNP
+スケジュール	NNP
+B/L COPY	NNP
+INPUT|81	NNP
+INPUT|501	NNP
+비엘번호로 담당자 찾기	NNP
+ビーエル番号で担当者を探す	NNP
+부킹 정보 등록/조회	NNP
+부킹등록/수정/조회/확인	NNP
+부킹조회	NNP
+ブッキング情報登録/照会	NNP
+ブッキング登録/修正/照会/確認、ブッキング番号、ブッキング照会	NNP
+INPUT|261	NNP
+신규 부킹	NNP
+新規ブッキング	NNP
+INPUT|181	NNP
+부킹정보 조회	NNP
+ブッキング情報照会	NNP
+INPUT|341	NNP
+부킹취소/캔슬	NNP
+ブッキングキャンセル	NNP
+INPUT|201	NNP
+비엘 정보 조회	NNP
+ビーエル情報照会	NNP
+반납지 업무	NNP
+半納地業務	NNP
+返却業務	NNP
+半内の業務	NNP
+서류 마감시간	NNP
+書類の締め切り時間	NNP
+INPUT|441	NNP
+반납지 조회	NNP
+半納地照会	NNP
+返戻地照会	NNP
+INPUT|442	NNP
+반납지 변경신청	NNP
+半納地変更申請	NNP
+기타업무	NNP
+その他の業務	NNP
+INPUT|461	NNP
+반납지 인보이스 발행	NNP
+半納地インボイス発行	NNP
+양식 다운로드	NNP
+様式ダウンロード	NNP
+담당자 찾기	NNP
+担当者探し	NNP
+INPUT|421	NNP
+영업 담당자 찾기	NNP
+営業担当者探し	NNP
 천기영	NNP
-천경해운	NNP
 천경	NNP
 CK	NNP
 CKLINE	NNP
-CKLINE	NNP
-CK	NNP
+チョン・ギヨン	NNP
+天国海運	NNP
+天国	NNP
 INPUT|141	NNP
-NONE	NNP
-운임 인보이스 발행	NNP
-운임 인보이스 발행	NNP
+비엘번호로 조회	NNP
+ビーエル番号で照会	NNP
 프리타임 계산서 발행 요청(수입)	NNP
-계산서 발생 요청	NNP
+계산서 발행 요청	NNP
+フリータイム計算書発行要請(収入)	NNP
+計算書発行要請	NNP
 INPUT|281	NNP
 서렌더 원본접수 확인	NNP
+サレンダー原本受付確認	NNP
 부킹번호로 스케줄 조회	NNP
-부킹번호로 스케줄 조회	NNP
-수출업무	NNP
+ブッキング番号でスケジュール照会	NNP
 수출업무	NNP
 수입업무	NNP
-수입업무	NNP
+輸入業務	NNP
 INPUT|161	NNP
-부킹번호로 조회	NNP
 INPUT|401	NNP
 비엘번호로 스케줄 조회	NNP
-ARRIVAL NOTICE 발행	NNP
-A/N	NNP
+ビーエル番号でスケジュール照会	NNP
+INPUT|244	NNP
+ログイン	NNP
 회사소개	NNP
-회사소개	NNP
+会社紹介	NNP
 INPUT|121	NNP
-컨테이너 번호로 추적	NNP
-비엘번호로 스케줄 조회	NNP
-비엘번호로 스케줄 조회	NNP
+컨테이너 번호로 조회	NNP
+コンテナ番号で照会	NNP
 화물추적	NNP
-화물추적	NNP
+貨物追跡	NNP
 비엘 조회/확인	NNP
-비엘 조회/확인	NNP
+ビーエル照会/確認	NNP
 INPUT|321	NNP
 마감시간	NNP
+締め切り時間	NNP
 INPUT|241	NNP
 픽업지 변경	NNP
+ピックアップ先の変更	NNP
 INPUT|221	NNP
 지연공문	NNP
+遅延公文書	NNP
 INPUT|322	NNP
 컨테이너 선적 확인	NNP
+コンテナ船積確認	NNP
 FREETIME(수출)	NNP
-FREETIME	NNP
+FREETIME(輸出)	NNP
+INPUT|521	NNP
+운임 인보이스 발행(수입)	NNP
+運賃インボイス発行（収入）	NNP

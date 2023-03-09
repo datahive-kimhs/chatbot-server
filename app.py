@@ -3,17 +3,12 @@ import logging
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 
-from data.load_data import load_dataset
-from data.load_data import dataset_bm25
-from data.load_model import load_model
-
 from endpoints.chatbot.chatbot import chatbot_router
 from endpoints.chatbot.chatroom import chatroom_router
 from config import server_config
 from connection import connect_db as connect_db_to_ckline
 
 from extensions import initialize
-
 
 connected = connect_db_to_ckline()
 if not connected:
@@ -31,7 +26,6 @@ app.add_middleware(
 )
 
 initialize()
-
 # add route
 app.include_router(chatbot_router)
 app.include_router(chatroom_router)

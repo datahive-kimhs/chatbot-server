@@ -59,7 +59,6 @@ class Preprocess_ja:
                 w2i.append(self.word_index['OOV'])
         return w2i
 
-
 class Preprocess:
     def __init__(self, word2index_dic='', userdic=None):  # 생성자
         # 단어 인덱스 사전 불러오기

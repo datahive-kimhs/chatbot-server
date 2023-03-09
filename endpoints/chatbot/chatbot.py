@@ -8,9 +8,7 @@ from core.chatbot import make_answer
 from schema.response import ChatResponse
 from schema.chatbot import ChatData
 
-
 chatbot_router = APIRouter(prefix='/chatbot')
-
 
 async def send_json_unicode(websocket: WebSocket, message: Message) -> None:
     """
@@ -35,6 +33,7 @@ async def chatbot_websocket_endpoint(
     
     await websocket.accept()
     # Preprocess chat room - load chat log, etc...
+    
     try:
         while True:
             # data = await websocket.receive_text()
