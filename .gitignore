@@ -2,15 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
-chatting_kr.json
-chatting_ckline.json
+
 # C extensions
 *.so
-/utils/user_dic.tsv
-/utils/user_dic_ja.tsv
-/utils/user_dic_ja_NNP.tsv
-/train_tools/dict/corpus.txt
-/train_tools/dict/corpus_ja.txt
+
 # Distribution / packaging
 .Python
 build/

@@ -1,13 +1,76 @@
+import pandas as pd
+from konlpy.tag import Komoran
+from rank_bm25 import BM25Okapi
+from utils.Preprocess import Preprocess_ja
+from transformers import AutoTokenizer
+from transformers import TFGPT2LMHeadModel
+
+komoran = Komoran()
+
+p_ja = Preprocess_ja(word2index_dic='./train_tools/dict/chatbot_dict_ja.bin',
+                     userdic=None)
+
+def load_corpus(dataset, lang):
+    if lang == "ko":
+        merge_dataset_corpus = dataset['Q']
+        merge_dataset_tokenized_corpus = []
+        for data in merge_dataset_corpus:
+            pos_list = komoran.pos(data)
+            result = [pos[0] for pos in pos_list]
+            merge_dataset_tokenized_corpus.append(result)
+        dataset_bm25 = BM25Okapi(merge_dataset_tokenized_corpus)
+        return dataset_bm25
+    elif lang == "ja":
+        merge_dataset_corpus = dataset['Q']
+        merge_dataset_tokenized_corpus = []
+        for data in merge_dataset_corpus:
+            pos_list = p_ja.pos(data)
+            result = [pos[0] for pos in pos_list]
+            merge_dataset_tokenized_corpus.append(result)
+
+        dataset_bm25 = BM25Okapi(merge_dataset_tokenized_corpus)
+        return dataset_bm25
+
 class ModelDataExample:
     def __init__(self):
-        self.a = None
-        self.b = None
-        self.c = None
+        self.chatting_ckline = None
+        self.chatting_kr = None
+        self.merge_dataset_ja = None
+        self.chatting_ckline_bm25 = None
+        self.merge_dataset_bm25_ja = None
+        self.model = None
+        self.tokenizer = None
 
-    def load_data(self, path):
-        self.a = open(path)
-        self.b = open(path)
-        self.c = open(path)
+    def load_data(self, path1, path2, path3):
+        self.chatting_ckline = pd.read_json(path1, encoding="UTF-8").dropna()
+        self.chatting_kr = pd.read_json(path2, encoding="UTF-8").dropna()
+        self.merge_dataset_ja = pd.read_json(path3, encoding="UTF-8").dropna()
 
-    def get_a(self):
-        return self.a
+    def get_chatting_ckline(self):
+        return self.chatting_ckline
+    
+    def get_chatting_kr(self):
+        return self.chatting_kr
+    
+    def get_merge_dataset_ja(self):
+        return self.merge_dataset_ja
+    
+    def dataset_bm25(self):
+        self.chatting_ckline_bm25 = load_corpus(self.chatting_ckline, "ko")
+        self.merge_dataset_bm25_ja = load_corpus(self.merge_dataset_ja, "ja")
+    
+    def get_chatting_ckline_bm25(self):
+        return self.chatting_ckline_bm25
+
+    def get_merge_dataset_bm25_ja(self):
+        return self.merge_dataset_bm25_ja
+    
+    def load_model(self):
+        self.model = TFGPT2LMHeadModel.from_pretrained('cheonboy/kogpt2_small50')
+        self.tokenizer = AutoTokenizer.from_pretrained('skt/kogpt2-base-v2', bos_token='</s>', eos_token='</s>', pad_token='<pad>')
+    
+    def get_model(self):
+        return self.model
+    
+    def get_tokenizer(self):
+        return self.tokenizer

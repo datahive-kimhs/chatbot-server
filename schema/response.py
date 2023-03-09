@@ -4,12 +4,12 @@ from pydantic import BaseModel
 class ChatResponse(BaseModel):
     Query: str
     Answer: str
-    keyword: str
-    keyword_answer: str
-    NER: str
+    keyword: list | None
+    keyword_answer: str | None
+    NER: str | None
     url: str | None
-    usruse: int
-    category: str
-    input: str
-    depth: int
+    usruse: str | None
+    category: str | None
+    input: str | None
+    depth: int | None
     parent_idx: int | None

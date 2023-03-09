@@ -10,7 +10,6 @@ from connection import connect_db as connect_db_to_ckline
 
 from extensions import initialize
 
-
 connected = connect_db_to_ckline()
 if not connected:
     raise Exception("Cannot Connect to CKLINE! Check server status or value of config/config.ini.")
@@ -27,7 +26,6 @@ app.add_middleware(
 )
 
 initialize()
-
 # add route
 app.include_router(chatbot_router)
 app.include_router(chatroom_router)

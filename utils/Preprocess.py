@@ -18,9 +18,9 @@ class Preprocess_ja:
 
         # 제외할 품사
         # 참조 : https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=apparition18&logNo=100106659574
-        # 부사, 연대사, 접속사, 감동사, 조동사, 조사 제거
+        # 부사, 연대사, 접속사, 감동사, 조동사, 조사 , 보조기호 제거
         self.exclusion_tags = [
-            '副詞', '連体詞', '接続詞', '感動詞', '助動詞', '助詞'
+            '副詞', '連体詞', '接続詞', '感動詞', '助動詞', '助詞', '補助記号'
         ]
     
     # 형태소 분석기 POS 태거
@@ -47,18 +47,17 @@ class Preprocess_ja:
         return word_list
 
     # 키워드를 단어 인덱스 시퀀스로 변환
-    # def get_wordidx_sequence(self, keywords):
-    #     if self.word_index is None:
-    #         return []
-    #     w2i = []
-    #     for word in keywords:
-    #         try:
-    #             w2i.append(self.word_index[word])
-    #         except KeyError:
-    #             # 해당 단어가 사전에 없는 경우 OOV 처리
-    #             w2i.append(self.word_index['OOV'])
-    #     return w2i
-
+    def get_wordidx_sequence(self, keywords):
+        if self.word_index is None:
+            return []
+        w2i = []
+        for word in keywords:
+            try:
+                w2i.append(self.word_index[word])
+            except KeyError:
+                # 해당 단어가 사전에 없는 경우 OOV 처리
+                w2i.append(self.word_index['OOV'])
+        return w2i
 
 class Preprocess:
     def __init__(self, word2index_dic='', userdic=None):  # 생성자
