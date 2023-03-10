@@ -39,6 +39,7 @@ from transformers import AutoTokenizer
 from transformers import TFGPT2LMHeadModel
 
 from extensions import model_data
+from core.gpt_module import return_answer
 
 # result = model_data.get_chatting_ckline()
 # print(result)
@@ -834,15 +835,7 @@ def make_answer(question: ChatData) -> ChatResponse:
                 if answer_text is None or answer_text == "":
                     if lang == "ko":
                         print("kogpt로 입장!")
-                        prompt = f'''
-Q : {test_query}
-A :'''
-                        with torch.no_grad():
-                            tokens = tokenizer.encode(prompt, return_tensors='pt').to(device='cuda', non_blocking=True)
-                            gen_tokens = model.generate(tokens, do_sample=True, temperature=0.85, max_length=100)
-                            generated = tokenizer.batch_decode(gen_tokens)[0].split('\n')[2]
-
-                        answer_text = generated[4:]
+                        answer_text = return_answer(test_query)
 
             except Exception as ex:
                 print(" 생성 모델 : ", ex)

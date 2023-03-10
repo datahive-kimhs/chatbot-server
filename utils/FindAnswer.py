@@ -214,7 +214,7 @@ class FindAnswer:
                                 or "추적" == ne or "発行" == ne or "要請" == ne or "確認" == ne or "変更" == ne or "照会" == ne or "修正" == ne or "時間" == ne \
                         or "釜山" == ne or "仁川" == ne or "登録" == ne or "発生" == ne or "申請" == ne or "情報" == ne or "サービス" == ne \
                             or "新規" == ne or "運賃" == ne or "自家" == ne or "運送" == ne or "番号" == ne or "進行" == ne or "状態" == ne \
-                                or "追跡" == ne:
+                                or "追跡" == ne or "소개" == ne:
                             continue
 
                         if lang == "ko":
@@ -239,7 +239,7 @@ class FindAnswer:
                                 or "추적" == ne or "発行" == ne or "要請" == ne or "確認" == ne or "変更" == ne or "照会" == ne or "修正" == ne or "時間" == ne \
                         or "釜山" == ne or "仁川" == ne or "登録" == ne or "発生" == ne or "申請" == ne or "情報" == ne or "サービス" == ne \
                             or "新規" == ne or "運賃" == ne or "自家" == ne or "運送" == ne or "番号" == ne or "進行" == ne or "状態" == ne \
-                                or "追跡" == ne:
+                                or "追跡" == ne or "소개" == ne:
                             continue
 
                         if lang == "ko":

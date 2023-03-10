@@ -43,7 +43,6 @@ class ModelDataExample:
         self.tokenizer = None
         self.model = None
 
-
     def load_data(self, path1, path2, path3):
         self.chatting_ckline = pd.read_json(path1, encoding="UTF-8").dropna()
         self.chatting_kr = pd.read_json(path2, encoding="UTF-8").dropna()
@@ -68,19 +67,20 @@ class ModelDataExample:
     def get_merge_dataset_bm25_ja(self):
         return self.merge_dataset_bm25_ja
     
-    def load_model(self):
-        self.tokenizer = AutoTokenizer.from_pretrained(
-  'kakaobrain/kogpt', revision='KoGPT6B-ryan1.5b-float16',  # or float32 version: revision=KoGPT6B-ryan1.5b
-  bos_token='[BOS]', eos_token='[EOS]', unk_token='[UNK]', pad_token='[PAD]', mask_token='[MASK]')
-        self.model = AutoModelForCausalLM.from_pretrained(
-  'kakaobrain/kogpt', revision='KoGPT6B-ryan1.5b-float16',  # or float32 version: revision=KoGPT6B-ryan1.5b
-  pad_token_id=self.tokenizer.eos_token_id,
-  torch_dtype='auto', low_cpu_mem_usage=True
-).to(device='cuda', non_blocking=True)
-        # self.tokenizer = AutoTokenizer.from_pretrained('skt/kogpt2-base-v2', bos_token='</s>', eos_token='</s>', pad_token='<pad>')
+#     def load_model(self):
+#         self.tokenizer = AutoTokenizer.from_pretrained(
+#   'kakaobrain/kogpt', revision='KoGPT6B-ryan1.5b-float16',  # or float32 version: revision=KoGPT6B-ryan1.5b
+#   bos_token='[BOS]', eos_token='[EOS]', unk_token='[UNK]', pad_token='[PAD]', mask_token='[MASK]')
+#         self.model = AutoModelForCausalLM.from_pretrained(
+#   'kakaobrain/kogpt', revision='KoGPT6B-ryan1.5b-float16',  # or float32 version: revision=KoGPT6B-ryan1.5b
+#   pad_token_id=self.tokenizer.eos_token_id,
+#   torch_dtype='auto', low_cpu_mem_usage=True
+# ).to(device='cuda', non_blocking=True)
+#         _ = self.model.eval()
+#         # self.tokenizer = AutoTokenizer.from_pretrained('skt/kogpt2-base-v2', bos_token='</s>', eos_token='</s>', pad_token='<pad>')
     
-    def get_tokenizer(self):
-        return self.tokenizer
+#     def get_tokenizer(self):
+#         return self.tokenizer
 
-    def get_model(self):
-        return self.model
+#     def get_model(self):
+#         return self.model
