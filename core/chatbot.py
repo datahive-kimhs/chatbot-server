@@ -5,6 +5,7 @@ import random
 import string
 from typing import Any, Optional
 
+import torch
 import pandas as pd
 import googletrans
 from sqlalchemy import select, update, delete
@@ -519,9 +520,9 @@ def make_answer(question: ChatData) -> ChatResponse:
     chatting_kr = model_data.get_chatting_kr()
     merge_dataset_ja = model_data.get_merge_dataset_ja()
     merge_dataset_bm25_ja = model_data.get_merge_dataset_bm25_ja()
-    model = model_data.get_model()
     tokenizer = model_data.get_tokenizer()
-
+    model = model_data.get_model()
+    
     if lang == "ko":
             # 일부 특수문자 처리
             query = convert_specialChar(query)
@@ -833,7 +834,15 @@ def make_answer(question: ChatData) -> ChatResponse:
                 if answer_text is None or answer_text == "":
                     if lang == "ko":
                         print("kogpt로 입장!")
-                        answer_text = return_answer_by_chatbot(test_query, model, tokenizer)
+                        prompt = f'''
+Q : {test_query}
+A :'''
+                        with torch.no_grad():
+                            tokens = tokenizer.encode(prompt, return_tensors='pt').to(device='cuda', non_blocking=True)
+                            gen_tokens = model.generate(tokens, do_sample=True, temperature=0.85, max_length=100)
+                            generated = tokenizer.batch_decode(gen_tokens)[0].split('\n')[2]
+
+                        answer_text = generated[4:]
 
             except Exception as ex:
                 print(" 생성 모델 : ", ex)
