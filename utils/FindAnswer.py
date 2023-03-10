@@ -301,146 +301,42 @@ class FindAnswer:
                 if len(answer_keyword) != 0:
                     for answer_key in answer_keyword:
                         if len(answer_key) >= 2:
-                            sql = self._make_query(None, answer_keyword, lang, opt)
-                            answers = self.session.execute(sql).all()
-                            usruse = "0"
-                            keyword_answer = ""
-                            answerNum = 5
-                            keyword_answerNum1 = 4
-                            keyword_answerNum2 = 6
-
-                            if lang == "ko":
+                            try:
+                                sql = self._make_query(None, answer_keyword, lang, opt)
+                                answers = self.session.execute(sql).all()
+                                usruse = "0"
+                                keyword_answer = ""
                                 answerNum = 5
                                 keyword_answerNum1 = 4
                                 keyword_answerNum2 = 6
-                            elif lang == "en":
-                                answerNum = 14
-                                keyword_answerNum1 = 13
-                                keyword_answerNum2 = 15
-                            elif lang == "ja":
-                                answerNum = 19
-                                keyword_answerNum1 = 18
-                                keyword_answerNum2 = 20
-                            elif lang == "cn":
-                                answerNum = 24
-                                keyword_answerNum1 = 23
-                                keyword_answerNum2 = 25
 
-                            # 고도화
-                            try:
-                                keyNum = 0
-                                if len(answers) > 1:
-                                    
-                                    if lang == "ko":
-                                        for i in answers:
-                                            if keyNum < 7:
-                                                keyword_answer += i[keyword_answerNum1]+","
-                                            keyNum += 1
+                                if lang == "ko":
+                                    answerNum = 5
+                                    keyword_answerNum1 = 4
+                                    keyword_answerNum2 = 6
+                                elif lang == "en":
+                                    answerNum = 14
+                                    keyword_answerNum1 = 13
+                                    keyword_answerNum2 = 15
+                                elif lang == "ja":
+                                    answerNum = 19
+                                    keyword_answerNum1 = 18
+                                    keyword_answerNum2 = 20
+                                elif lang == "cn":
+                                    answerNum = 24
+                                    keyword_answerNum1 = 23
+                                    keyword_answerNum2 = 25
 
-                                        vectorizer = TfidfVectorizer(min_df=1, decode_error='ignore')
-
-                                        contents_tokens = [komoran_object.morphs(row) for row in ckline_talk_dataset['Q']]
-
-                                        contents_for_vectorize = []
-
-                                        for content in contents_tokens:
-                                            sentence = ''
-                                            for word in content:
-                                                sentence = sentence + ' ' + word
-
-                                            contents_for_vectorize.append(sentence)
-
-                                        X = vectorizer.fit_transform(contents_for_vectorize)
-                                        num_samples, num_features = X.shape
-
-                                        new_post = [question]
-                                        new_post_tokens = [komoran_object.morphs(row) for row in new_post]
-
-                                        new_post_for_vectorize = []
-
-                                        for content in new_post_tokens:
-                                            sentence = ''
-                                            for word in content:
-                                                sentence = sentence + ' ' + word
-
-                                            new_post_for_vectorize.append(sentence)
-
-                                        new_post_vec = vectorizer.transform(new_post_for_vectorize)
-                                        result = get_close_question(X, num_samples, new_post_vec, ckline_talk_dataset, question)
+                                # 고도화
+                                try:
+                                    keyNum = 0
+                                    if len(answers) > 1:
                                         
-                                        print(f'천경해운 새로운 closer_matcher {result}')
-                                        if result == None:
-                                            answer, url = "아래의 버튼 중 원하시는 업무를 선택해주세요", ""
-                                        elif len(result):
-                                            answer = result
-                                        else:
-                                            answer, url = "아래의 버튼 중 원하시는 업무를 선택해주세요", ""
-
-                                    elif lang == "ja":
-                                        pass
-                                        # for i in answers:
-                                        #     if keyNum < 7:
-                                        #         keyword_answer += i[keyword_answerNum1]+","
-                                        #     keyNum += 1
-
-                                        # vectorizer = TfidfVectorizer(min_df=1, decode_error='ignore')
-
-                                        # contents_tokens = [komoran_object.morphs(row) for row in ckline_talk_dataset_ja['Q']]
-
-                                        # contents_for_vectorize = []
-
-                                        # for content in contents_tokens:
-                                        #     sentence = ''
-                                        #     for word in content:
-                                        #         sentence = sentence + ' ' + word
-
-                                        #     contents_for_vectorize.append(sentence)
-
-                                        # X = vectorizer.fit_transform(contents_for_vectorize)
-                                        # num_samples, num_features = X.shape
-
-                                        # new_post = [question]
-                                        # new_post_tokens = [komoran_object.morphs(row) for row in new_post]
-
-                                        # new_post_for_vectorize = []
-
-                                        # for content in new_post_tokens:
-                                        #     sentence = ''
-                                        #     for word in content:
-                                        #         sentence = sentence + ' ' + word
-
-                                        #     new_post_for_vectorize.append(sentence)
-
-                                        # new_post_vec = vectorizer.transform(new_post_for_vectorize)
-                                        # result = get_close_question(X, num_samples, new_post_vec, ckline_talk_dataset, question)
-                                        
-                                        # print(f'천경해운 새로운 closer_matcher {result}')
-                                        # if result == None:
-                                        #     answer, url = "아래의 버튼 중 원하시는 업무를 선택해주세요", ""
-                                        # elif len(result):
-                                        #     answer = result
-                                        # else:
-                                        #     answer, url = "아래의 버튼 중 원하시는 업무를 선택해주세요", ""
-                                
-                                elif len(answers) == 1:
-                                    if ner_tags[0] == "CK_WORD":
-                                        a = self.tag_to_word(ner_predicts, lang)
-                                        keyword_answer = a+","
-
-                                    if lang == "ko":
-                                        try:
-                                            keyword_answer += answers[0][keyword_answerNum2]
-                                            answer, category = answers[0][answerNum],  answers[0][8]
-                                            depth = answers[0][1]
-                                            parent_idx = answers[0][2]
-                                            usruse = answers[0][11]
-
-                                            if keyword_answer == "딜레이노티스|CKAIX_RPA_WORKING_LIST,":
-                                                keyword_answer = "지연공문,"
-                                                category = ''
-                                            elif keyword_answer == ",딜레이노티스|CKAIX_RPA_WORKING_LIST,":
-                                                keyword_answer = "지연공문,"
-                                                category = ''
+                                        if lang == "ko":
+                                            for i in answers:
+                                                if keyNum < 7:
+                                                    keyword_answer += i[keyword_answerNum1]+","
+                                                keyNum += 1
 
                                             vectorizer = TfidfVectorizer(min_df=1, decode_error='ignore')
 
@@ -472,82 +368,189 @@ class FindAnswer:
 
                                             new_post_vec = vectorizer.transform(new_post_for_vectorize)
                                             result = get_close_question(X, num_samples, new_post_vec, ckline_talk_dataset, question)
+                                            
                                             print(f'천경해운 새로운 closer_matcher {result}')
-                                            if len(result):
+                                            if result == None:
+                                                answer, url = "아래의 버튼 중 원하시는 업무를 선택해주세요", ""
+                                            elif len(result):
                                                 answer = result
                                             else:
                                                 answer, url = "아래의 버튼 중 원하시는 업무를 선택해주세요", ""
-                                        except Exception as ex:
-                                            find_keyword = answers[0][4]
-                                            depth = answers[0][1]
-                                            parent_idx = answers[0][2]
-                                            usruse = answers[0][11]
 
-                                            keyword_answer = find_keyword
-                                            answer = "다음과 같은 키워드가 검색되었습니다."
-                                    elif lang == "ja":
-                                        try:
+                                        elif lang == "ja":
                                             pass
-                                        except:
-                                            pass
-                                        #     keyword_answer += answers[0][keyword_answerNum2]
-                                        #     answer, category = answers[0][answerNum],  answers[0][8]
-                                        #     depth = answers[0][1]
-                                        #     parent_idx = answers[0][2]
-                                        #     usruse = answers[0][11]
+                                            # for i in answers:
+                                            #     if keyNum < 7:
+                                            #         keyword_answer += i[keyword_answerNum1]+","
+                                            #     keyNum += 1
 
-                                        #     if keyword_answer == "딜레이노티스|CKAIX_RPA_WORKING_LIST,":
-                                        #         keyword_answer = "지연공문,"
-                                        #         category = ''
-                                        #     elif keyword_answer == ",딜레이노티스|CKAIX_RPA_WORKING_LIST,":
-                                        #         keyword_answer = "지연공문,"
-                                        #         category = ''
+                                            # vectorizer = TfidfVectorizer(min_df=1, decode_error='ignore')
 
-                                        #     vectorizer = TfidfVectorizer(min_df=1, decode_error='ignore')
+                                            # contents_tokens = [komoran_object.morphs(row) for row in ckline_talk_dataset_ja['Q']]
 
-                                        #     contents_tokens = [komoran_object.morphs(row) for row in ckline_talk_dataset['Q']]
+                                            # contents_for_vectorize = []
 
-                                        #     contents_for_vectorize = []
+                                            # for content in contents_tokens:
+                                            #     sentence = ''
+                                            #     for word in content:
+                                            #         sentence = sentence + ' ' + word
 
-                                        #     for content in contents_tokens:
-                                        #         sentence = ''
-                                        #         for word in content:
-                                        #             sentence = sentence + ' ' + word
+                                            #     contents_for_vectorize.append(sentence)
 
-                                        #         contents_for_vectorize.append(sentence)
+                                            # X = vectorizer.fit_transform(contents_for_vectorize)
+                                            # num_samples, num_features = X.shape
 
-                                        #     X = vectorizer.fit_transform(contents_for_vectorize)
-                                        #     num_samples, num_features = X.shape
+                                            # new_post = [question]
+                                            # new_post_tokens = [komoran_object.morphs(row) for row in new_post]
 
-                                        #     new_post = [question]
-                                        #     new_post_tokens = [komoran_object.morphs(row) for row in new_post]
+                                            # new_post_for_vectorize = []
 
-                                        #     new_post_for_vectorize = []
+                                            # for content in new_post_tokens:
+                                            #     sentence = ''
+                                            #     for word in content:
+                                            #         sentence = sentence + ' ' + word
 
-                                        #     for content in new_post_tokens:
-                                        #         sentence = ''
-                                        #         for word in content:
-                                        #             sentence = sentence + ' ' + word
+                                            #     new_post_for_vectorize.append(sentence)
 
-                                        #         new_post_for_vectorize.append(sentence)
+                                            # new_post_vec = vectorizer.transform(new_post_for_vectorize)
+                                            # result = get_close_question(X, num_samples, new_post_vec, ckline_talk_dataset, question)
+                                            
+                                            # print(f'천경해운 새로운 closer_matcher {result}')
+                                            # if result == None:
+                                            #     answer, url = "아래의 버튼 중 원하시는 업무를 선택해주세요", ""
+                                            # elif len(result):
+                                            #     answer = result
+                                            # else:
+                                            #     answer, url = "아래의 버튼 중 원하시는 업무를 선택해주세요", ""
+                                    
+                                    elif len(answers) == 1:
+                                        if ner_tags[0] == "CK_WORD":
+                                            a = self.tag_to_word(ner_predicts, lang)
+                                            keyword_answer = a+","
 
-                                        #     new_post_vec = vectorizer.transform(new_post_for_vectorize)
-                                        #     result = get_close_question(X, num_samples, new_post_vec, ckline_talk_dataset, question)
-                                        #     print(f'천경해운 새로운 closer_matcher {result}')
-                                        #     if len(result):
-                                        #         answer = result
-                                        #     else:
-                                        #         answer, url = "아래의 버튼 중 원하시는 업무를 선택해주세요", ""
-                                        # except Exception as ex:
-                                        #     find_keyword = answers[0][4]
-                                        #     depth = answers[0][1]
-                                        #     parent_idx = answers[0][2]
-                                        #     usruse = answers[0][11]
+                                        if lang == "ko":
+                                            try:
+                                                keyword_answer += answers[0][keyword_answerNum2]
+                                                answer, category = answers[0][answerNum],  answers[0][8]
+                                                depth = answers[0][1]
+                                                parent_idx = answers[0][2]
+                                                usruse = answers[0][11]
 
-                                        #     keyword_answer = find_keyword
-                                        #     answer = "다음과 같은 키워드가 검색되었습니다."
+                                                if keyword_answer == "딜레이노티스|CKAIX_RPA_WORKING_LIST,":
+                                                    keyword_answer = "지연공문,"
+                                                    category = ''
+                                                elif keyword_answer == ",딜레이노티스|CKAIX_RPA_WORKING_LIST,":
+                                                    keyword_answer = "지연공문,"
+                                                    category = ''
 
-                                return answer, keyword_answer, url, usruse, category, input, depth, parent_idx
+                                                vectorizer = TfidfVectorizer(min_df=1, decode_error='ignore')
+
+                                                contents_tokens = [komoran_object.morphs(row) for row in ckline_talk_dataset['Q']]
+
+                                                contents_for_vectorize = []
+
+                                                for content in contents_tokens:
+                                                    sentence = ''
+                                                    for word in content:
+                                                        sentence = sentence + ' ' + word
+
+                                                    contents_for_vectorize.append(sentence)
+
+                                                X = vectorizer.fit_transform(contents_for_vectorize)
+                                                num_samples, num_features = X.shape
+
+                                                new_post = [question]
+                                                new_post_tokens = [komoran_object.morphs(row) for row in new_post]
+
+                                                new_post_for_vectorize = []
+
+                                                for content in new_post_tokens:
+                                                    sentence = ''
+                                                    for word in content:
+                                                        sentence = sentence + ' ' + word
+
+                                                    new_post_for_vectorize.append(sentence)
+
+                                                new_post_vec = vectorizer.transform(new_post_for_vectorize)
+                                                result = get_close_question(X, num_samples, new_post_vec, ckline_talk_dataset, question)
+                                                print(f'천경해운 새로운 closer_matcher {result}')
+                                                if len(result):
+                                                    answer = result
+                                                else:
+                                                    answer, url = "아래의 버튼 중 원하시는 업무를 선택해주세요", ""
+                                            except Exception as ex:
+                                                find_keyword = answers[0][4]
+                                                depth = answers[0][1]
+                                                parent_idx = answers[0][2]
+                                                usruse = answers[0][11]
+
+                                                keyword_answer = find_keyword
+                                                answer = "다음과 같은 키워드가 검색되었습니다."
+                                        elif lang == "ja":
+                                            try:
+                                                pass
+                                            except:
+                                                pass
+                                            #     keyword_answer += answers[0][keyword_answerNum2]
+                                            #     answer, category = answers[0][answerNum],  answers[0][8]
+                                            #     depth = answers[0][1]
+                                            #     parent_idx = answers[0][2]
+                                            #     usruse = answers[0][11]
+
+                                            #     if keyword_answer == "딜레이노티스|CKAIX_RPA_WORKING_LIST,":
+                                            #         keyword_answer = "지연공문,"
+                                            #         category = ''
+                                            #     elif keyword_answer == ",딜레이노티스|CKAIX_RPA_WORKING_LIST,":
+                                            #         keyword_answer = "지연공문,"
+                                            #         category = ''
+
+                                            #     vectorizer = TfidfVectorizer(min_df=1, decode_error='ignore')
+
+                                            #     contents_tokens = [komoran_object.morphs(row) for row in ckline_talk_dataset['Q']]
+
+                                            #     contents_for_vectorize = []
+
+                                            #     for content in contents_tokens:
+                                            #         sentence = ''
+                                            #         for word in content:
+                                            #             sentence = sentence + ' ' + word
+
+                                            #         contents_for_vectorize.append(sentence)
+
+                                            #     X = vectorizer.fit_transform(contents_for_vectorize)
+                                            #     num_samples, num_features = X.shape
+
+                                            #     new_post = [question]
+                                            #     new_post_tokens = [komoran_object.morphs(row) for row in new_post]
+
+                                            #     new_post_for_vectorize = []
+
+                                            #     for content in new_post_tokens:
+                                            #         sentence = ''
+                                            #         for word in content:
+                                            #             sentence = sentence + ' ' + word
+
+                                            #         new_post_for_vectorize.append(sentence)
+
+                                            #     new_post_vec = vectorizer.transform(new_post_for_vectorize)
+                                            #     result = get_close_question(X, num_samples, new_post_vec, ckline_talk_dataset, question)
+                                            #     print(f'천경해운 새로운 closer_matcher {result}')
+                                            #     if len(result):
+                                            #         answer = result
+                                            #     else:
+                                            #         answer, url = "아래의 버튼 중 원하시는 업무를 선택해주세요", ""
+                                            # except Exception as ex:
+                                            #     find_keyword = answers[0][4]
+                                            #     depth = answers[0][1]
+                                            #     parent_idx = answers[0][2]
+                                            #     usruse = answers[0][11]
+
+                                            #     keyword_answer = find_keyword
+                                            #     answer = "다음과 같은 키워드가 검색되었습니다."
+
+                                    return answer, keyword_answer, url, usruse, category, input, depth, parent_idx
+                                except Exception as ex:
+                                    print(ex)
                             except Exception as ex:
                                 print(ex)
                         else:

@@ -114,6 +114,7 @@ def get_close_matches(word, possibilities, n=3, cutoff=0.6):
            s.ratio() >= cutoff:
             result.append((s.ratio(), index))
 
+    print(f"result : {result}")
     # Move the best scorers to head of list
     result = _nlargest(n, result)
 
@@ -521,8 +522,6 @@ def make_answer(question: ChatData) -> ChatResponse:
     chatting_kr = model_data.get_chatting_kr()
     merge_dataset_ja = model_data.get_merge_dataset_ja()
     merge_dataset_bm25_ja = model_data.get_merge_dataset_bm25_ja()
-    tokenizer = model_data.get_tokenizer()
-    model = model_data.get_model()
     
     if lang == "ko":
             # 일부 특수문자 처리
@@ -821,7 +820,7 @@ def make_answer(question: ChatData) -> ChatResponse:
                     if lang == "ko":
                         print("한국어 기준 높은 스몰톡 입장")
                         close_matches_index = get_close_matches(
-                                                        query, chatting_kr['Q'], 1, 0.8)
+                                                        query, chatting_kr['Q'], 1, 0.85)
                         if len(close_matches_index):
                             NUM = 0
                             index = close_matches_index[NUM]
