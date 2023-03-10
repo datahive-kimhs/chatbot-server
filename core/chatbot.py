@@ -35,11 +35,9 @@ from schema.chatbot import ChatData
 from schema.response import ChatResponse
 
 import tensorflow as tf
-from transformers import AutoTokenizer
-from transformers import TFGPT2LMHeadModel
 
 from extensions import model_data
-from core.gpt_module import return_answer
+from core.local_module import return_answer
 
 # result = model_data.get_chatting_ckline()
 # print(result)
