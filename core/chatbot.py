@@ -341,19 +341,20 @@ def change_answer(query, answer_text):
 
 
 def text_format(answers, text):
-    answers_len = len(answers)
+    answers_len = len(answers[0])
     if answers_len == 1:
-        answer_text = text.format(answers[0])
+        answer_text = text.format(answers[0][0])
     elif answers_len == 2:
-        answer_text = text.format(answers[0], answers[1])
+        answer_text = text.format(answers[0][0], answers[0][1])
     elif answers_len == 3:
-        answer_text = text.format(answers[0], answers[1], answers[2])
+        answer_text = text.format(answers[0][0], answers[0][1], answers[0][2])
     elif answers_len == 4:
-        answer_text = text.format(answers[0], answers[1], answers[2], answers[3])
+        answer_text = text.format(answers[0][0], answers[0][1], answers[0][2], answers[0][3])
     return answer_text
 
 
 def special_qa_number_logic(type_: Optional[Any], query, ner_predicts):
+    answer_text = ''
     ckline_db = get_ckline_db_engine()
     syntax = string.punctuation
     if type_ is not None:
@@ -373,14 +374,14 @@ def special_qa_number_logic(type_: Optional[Any], query, ner_predicts):
                 if preprocess_text == preprocess_question:
                     # LOB형식인 answer 쿼리를 받아와서 쿼리 변수에 비엘 넘버를 넣어서 sql 실행
                     lob_data = sql_result_element[3]
-                    lob_data_text = ''.join(lob_data.read())
-                    lob_data_sql = lob_data_text.format(type_[0])
+                    # lob_data_text = ''.join(lob_data.read())
+                    lob_data_sql = lob_data.format(type_[0])
                     answers = ckline_db.get_db_session().execute(lob_data_sql).all()
                     # text를 받아서 변수에 lob_data_sql 쿼리문 실행한 결과 answer_text에 저장
                     text = sql_result_element[2]
                     if answers is None:
                         break
-                    answer_text = text.format(answers[0])
+                    answer_text = text.format(answers[0][0])
                     # answer_text 반환
                     return answer_text
             else:
@@ -394,15 +395,15 @@ def special_qa_number_logic(type_: Optional[Any], query, ner_predicts):
                                 continue
                             elif len(sql_result) != 0:
                                 lob_data = sql_result[0][3]
-                                lob_data_text = ''.join(lob_data.read())
-                                lob_data_sql = lob_data_text.format(type_[0])
+                                # lob_data_text = ''.join(lob_data.read())
+                                lob_data_sql = lob_data.format(type_[0])
                                 text = sql_result[0][2]
                                 answers = ckline_db.get_db_session().execute(lob_data_sql).all()
                                 if answers is None:
                                     flag = False
                                     break
                                     # raise ValueError("answers is not queried")
-                                answer_text = text.format(answers[0])
+                                answer_text = text.format(answers[0][0])
                                 return answer_text
                             elif len(sql_result) == 0 and i == int(sql_result[0][0]):
                                 flag = False
@@ -424,15 +425,13 @@ def special_qa_number_logic(type_: Optional[Any], query, ner_predicts):
                 if len(sql_result) == 0:
                     raise ValueError("sql_result is not queried")
                 lob_data = sql_result[0][3]
-                new_sql = ''.join(lob_data.read())
+                # new_sql = ''.join(lob_data.read())
                 text = sql_result[0][2]
                 for ner in ner_predicts:
                     try:
                         if ner[1] == "CK_WORD":
-                            lob_data_sql = new_sql.format(ner)
+                            lob_data_sql = lob_data.format(ner)
                             lob_data_sql_answers = ckline_db.get_db_session().execute(lob_data_sql).all()
-                            print(lob_data_sql_answers)
-                            print(len(lob_data_sql_answers))
                             for i in range(len(lob_data_sql_answers)):
                                 answer_text += text.format(lob_data_sql_answers[0][i])
                             return answer_text
@@ -444,9 +443,9 @@ def special_qa_number_logic(type_: Optional[Any], query, ner_predicts):
                 if len(sql_result) == 0:
                     raise ValueError("sql_result is not queried")
                 lob_data = sql_result[0][3]
-                new_sql = ''.join(lob_data.read())
+                # new_sql = ''.join(lob_data.read())
                 text = sql_result[0][2]
-                answers = ckline_db.get_db_session().execute(new_sql).all()
+                answers = ckline_db.get_db_session().execute(lob_data).all()
                 if answers is None:
                     raise ValueError("answers is not queried")
                 answer_text = text_format(answers, text)
@@ -714,12 +713,10 @@ def make_answer(question: ChatData) -> ChatResponse:
                                                 continue
                                             elif len(sql_result) != 0:
                                                 lob_data = sql_result[0][3]
-                                                new_sql = ''.join(lob_data.read())
+                                                # new_sql = ''.join(lob_data.read())
                                                 text = sql_result[0][2]
-                                                lob_data_sql = new_sql.format(ner_predicts[0][0])
+                                                lob_data_sql = lob_data.format(ner_predicts[0][0])
                                                 lob_data_sql_answers = ckline_db.get_db_session().execute(lob_data_sql).all()
-                                                print(lob_data_sql_answers)
-                                                print(len(lob_data_sql_answers))
                                                 if lob_data_sql_answers is None:
                                                     flag = False
                                                     break
@@ -743,9 +740,9 @@ def make_answer(question: ChatData) -> ChatResponse:
                                                 continue
                                             elif len(sql_result) != 0:
                                                 lob_data = sql_result[0][3]
-                                                new_sql = ''.join(lob_data.read())
+                                                # new_sql = ''.join(lob_data.read())
                                                 text = sql_result[0][2]
-                                                answers = ckline_db.get_db_session().execute(new_sql).all()
+                                                answers = ckline_db.get_db_session().execute(lob_data).all()
                                                 if answers is None:
                                                     flag = False
                                                     break
