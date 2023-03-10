@@ -1,9 +1,11 @@
 import pandas as pd
+import torch
 from konlpy.tag import Komoran
 from rank_bm25 import BM25Okapi
 from utils.Preprocess import Preprocess_ja
 from transformers import AutoTokenizer
 from transformers import TFGPT2LMHeadModel
+from transformers import AutoModelForCausalLM
 
 komoran = Komoran()
 
@@ -38,8 +40,9 @@ class ModelDataExample:
         self.merge_dataset_ja = None
         self.chatting_ckline_bm25 = None
         self.merge_dataset_bm25_ja = None
-        self.model = None
         self.tokenizer = None
+        self.model = None
+
 
     def load_data(self, path1, path2, path3):
         self.chatting_ckline = pd.read_json(path1, encoding="UTF-8").dropna()
@@ -66,11 +69,18 @@ class ModelDataExample:
         return self.merge_dataset_bm25_ja
     
     def load_model(self):
-        self.model = TFGPT2LMHeadModel.from_pretrained('cheonboy/kogpt2_small50')
-        self.tokenizer = AutoTokenizer.from_pretrained('skt/kogpt2-base-v2', bos_token='</s>', eos_token='</s>', pad_token='<pad>')
-    
-    def get_model(self):
-        return self.model
+        self.tokenizer = AutoTokenizer.from_pretrained(
+  'kakaobrain/kogpt', revision='KoGPT6B-ryan1.5b-float16',  # or float32 version: revision=KoGPT6B-ryan1.5b
+  bos_token='[BOS]', eos_token='[EOS]', unk_token='[UNK]', pad_token='[PAD]', mask_token='[MASK]')
+        self.model = AutoModelForCausalLM.from_pretrained(
+  'kakaobrain/kogpt', revision='KoGPT6B-ryan1.5b-float16',  # or float32 version: revision=KoGPT6B-ryan1.5b
+  pad_token_id=self.tokenizer.eos_token_id,
+  torch_dtype='auto', low_cpu_mem_usage=True
+).to(device='cuda', non_blocking=True)
+        # self.tokenizer = AutoTokenizer.from_pretrained('skt/kogpt2-base-v2', bos_token='</s>', eos_token='</s>', pad_token='<pad>')
     
     def get_tokenizer(self):
         return self.tokenizer
+
+    def get_model(self):
+        return self.model
