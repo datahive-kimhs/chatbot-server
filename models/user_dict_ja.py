@@ -6,7 +6,7 @@ from models.base import ORMModelBase
 
 
 @dataclass
-class UserdictJA(ORMModelBase):
+class UserDictJA(ORMModelBase):
     __tablename__ = "CKAIX_USER_DICT_JA"
 
     userdict_seq = Sequence('USER_DICT_JA_SEQ')
