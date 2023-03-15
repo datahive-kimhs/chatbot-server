@@ -35,11 +35,9 @@ from schema.chatbot import ChatData
 from schema.response import ChatResponse
 
 import tensorflow as tf
-from transformers import AutoTokenizer
-from transformers import TFGPT2LMHeadModel
 
 from extensions import model_data
-from core.gpt_module import return_answer
+# from core.local_module import return_answer
 
 # result = model_data.get_chatting_ckline()
 # print(result)
@@ -827,14 +825,14 @@ def make_answer(question: ChatData) -> ChatResponse:
                 print(" 한국어 기준 높은 스몰톡 : ", ex)
                 raise Exception
             
-            try:
-                if answer_text is None or answer_text == "":
-                    if lang == "ko":
-                        print("kogpt로 입장!")
-                        answer_text = return_answer(test_query)
+            # try:
+            #     if answer_text is None or answer_text == "":
+            #         if lang == "ko":
+            #             print("kogpt로 입장!")
+            #             answer_text = return_answer(test_query)
 
-            except Exception as ex:
-                print(" 생성 모델 : ", ex)
+            # except Exception as ex:
+            #     print(" 생성 모델 : ", ex)
 
     # 위 모든 과정중에도 답을 얻지 못한 경우에는 다음과 같은 값을 리턴한다.
     except Exception as ex:

@@ -10,20 +10,20 @@ from sqlalchemy import select, update, delete
 from connection import get_ckline_db_engine
 from models.dictionary_ja import DictionaryJA
 from models.scenario_ja import ScenarioJA
-from models.user_dict_ja import UserdictJA
+from models.user_dict_ja import UserDictJA
 
 
 def train_user_dict_ja():
     try:
         ckline_db = get_ckline_db_engine()
         with ckline_db.get_db_session() as session:
-            stmt = select(UserdictJA)
+            stmt = select(UserDictJA)
             rows = session.execute(stmt).all()
 
             with open("utils/user_dic_ja_NNP.tsv", 'w', encoding='utf-8', newline='') as f:
                 tw = csv.writer(f, delimiter='\t')
                 for row in rows:
-                    tw.writerow([row.UserdictJA.word.upper(), 'NNP'])
+                    tw.writerow([row.UserDictJA.word.upper(), 'NNP'])
 
             stmt = select(DictionaryJA)
             rows = session.execute(stmt).all()

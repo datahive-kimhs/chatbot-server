@@ -16,7 +16,7 @@ from sqlalchemy import select, update, delete
 from connection import get_ckline_db_engine
 from models.dictionary import Dictionary
 from models.scenario import Scenario
-from models.user_dict import Userdict
+from models.user_dict import UserDict
 
 
 # 학습 데이터 초기화
@@ -97,17 +97,17 @@ def train_user_dict():
     try:
         user_dictionary = dict()
         with ckline_db.get_db_session() as session:
-            user_dict_stmt = select(Userdict)
+            user_dict_stmt = select(UserDict)
             user_dict_data = session.execute(user_dict_stmt).all()
             for user_dict_row in user_dict_data:
-                user_dictionary[user_dict_row.Userdict.word.upper()] = user_dict_row.Userdict.shape
+                user_dictionary[user_dict_row.UserDict.word.upper()] = user_dict_row.UserDict.shape
 
             dictionary_stmt = select(Dictionary.idx, Dictionary.word)
             dictionary_data = session.execute(dictionary_stmt).all()
             for dictionary_row in dictionary_data:
                 user_dictionary[dictionary_row.word.upper()] = 'NNP'
 
-            scenario_stmt = select(Scenario.index, Scenario.ner, Scenario.question, Scenario.ner_ja, Scenario.question_ja)
+            scenario_stmt = select(Scenario.idx, Scenario.ner, Scenario.question, Scenario.ner_ja, Scenario.question_ja)
             scenario_data = session.execute(scenario_stmt).all()
             for scenario_row in scenario_data:
                 user_dictionary[scenario_row.question.upper()] = 'NNP'
@@ -142,20 +142,20 @@ def train_user_dict():
 # from connection import get_ckline_db_engine
 # from models.dictionary import Dictionary
 # from models.scenario import Scenario
-# from models.user_dict import Userdict
+# from models.user_dict import UserDict
 
 
 # def train_user_dict():
 #     try:
 #         ckline_db = get_ckline_db_engine()
 #         with ckline_db.get_db_session() as session:
-#             stmt = select(Userdict)
+#             stmt = select(UserDict)
 #             rows = session.execute(stmt).all()
 
 #             with open("utils/user_dic.tsv", 'w', encoding='utf-8', newline='') as f:
 #                 tw = csv.writer(f, delimiter='\t')
 #                 for row in rows:
-#                     tw.writerow([row.Userdict.word.upper(), row.Userdict.shape])
+#                     tw.writerow([row.UserDict.word.upper(), row.UserDict.shape])
 
 #             stmt = select(Dictionary)
 #             rows = session.execute(stmt).all()
